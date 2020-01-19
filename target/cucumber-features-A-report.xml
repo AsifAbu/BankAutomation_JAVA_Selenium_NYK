@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="180.564606">
+<testcase classname="User is on LogIn page" name="Successful Login with Valid Credentials" time="32.42749">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+When User enters "erp.maxgroup@gmail.com" into Username field...............passed
+And User enters "123" into Password field...................................passed
+And User Click LogIn button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User is on LogIn page" name="Select Role" time="8.152996">
+<system-out><![CDATA[Then User select Creator at CDA.............................................passed
+Then click Confirm button...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User is going to Bank Log Out" name="User is going to Log Out" time="8.453077">
+<system-out><![CDATA[Then User click on profile button...........................................passed
+Then User click again click on Log Out button...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User is on Master_LogIn page" name="Unsuccessful Master_LogIn with Invalid Username and Valid Password" time="20.553763">
+<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+When User enters "mithukhan18@yahoo.com" into Username field................passed
+And User enters "123" into Password field...................................passed
+And User Click Master_LogIn button..........................................passed
+And Master_LogIn Denied With Alert Message "Invalid Email or Password"......passed
+]]></system-out>
+</testcase>
+<testcase classname="User is on Master_LogIn page" name="Unsuccessful Master_LogIn with Valid Username and Invalid Password" time="22.945951">
+<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+When User enters "fahadbilla@yahoo.com" into Username field.................passed
+And User enters "123d34593234556" into Password field.......................passed
+And User Click Master_LogIn button..........................................passed
+And Master_LogIn Denied With Alert Message "Invalid Email or Password"......passed
+]]></system-out>
+</testcase>
+<testcase classname="User is on Master_LogIn page" name="Unsuccessful Master_LogIn with Blank Username and Blank Password" time="22.656106">
+<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+When User enters "" into Username field.....................................passed
+And User enters "" into Password field......................................passed
+And User Click Master_LogIn button..........................................passed
+And Master_LogIn Denied With Alert Message "Please enter valid email address".passed
+]]></system-out>
+</testcase>
+<testcase classname="User is on Master_LogIn page" name="Unsuccessful Master_LogIn with Blank Username and Valid Password" time="23.251169">
+<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+When User enters "" into Username field.....................................passed
+And User enters "123" into Password field...................................passed
+And User Click Master_LogIn button..........................................passed
+And Master_LogIn Denied With Alert Message "Please enter valid email address".passed
+]]></system-out>
+</testcase>
+<testcase classname="User is on Master_LogIn page" name="Unsuccessful Master_LogIn with Valid Username and Blank Password" time="23.445213">
+<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+When User enters "fahadbillah@yahoo.com" into Username field................passed
+And User enters "" into Password field......................................passed
+And User Click Master_LogIn button..........................................passed
+And Master_LogIn Denied With Alert Message "Please enter password"..........passed
+]]></system-out>
+</testcase>
+<testcase classname="User is on Master_LogIn page" name="Successful Login with Valid Credentials in Master Module" time="18.678841">
+<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+When User enters "erp.maxgroup@gmail.com" into Master_name field............passed
+And User enters "123" into Master_Password field............................passed
+And User Click Master_LogIn button..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+
+    <test name="Test Cases Suite">
+        <classes>
+            <class name="com.subContructManagementV2.runner.runner"></class>
+        </classes>
+    </test>
+
+</suite>
