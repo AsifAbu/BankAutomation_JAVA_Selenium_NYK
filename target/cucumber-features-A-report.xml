@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="182.544021">
-<testcase classname="User is on Master_LogIn page" name="Successful Login with Valid Credentials in Master Module" time="35.151021">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="167.57761">
+<testcase classname="User is on Master_LogIn page" name="Successful Login with Valid Credentials in Master Module" time="33.319304">
 <system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
 When User enters "erp.maxgroup@gmail.com" into Master_name field............passed
 And User enters "123" into Master_Password field............................passed
@@ -7,40 +7,50 @@ And User Click Master_LogIn button..........................................pass
 And User Master_Login Successfully..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Create_Company on Master page" name="User going to Master_Add_New_Company page" time="8.161753">
+<testcase classname="User Create_Company on Master page" name="User going to Master_Add_New_Company page" time="8.150899">
 <system-out><![CDATA[When User Click Master Company button.......................................passed
 And User Click Master Add New Company button................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Create_Company on Master page" name="User going to create new company" time="139.231247">
+<testcase classname="User Create_Company on Master page" name="User going to create new company" time="36.853663">
 <system-out><![CDATA[Given User is on Master Add New Company Create page.........................passed
 When User enters "" into Company Name field.................................passed
 And User enters "" into Company Code field..................................passed
-And User Click City button..................................................passed
-And User enters "Rajshahi" into City Search field...........................passed
-And User Click into City field..............................................passed
-And User enters "Saheb Bazar" into Company Address field....................passed
-And User Click Calender button into Establish Date field....................passed
-And User Click Date button into Establish Date field........................passed
-And User enters "100" into Company Account No field.........................passed
-And User enters "Raj-1100" into Company TreadLicense field..................passed
-And User enters "50" into Tax Deduction AccountNo field.....................passed
-And User enters "1122" into Provided Fund Reg No field......................passed
-And User Click Calender button into Provided Fund Reg Date field............passed
-And User Click Date button into Provided Fund Reg Date field................passed
-And User enters "2211" into Gratuity Reg No field...........................passed
-And User enters "70" into Retirement Age field..............................passed
-And User enters "Abu Asif" Contact Person name field........................passed
-And User enters "HR" into Contact Person Designation field..................passed
 And User enters "abuasif.com" into Website field............................passed
-And Usert enters "abuasif.nyk@gmail.com" into Company Email field...........passed
-And User enters "01780963777" into Telephone Number field...................passed
-And User enters "000111" into Fax Number field..............................passed
-And User enters "Bank Management" into Business Type field..................passed
-And User enters "Max Group" into Business Group field.......................passed
-And User enters "ERP Management" into Company Catagory field................passed
-And User enters "Not Applicable" into Remarks field.........................passed
 And User Clicks Create Company button.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Create_Company on Master page" name="User is goint to save the data which is recently created" time="16.164183">
+<system-out><![CDATA[When User Click Show All Companies button...................................passed
+Then User collect the recent created company data...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="User goig to Verify New Company" name="Successful Login with Valid Credentials" time="6.94967">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User Login Successfully.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User goig to Verify New Company" name="Select Role" time="8.147417">
+<system-out><![CDATA[Then User select Creator at CDA.............................................passed
+Then click Confirm button...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User goig to Verify New Company" name="User going to Company List and Collect Data page" time="24.571781">
+<system-out><![CDATA[When User Click on Company List button......................................passed
+Then User Collect the Recent Created Company Data...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="User goig to Verify New Company" name="User is going to Log Out" time="10.856174">
+<system-out><![CDATA[Then User click on profile button...........................................passed
+Then User click again click on Log Out button...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User goig to Verify New Company" name="Successful Login with Valid Credentials in Master Module" time="22.564519">
+<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+When User enters "erp.maxgroup@gmail.com" into Master_name field............passed
+And User enters "123" into Master_Password field............................passed
+And User Click Master_LogIn button..........................................passed
+And User Master_Login Successfully..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
