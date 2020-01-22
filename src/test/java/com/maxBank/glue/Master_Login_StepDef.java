@@ -47,6 +47,13 @@ public class Master_Login_StepDef extends ParentScenario{
 		master_login.altmsgMaster(arg1);
 	}
 
+	@And("^User Master_Login Successfully$")
+	public void userMaster_LoginSuccessfully() throws Throwable {
+		Thread.sleep(4000);
+		master_login.loginSuccess();
+		Thread.sleep(2000);
+	}
+
 	
 	
 }

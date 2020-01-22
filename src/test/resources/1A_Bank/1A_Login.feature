@@ -43,6 +43,7 @@ Feature: User is on LogIn page
 		When User enters "erp.maxgroup@gmail.com" into Username field
     And User enters "123" into Password field
     And User Click LogIn button
+    And User Login Successfully
 
 	Scenario: Select Role
 		Then User select Creator at CDA

@@ -14,7 +14,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources",
+		features = "src/test/resources/1B_Master",
 		glue = "com.maxBank.glue",
 		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
 		format = {"pretty","json:target/cucumber.json","html:target/TestSuite_1","junit:target/cucumber-features-A-report.xml"}

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import com.maxBank.pageObject.Bank_Logout;
 //import com.maxBank.pageObject.Bank_Dashboard;
 import com.maxBank.pageObject.Login;
+import com.maxBank.pageObject.Master_Create_Company;
 import com.maxBank.pageObject.Master_Login;
 
 public class ParentScenario extends ParentDriver{
@@ -15,6 +16,7 @@ public class ParentScenario extends ParentDriver{
 	//public Bank_Dashboard bank_dashboard;
 	public Bank_Logout bank_logout;
 	public Master_Login master_login;
+	public Master_Create_Company master_create_company;
 	
 	
 	public void startBrowser() {
@@ -23,7 +25,7 @@ public class ParentScenario extends ParentDriver{
 		//bank_dashboard = new Bank_Dashboard(driver);
 		bank_logout = new Bank_Logout(driver);
 		master_login = new Master_Login(driver);
-		
+		master_create_company = new Master_Create_Company(driver);
 		
 	    }
 	 
