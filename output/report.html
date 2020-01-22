@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 19, 2020 03:25:14 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 21, 2020 04:39:50 PM</span>
 				</a>
 			</li>
 			<li>
@@ -127,7 +127,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -142,7 +142,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -157,7 +157,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>37</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>35</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -176,23 +176,23 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>User is on LogIn page</span>
-						<span class='test-time'>Jan 19, 2020 03:25:15 PM</span>
+						<span class='test-name'>User is on Master_LogIn page</span>
+						<span class='test-time'>Jan 21, 2020 04:39:51 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 32s+724ms</span>
+	<span class='duration right label'>0h 0m 35s+306ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Successful Login with Valid Credentials</span>
+		<span class="desc-text">Successful Login with Valid Credentials in Master Module</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
 			
 			<b>Given</b>
 			
-			<span class="bdd-step-name">Given User is on Login page</span>
+			<span class="bdd-step-name">Given User is on Master_LogIn page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -200,7 +200,7 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User enters "erp.maxgroup@gmail.com" into Username field</span>
+			<span class="bdd-step-name">When User enters "erp.maxgroup@gmail.com" into Master_name field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -208,7 +208,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters "123" into Password field</span>
+			<span class="bdd-step-name">And User enters "123" into Master_Password field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -216,32 +216,15 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User Click LogIn button</span>
+			<span class="bdd-step-name">And User Click Master_LogIn button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='7' status='pass'>
-	<span class='duration right label'>0h 0m 8s+161ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Select Role</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='8' class='node then pass' status='pass'>
+		<li test-id='7' class='node and pass' status='pass'>
 			
-			<b>Then</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">Then User select Creator at CDA</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='9' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then click Confirm button</span>
+			<span class="bdd-step-name">And User Master_Login Successfully</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -251,69 +234,82 @@
 				</li>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='10'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='8'>
 					<div class='test-heading'>
-						<span class='test-name'>User is going to Bank Log Out</span>
-						<span class='test-time'>Jan 19, 2020 03:25:56 PM</span>
+						<span class='test-name'>User Create_Company on Master page</span>
+						<span class='test-time'>Jan 21, 2020 04:40:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='11' status='pass'>
-	<span class='duration right label'>0h 0m 8s+463ms</span>
+<div class='scenario node' test-id='9' status='pass'>
+	<span class='duration right label'>0h 0m 8s+169ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">User is going to Log Out</span>
+		<span class="desc-text">User going to Master_Add_New_Company page</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='12' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User click on profile button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='13' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User click again click on Log Out button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>User is on Master_LogIn page</span>
-						<span class='test-time'>Jan 19, 2020 03:26:04 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='scenario node' test-id='15' status='pass'>
-	<span class='duration right label'>0h 0m 20s+566ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Unsuccessful Master_LogIn with Invalid Username and Valid Password</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='16' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on Master_LogIn page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='17' class='node when pass' status='pass'>
+		<li test-id='10' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User enters "mithukhan18@yahoo.com" into Username field</span>
+			<span class="bdd-step-name">When User Click Master Company button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Click Master Add New Company button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='12' status='pass'>
+	<span class='duration right label'>0h 2m 19s+284ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User going to create new company</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='13' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User is on Master Add New Company Create page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='14' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User enters "" into Company Name field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "" into Company Code field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Click City button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='17' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "Rajshahi" into City Search field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -321,7 +317,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters "123" into Password field</span>
+			<span class="bdd-step-name">And User Click into City field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -329,7 +325,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User Click Master_LogIn button</span>
+			<span class="bdd-step-name">And User enters "Saheb Bazar" into Company Address field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -337,32 +333,31 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And Master_LogIn Denied With Alert Message "Invalid Email or Password"</span>
+			<span class="bdd-step-name">And User Click Calender button into Establish Date field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='21' status='pass'>
-	<span class='duration right label'>0h 0m 22s+956ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Unsuccessful Master_LogIn with Valid Username and Invalid Password</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='22' class='node given pass' status='pass'>
+		<li test-id='21' class='node and pass' status='pass'>
 			
-			<b>Given</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">Given User is on Master_LogIn page</span>
+			<span class="bdd-step-name">And User Click Date button into Establish Date field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='23' class='node when pass' status='pass'>
+		<li test-id='22' class='node and pass' status='pass'>
 			
-			<b>When</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">When User enters "fahadbilla@yahoo.com" into Username field</span>
+			<span class="bdd-step-name">And User enters "100" into Company Account No field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "Raj-1100" into Company TreadLicense field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -370,7 +365,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters "123d34593234556" into Password field</span>
+			<span class="bdd-step-name">And User enters "50" into Tax Deduction AccountNo field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -378,7 +373,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User Click Master_LogIn button</span>
+			<span class="bdd-step-name">And User enters "1122" into Provided Fund Reg No field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -386,32 +381,31 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And Master_LogIn Denied With Alert Message "Invalid Email or Password"</span>
+			<span class="bdd-step-name">And User Click Calender button into Provided Fund Reg Date field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='27' status='pass'>
-	<span class='duration right label'>0h 0m 22s+668ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Unsuccessful Master_LogIn with Blank Username and Blank Password</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='28' class='node given pass' status='pass'>
+		<li test-id='27' class='node and pass' status='pass'>
 			
-			<b>Given</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">Given User is on Master_LogIn page</span>
+			<span class="bdd-step-name">And User Click Date button into Provided Fund Reg Date field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='29' class='node when pass' status='pass'>
+		<li test-id='28' class='node and pass' status='pass'>
 			
-			<b>When</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">When User enters "" into Username field</span>
+			<span class="bdd-step-name">And User enters "2211" into Gratuity Reg No field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='29' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "70" into Retirement Age field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -419,7 +413,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters "" into Password field</span>
+			<span class="bdd-step-name">And User enters "Abu Asif" Contact Person name field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -427,7 +421,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User Click Master_LogIn button</span>
+			<span class="bdd-step-name">And User enters "HR" into Contact Person Designation field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -435,32 +429,31 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And Master_LogIn Denied With Alert Message "Please enter valid email address"</span>
+			<span class="bdd-step-name">And User enters "abuasif.com" into Website field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='33' status='pass'>
-	<span class='duration right label'>0h 0m 23s+261ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Unsuccessful Master_LogIn with Blank Username and Valid Password</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='34' class='node given pass' status='pass'>
+		<li test-id='33' class='node and pass' status='pass'>
 			
-			<b>Given</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">Given User is on Master_LogIn page</span>
+			<span class="bdd-step-name">And Usert enters "abuasif.nyk@gmail.com" into Company Email field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='35' class='node when pass' status='pass'>
+		<li test-id='34' class='node and pass' status='pass'>
 			
-			<b>When</b>
+			<b>And</b>
 			
-			<span class="bdd-step-name">When User enters "" into Username field</span>
+			<span class="bdd-step-name">And User enters "01780963777" into Telephone Number field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='35' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters "000111" into Fax Number field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -468,7 +461,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters "123" into Password field</span>
+			<span class="bdd-step-name">And User enters "Bank Management" into Business Type field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -476,7 +469,7 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User Click Master_LogIn button</span>
+			<span class="bdd-step-name">And User enters "Max Group" into Business Group field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -484,97 +477,23 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And Master_LogIn Denied With Alert Message "Please enter valid email address"</span>
+			<span class="bdd-step-name">And User enters "ERP Management" into Company Catagory field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='39' status='pass'>
-	<span class='duration right label'>0h 0m 23s+456ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Unsuccessful Master_LogIn with Valid Username and Blank Password</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='40' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on Master_LogIn page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='41' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User enters "fahadbillah@yahoo.com" into Username field</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='42' class='node and pass' status='pass'>
+		<li test-id='39' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User enters "" into Password field</span>
+			<span class="bdd-step-name">And User enters "Not Applicable" into Remarks field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='43' class='node and pass' status='pass'>
+		<li test-id='40' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User Click Master_LogIn button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='44' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And Master_LogIn Denied With Alert Message "Please enter password"</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='45' status='pass'>
-	<span class='duration right label'>0h 0m 18s+685ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Successful Login with Valid Credentials in Master Module</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='46' class='node given pass' status='pass'>
-			
-			<b>Given</b>
-			
-			<span class="bdd-step-name">Given User is on Master_LogIn page</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='47' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User enters "erp.maxgroup@gmail.com" into Master_name field</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='48' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User enters "123" into Master_Password field</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='49' class='node and pass' status='pass'>
-			
-			<b>And</b>
-			
-			<span class="bdd-step-name">And User Click Master_LogIn button</span>
+			<span class="bdd-step-name">And User Clicks Create Company button</span>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="image/png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
@@ -620,37 +539,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>37</div>
+					<div class='panel-lead'>35</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 19, 2020 03:25:14 PM</div>
+					<div class='panel-lead'>Jan 21, 2020 04:39:50 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 19, 2020 03:28:16 PM</div>
+			 		<div class='panel-lead'>Jan 21, 2020 04:42:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 3m 1s+519ms</div>
+					<div class='panel-lead'>0h 3m 3s+114ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -708,7 +627,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
+				passParent: 2,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -716,7 +635,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 9,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -725,7 +644,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 37,
+				passGrandChild: 35,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

@@ -32,4 +32,11 @@ public class Master_Login extends ParentDriver{
 		
 	}
 
+	public void loginSuccess() {
+		String A = driver.getCurrentUrl();
+		
+		String B = "https://master.jomakhata.com/#/dashboard";
+		Assert.assertEquals(A, B);
+	}
+
 }

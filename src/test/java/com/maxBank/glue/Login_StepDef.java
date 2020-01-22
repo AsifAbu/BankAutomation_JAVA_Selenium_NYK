@@ -62,5 +62,13 @@ public class Login_StepDef extends ParentScenario{
 		LogIn.altmsg(arg1);
 	}
 	
+	@When("^User Login Successfully$")
+	public void user_Login_Successfully() throws Throwable {
+		Thread.sleep(4000);
+		LogIn.loginSuccess();
+		Thread.sleep(2000);
+	}
+
+	
 
 }

@@ -40,5 +40,13 @@ public class Login extends ParentDriver {
 	public void ClickRoleConfirmBtn() {
 		driver.findElement(By.xpath("//button[contains(.,'Confirm')]")).click();
 	}
+	
+	public void loginSuccess() {
+		
+		String A = driver.getCurrentUrl();
+		
+		String B = "https://bank.jomakhata.com/#/role";
+		Assert.assertEquals(A, B);
+	}
 
 }

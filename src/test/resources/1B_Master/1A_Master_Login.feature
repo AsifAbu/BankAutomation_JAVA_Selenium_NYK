@@ -43,5 +43,6 @@ Feature: User is on Master_LogIn page
 		When User enters "erp.maxgroup@gmail.com" into Master_name field
     And User enters "123" into Master_Password field
     And User Click Master_LogIn button
+    And User Master_Login Successfully
 
 	
