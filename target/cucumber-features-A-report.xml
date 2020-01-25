@@ -1,56 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="167.57761">
-<testcase classname="User is on Master_LogIn page" name="Successful Login with Valid Credentials in Master Module" time="33.319304">
-<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="124.889332">
+<testcase classname="User goig to Verify New Project" name="Successful Login with Valid Credentials" time="30.20346">
+<system-out><![CDATA[Given User is on Login page.................................................passed
 When User enters "erp.maxgroup@gmail.com" into Master_name field............passed
 And User enters "123" into Master_Password field............................passed
-And User Click Master_LogIn button..........................................passed
-And User Master_Login Successfully..........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Create_Company on Master page" name="User going to Master_Add_New_Company page" time="8.150899">
-<system-out><![CDATA[When User Click Master Company button.......................................passed
-And User Click Master Add New Company button................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Create_Company on Master page" name="User going to create new company" time="36.853663">
-<system-out><![CDATA[Given User is on Master Add New Company Create page.........................passed
-When User enters "" into Company Name field.................................passed
-And User enters "" into Company Code field..................................passed
-And User enters "abuasif.com" into Website field............................passed
-And User Clicks Create Company button.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Create_Company on Master page" name="User is goint to save the data which is recently created" time="16.164183">
-<system-out><![CDATA[When User Click Show All Companies button...................................passed
-Then User collect the recent created company data...........................passed
-]]></system-out>
-</testcase>
-<testcase classname="User goig to Verify New Company" name="Successful Login with Valid Credentials" time="6.94967">
-<system-out><![CDATA[Given User is on Login page.................................................passed
+And User Click LogIn button.................................................passed
 And User Login Successfully.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User goig to Verify New Company" name="Select Role" time="8.147417">
+<testcase classname="User goig to Verify New Project" name="Select Role" time="8.134148">
 <system-out><![CDATA[Then User select Creator at CDA.............................................passed
 Then click Confirm button...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User goig to Verify New Company" name="User going to Company List and Collect Data page" time="24.571781">
-<system-out><![CDATA[When User Click on Company List button......................................passed
-Then User Collect the Recent Created Company Data...........................passed
+<testcase classname="User goig to Verify New Project" name="User going to Project List and Collect Data Fixed Budget" time="38.7045">
+<system-out><![CDATA[When User Click on Project List button......................................passed
+Then User Collect the Recent Created Project Data Fixed Budget..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="User goig to Verify New Company" name="User is going to Log Out" time="10.856174">
-<system-out><![CDATA[Then User click on profile button...........................................passed
-Then User click again click on Log Out button...............................passed
-]]></system-out>
-</testcase>
-<testcase classname="User goig to Verify New Company" name="Successful Login with Valid Credentials in Master Module" time="22.564519">
-<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
-When User enters "erp.maxgroup@gmail.com" into Master_name field............passed
-And User enters "123" into Master_Password field............................passed
-And User Click Master_LogIn button..........................................passed
-And User Master_Login Successfully..........................................passed
+<testcase classname="User goig to Verify New Project" name="User going to Project List and Collect Data Recurring Budget" time="47.847224">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+Then User select Creator at CDA.............................................passed
+Then click Confirm button...................................................passed
+When User Click on Project List button......................................passed
+Then User Collect the Recent Created Project Data Recurring Budget..........passed
 ]]></system-out>
 </testcase>
 </testsuite>

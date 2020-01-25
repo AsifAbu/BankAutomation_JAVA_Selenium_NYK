@@ -25,10 +25,10 @@ public class Company_Verify_StepDef extends ParentScenario{
 
 	@Then("^User Collect the Recent Created Company Data$")
 	public void userCollectTheRecentCreatedCompanyData() throws Throwable {
-		Thread.sleep(8000);
+		Thread.sleep(15000);
 		company_verify.collectRecentCreatedCompanyData();
-		Thread.sleep(12000);
-//		company_verify.verify();
+		Thread.sleep(20000);
+		company_verify.verify();
 		
 	}
 	

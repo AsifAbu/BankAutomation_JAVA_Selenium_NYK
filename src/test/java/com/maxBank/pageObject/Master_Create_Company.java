@@ -50,16 +50,16 @@ public class Master_Create_Company extends ParentDriver{
 		String B = "https://master.jomakhata.com/#/company/create";
 		Assert.assertEquals(A, B);
 	}
-
+	
 	public void addCompanyName(String arg1) {
 		arg1 = UUID.randomUUID().toString();
 		driver.findElement(By.xpath("//input[@id='companyName']")).sendKeys(arg1);
+		
 	}
 
 	public void addCompanyCode(String arg1) {
 		arg1 = UUID.randomUUID().toString();
 		driver.findElement(By.xpath("//input[@id='companyId']")).sendKeys(arg1);
-		
 	}
 
 	public void clickCityBtn() {
@@ -206,17 +206,6 @@ public class Master_Create_Company extends ParentDriver{
 		writer.close();
 		System.out.println("Save New Company Code: " + getCompanyCode);
 		System.out.println("Save New Company Name: " + getCompanyName);
-	}
-
-	
-	
-	
-	public void save_Data_Designation_Title_For_New_Project() throws FileNotFoundException, UnsupportedEncodingException {
-		String getSN = driver.findElement(By.xpath("//div[2]/table/tbody/tr[1]/td[1]")).getText();
-		PrintWriter writer = new PrintWriter("LocalStorage/NewProjectData.txt", "UTF-8");
-		writer.println(getSN);
-		writer.close();
-		System.out.println("Save DesignationTitle: " + getSN);
 	}
 
 	public void Search_Designation_Title_UTF_For_New_Project() throws IOException, InterruptedException {

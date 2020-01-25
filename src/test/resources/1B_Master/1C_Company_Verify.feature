@@ -2,8 +2,6 @@
 
 Feature: User goig to Verify New Company
 
-	
-
 	Scenario: Successful Login with Valid Credentials
 		Given User is on Login page
     And User Login Successfully

@@ -24,13 +24,14 @@ public class Company_Verify extends ParentDriver{
 	}
 
 	public void verify() throws IOException, InterruptedException{
-		String ComCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[2]")).getText();
-		String ComName = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[3]")).getText();
+		String ComName = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[2]")).getText();
+		String ComCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/div/table/tbody/tr[1]/td[3]")).getText();
 		
-		Assert.assertEquals(ComCode, CompanyCode);
-		Assert.assertEquals(ComName, CompanyName);
+		Assert.assertEquals(ComCode.trim(), CompanyCode);
+		Assert.assertEquals(ComName.trim(), CompanyName);
 		
-		
+		System.out.println("Company Code: "+CompanyCode);
+		System.out.println("Company Name: "+CompanyName);
 	}
 
 	public void collectRecentCreatedCompanyData() throws IOException, InterruptedException {
@@ -41,4 +42,5 @@ public class Company_Verify extends ParentDriver{
 		driver.findElement(By.xpath("(//input[@ng-change='columnSearch()'])[2]")).sendKeys(CompanyName);
 		
 	}
+
 }
