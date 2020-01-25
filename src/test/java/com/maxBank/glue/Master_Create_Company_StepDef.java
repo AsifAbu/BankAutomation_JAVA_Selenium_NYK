@@ -7,6 +7,7 @@ import com.maxBank.framework.ParentScenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class Master_Create_Company_StepDef extends ParentScenario{
@@ -202,6 +203,29 @@ public class Master_Create_Company_StepDef extends ParentScenario{
 	public void user_Clicks_Create_Company_button() throws Throwable {
 		Thread.sleep(4000);
 		master_create_company.createCompany();
+		Thread.sleep(2000);
+		master_create_company.scrollUp();
+	}
+
+	@When("^User Click Show All Companies button$")
+	public void userClickShowAllCompaniesButton() throws Throwable {
+		Thread.sleep(4000);
+		master_create_company.clickShowAllCompaniesBtn();
+		Thread.sleep(2000);
+		master_create_company.verifyShowAllCompaniesPage();
+	}
+
+	@Then("^User collect the recent created company data$")
+	public void userCollectTheRecentCreatedCompanyData() throws Throwable {
+		Thread.sleep(6000);
+		master_create_company.save_Data_Title_For_New_Company();
+		Thread.sleep(4000);
+		
+	}
+	@Then("^User Logout Master$")
+	public void userLogoutMaster() throws Throwable {
+		Thread.sleep(3000);
+		master_create_company.logoutMaster();
 	}
 	
 

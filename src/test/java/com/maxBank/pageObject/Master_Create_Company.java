@@ -1,7 +1,13 @@
 package com.maxBank.pageObject;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -44,16 +50,16 @@ public class Master_Create_Company extends ParentDriver{
 		String B = "https://master.jomakhata.com/#/company/create";
 		Assert.assertEquals(A, B);
 	}
-
+	
 	public void addCompanyName(String arg1) {
 		arg1 = UUID.randomUUID().toString();
 		driver.findElement(By.xpath("//input[@id='companyName']")).sendKeys(arg1);
+		
 	}
 
 	public void addCompanyCode(String arg1) {
 		arg1 = UUID.randomUUID().toString();
 		driver.findElement(By.xpath("//input[@id='companyId']")).sendKeys(arg1);
-		
 	}
 
 	public void clickCityBtn() {
@@ -175,6 +181,41 @@ public class Master_Create_Company extends ParentDriver{
 		
 	}
 
+	public void clickShowAllCompaniesBtn() {
+		driver.findElement(By.xpath("//a[@ui-sref='companyList']")).click();
+		
+	}
+
+	public void verifyShowAllCompaniesPage() {
+		String A = driver.getCurrentUrl();
+		
+		String B = "https://master.jomakhata.com/#/company/List";
+		Assert.assertEquals(A, B);
+		
+	}
+
 	
+	//save data in text file  
+	
+	public void save_Data_Title_For_New_Company() throws FileNotFoundException, UnsupportedEncodingException {
+		String getCompanyCode = driver.findElement(By.xpath("//div[2]/div/table/tbody/tr[1]/td[2]/div/div")).getText();
+		String getCompanyName = driver.findElement(By.xpath("//div[2]/div/table/tbody/tr[1]/td[3]/div/div")).getText();
+		
+		PrintWriter writer = new PrintWriter("LocalStorage/NewCompanyData.txt", "UTF-8");
+		writer.println(getCompanyCode+"/"+getCompanyName);
+		writer.close();
+		System.out.println("Save New Company Code: " + getCompanyCode);
+		System.out.println("Save New Company Name: " + getCompanyName);
+	}
+
+	public void Search_Designation_Title_UTF_For_New_Project() throws IOException, InterruptedException {
+		String data = FileUtils.readFileToString(new File("LocalStorage/NewProjectData.txt"), "UTF-8");
+		driver.findElement(By.xpath("//input[@name='searchDesignationTitle']")).sendKeys(data);
+	}
+
+	public void logoutMaster() {
+		driver.findElement(By.xpath("//span[@class='username username-hide-on-mobile ng-binding']")).click();
+		driver.findElement(By.xpath("//a[@ng-click='logout()']")).click();
+	}
     
 }
