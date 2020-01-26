@@ -217,9 +217,9 @@ public class Master_Create_Company_StepDef extends ParentScenario{
 
 	@Then("^User collect the recent created company data$")
 	public void userCollectTheRecentCreatedCompanyData() throws Throwable {
-		Thread.sleep(6000);
-		master_create_company.save_Data_Title_For_New_Company();
-		Thread.sleep(4000);
+		Thread.sleep(20000);
+		master_create_company.verify_New_Company();
+		Thread.sleep(15000);
 		
 	}
 	@Then("^User Logout Master$")

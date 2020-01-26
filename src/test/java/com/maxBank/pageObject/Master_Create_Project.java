@@ -1,12 +1,16 @@
 package com.maxBank.pageObject;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.maxBank.framework.ParentDriver;
 
@@ -30,16 +34,31 @@ public class Master_Create_Project extends ParentDriver{
 		driver.findElement(By.xpath("//option[contains(.,'MAX Infrastructure Limited')]")).click();
 		
 	}
-
+	String ProjectNameDemo;
 	public void addProjectName(String arg1) {
 		arg1 = UUID.randomUUID().toString();
-		driver.findElement(By.xpath("//input[@ng-model='createProject.projectName']")).sendKeys(arg1);
+		ProjectNameDemo = arg1;
+		driver.findElement(By.xpath("//input[@ng-model='createProject.projectName']")).sendKeys(ProjectNameDemo);
 		
 	}
-
-	public void addProjectID(String arg1) {
+	public void addProjectID(String arg1) throws FileNotFoundException, UnsupportedEncodingException {
 		arg1 = UUID.randomUUID().toString();
 		driver.findElement(By.xpath("//input[@ng-model='createProject.projectId']")).sendKeys(arg1);
+		String aa = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div[2]/form/div[1]/div[5]/div/select/option[1]")).getText();
+		if(aa.trim() == "fixed")
+		{
+			PrintWriter writer = new PrintWriter("LocalStorage/NewProjectDataFixed.txt", "UTF-8");
+			writer.println(arg1+"/"+ProjectNameDemo);
+			writer.close();
+		}
+		else
+		{
+			PrintWriter writer = new PrintWriter("LocalStorage/NewProjectDataRecurring.txt", "UTF-8");
+			writer.println(arg1+"/"+ProjectNameDemo);
+			writer.close();
+		}
+		System.out.println(arg1);
+		
 		
 	}
 
@@ -104,22 +123,43 @@ public class Master_Create_Project extends ParentDriver{
 		
 	}
 
-	public void save_Data_For_New_Project_Fixed() throws FileNotFoundException, UnsupportedEncodingException{
-		String getProjectCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
-		String getProjectName = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[3]/div/div")).getText();
+	public void save_Data_For_New_Project_Fixed() throws IOException, FileNotFoundException, UnsupportedEncodingException{		
+		String PCodeSaved, PNameSaved;
 		
-		PrintWriter writer = new PrintWriter("LocalStorage/NewProjectDataFixed.txt", "UTF-8");
-		writer.println(getProjectCode+"/"+getProjectName);
-		writer.close();
+		String data = FileUtils.readFileToString(new File("LocalStorage/NewProjectDataFixed.txt"), "UTF-8");
+		String[] parts = data.trim().split("/");
+		PCodeSaved = parts[0].trim(); //previously saved in text when created
+		PNameSaved = parts[1].trim();
 		
+		driver.findElement(By.xpath("(//input[@ng-change='getallData(true)'])[4]")).sendKeys(PNameSaved);
+		
+		//data collect from the list page
+		String ProjectNameInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[3]/div/div")).getText();
+		String ProjectCodeInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
+		
+		//assert here of list data vs saved data in Master Module
+		Assert.assertEquals(PNameSaved, ProjectNameInList.trim());
+		//Assert.assertEquals(PCodeSaved, ProjectCodeInList.trim());
+				
 	}
-	public void save_Data_For_New_Project_Recurring() throws FileNotFoundException, UnsupportedEncodingException{
-		String getProjectCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
-		String getProjectName = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[3]/div/div")).getText();
+	public void save_Data_For_New_Project_Recurring() throws IOException, FileNotFoundException, UnsupportedEncodingException{
+				
+		String ProjectCodeSaved, ProjectNameSaved;
 		
-		PrintWriter writer = new PrintWriter("LocalStorage/NewProjectDataRecurring.txt", "UTF-8");
-		writer.println(getProjectCode+"/"+getProjectName);
-		writer.close();
+		String data = FileUtils.readFileToString(new File("LocalStorage/NewProjectDataRecurring.txt"), "UTF-8");
+		String[] parts = data.trim().split("/");
+		ProjectCodeSaved = parts[0].trim(); //previously saved in text when created
+		ProjectNameSaved = parts[1].trim();
+		
+		driver.findElement(By.xpath("(//input[@ng-change='getallData(true)'])[4]")).sendKeys(ProjectNameSaved);
+		
+		//data collect from the list page
+		String ProjectNameInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[3]/div/div")).getText();
+		String ProjectCodeInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
+		
+		//assert here of list data vs saved data in Master Module
+		Assert.assertEquals(ProjectNameSaved, ProjectNameInList);
+		//Assert.assertEquals(ProjectCodeSaved, ProjectCodeInList);
 		
 	}
 	
