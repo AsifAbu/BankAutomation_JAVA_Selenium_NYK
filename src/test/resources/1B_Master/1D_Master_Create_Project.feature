@@ -1,6 +1,6 @@
 #Author: abuasif.nyk@gmail.com
 
-Feature: User going to Create New Company
+Feature: User going to Create New Project
 	Scenario: Create New Project of Fixed Budget Type
 		Given User is on Master_LogIn page	
 		When User enters "erp.maxgroup@gmail.com" into Master_name field
@@ -11,6 +11,8 @@ Feature: User going to Create New Company
 		Then User Click ProjectBusiness Unit button
 		Then User Click Add New Project button
 		Then User Click Select Parent Company 
+		
+	Scenario: Create New Project of Fixed Budget Type	
 		And User enters "" on Project Name field
 		And User enters "" on Project ID field
 		And User enters "Random" on Project Type field
@@ -28,7 +30,7 @@ Feature: User going to Create New Company
 		
 	Scenario: Create New Project of Recurring Budget Type	
 		Then User Click Add New Project button
-		Then User Click Select Parent Company 
+		Then User Click Select Parent Company
 		And User enters "" on Project Name field
 		And User enters "" on Project ID field
 		And User enters "Random" on Project Type field

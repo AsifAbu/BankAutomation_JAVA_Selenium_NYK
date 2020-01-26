@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/1B_Master/1E_Project_Verify.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/1B_Master/1D_Master_Create_Project.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,50 +7,50 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "User goig to Verify New Project",
+  "name": "User going to Create New Project",
   "description": "",
-  "id": "user-goig-to-verify-new-project",
+  "id": "user-going-to-create-new-project",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8043459200,
+  "duration": 8663129000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 149899,
+  "duration": 129300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 102001,
+  "duration": 74700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88900,
+  "duration": 68000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 129101,
+  "duration": 75900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 122400,
+  "duration": 84000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 103699,
+  "duration": 80000,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Successful Login with Valid Credentials",
+  "name": "Create New Project of Fixed Budget Type",
   "description": "",
-  "id": "user-goig-to-verify-new-project;successful-login-with-valid-credentials",
+  "id": "user-going-to-create-new-project;create-new-project-of-fixed-budget-type",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "User is on Login page",
+  "name": "User is on Master_LogIn page",
   "keyword": "Given "
 });
 formatter.step({
@@ -65,19 +65,34 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "User Click LogIn button",
+  "name": "User Click Master_LogIn button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "User Login Successfully",
-  "keyword": "And "
+  "line": 10,
+  "name": "User Master_Login Successfully",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User Click ProjectBusiness Unit button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "User Click Add New Project button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "User Click Select Parent Company",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "Login_StepDef.user_is_on_Login_page()"
+  "location": "Master_Login_StepDef.userIsOnMaster_LogInPage()"
 });
 formatter.result({
-  "duration": 3845843400,
+  "duration": 7379699900,
   "status": "passed"
 });
 formatter.match({
@@ -90,7 +105,7 @@ formatter.match({
   "location": "Master_Login_StepDef.user_enters_into_Master_name_field(String)"
 });
 formatter.result({
-  "duration": 4172302400,
+  "duration": 4187185500,
   "status": "passed"
 });
 formatter.match({
@@ -103,237 +118,552 @@ formatter.match({
   "location": "Master_Login_StepDef.user_enters_into_Master_Password_field(String)"
 });
 formatter.result({
-  "duration": 4063985400,
+  "duration": 4058759500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Login_StepDef.user_Click_LogIn_button()"
+  "location": "Master_Login_StepDef.userClickMaster_LogInButton()"
 });
 formatter.result({
-  "duration": 4065896399,
+  "duration": 4069116500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Login_StepDef.user_Login_Successfully()"
+  "location": "Master_Login_StepDef.userMaster_LoginSuccessfully()"
 });
 formatter.result({
-  "duration": 6011277001,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 91500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 67800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 57401,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 42801,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 64699,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 95299,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 77900,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 11,
-  "name": "Select Role",
-  "description": "",
-  "id": "user-goig-to-verify-new-project;select-role",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 12,
-  "name": "User select Creator at CDA",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "click Confirm button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Login_StepDef.user_select_Creator_at_CDA()"
-});
-formatter.result({
-  "duration": 4049694899,
+  "duration": 6042040900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Login_StepDef.click_Confirm_button()"
+  "location": "Master_Create_Project_StepDef.user_Click_ProjectBusiness_Unit_button()"
 });
 formatter.result({
-  "duration": 4083956200,
+  "duration": 3078084400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.user_Click_Add_New_Project_button()"
+});
+formatter.result({
+  "duration": 3070980000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.user_Click_Select_Parent_Company()"
+});
+formatter.result({
+  "duration": 3156231500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 215800,
+  "duration": 110000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 148099,
+  "duration": 96500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 115900,
+  "duration": 77500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 96299,
+  "duration": 95100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 80400,
+  "duration": 82800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 113199,
+  "duration": 135400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 93700,
+  "duration": 95600,
   "status": "passed"
 });
 formatter.scenario({
   "line": 15,
-  "name": "User going to Project List and Collect Data Fixed Budget",
+  "name": "Create New Project of Fixed Budget Type",
   "description": "",
-  "id": "user-goig-to-verify-new-project;user-going-to-project-list-and-collect-data-fixed-budget",
+  "id": "user-going-to-create-new-project;create-new-project-of-fixed-budget-type",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 16,
-  "name": "User Click on Project List button",
-  "keyword": "When "
+  "name": "User enters \"\" on Project Name field",
+  "keyword": "And "
 });
 formatter.step({
   "line": 17,
-  "name": "User Collect the Recent Created Project Data Fixed Budget",
+  "name": "User enters \"\" on Project ID field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "User enters \"Random\" on Project Type field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 19,
+  "name": "User enters \"Rajshahi\" on Project Locatin field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "User Enters \"200\" on Project Budget Ammount Field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "User Click on Budget Duration button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 22,
+  "name": "User Click on Budget Duration To button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "User enters \"Asif\" on Contact Person Name field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "User enters \"01799999999\" on Contact Person No field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "User enters \"Not Applicable for automation\" on Remarks field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "User enters \"Not Applicable for automation\" on Other Details field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "User Click Create Project button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "User Click Show All Project button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "User Collect Created New Project Data for Fixed Budget Type",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Project_Verify_StepDef.user_Click_on_Project_List_button()"
+  "arguments": [
+    {
+      "val": "",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Name_field(String)"
 });
 formatter.result({
-  "duration": 3233843601,
+  "duration": 5334135700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Project_Verify_StepDef.userCollectTheRecentCreatedProjectDataFixedBudget()"
+  "arguments": [
+    {
+      "val": "",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_ID_field(String)"
 });
 formatter.result({
-  "duration": 35469792601,
+  "duration": 35359190700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Random",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Type_field(String)"
+});
+formatter.result({
+  "duration": 3087177100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Rajshahi",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Locatin_field(String)"
+});
+formatter.result({
+  "duration": 3124773600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "200",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_Enters_on_Project_Budget_Ammount_Field(String)"
+});
+formatter.result({
+  "duration": 3079112900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.userClickOnBudgetDurationButton()"
+});
+formatter.result({
+  "duration": 3160642200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.userClickOnBudgetDurationToButton()"
+});
+formatter.result({
+  "duration": 3152308600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Asif",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_Name_field(String)"
+});
+formatter.result({
+  "duration": 3073576600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "01799999999",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_No_field(String)"
+});
+formatter.result({
+  "duration": 3105330000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Not Applicable for automation",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Remarks_field(String)"
+});
+formatter.result({
+  "duration": 3155008000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Not Applicable for automation",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Other_Details_field(String)"
+});
+formatter.result({
+  "duration": 3161488400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.user_Click_Create_Project_button()"
+});
+formatter.result({
+  "duration": 3070843900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.user_Click_Show_All_Project_button()"
+});
+formatter.result({
+  "duration": 3068854900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.userCollectCreatedNewProjectDataForFixedBudgetType()"
+});
+formatter.result({
+  "duration": 26393247500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 84101,
+  "duration": 81600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 105900,
+  "duration": 86700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 77200,
+  "duration": 73800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 80200,
+  "duration": 63900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 94199,
+  "duration": 66300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 78800,
+  "duration": 53100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 81300,
+  "duration": 104200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 19,
-  "name": "User going to Project List and Collect Data Recurring Budget",
+  "line": 31,
+  "name": "Create New Project of Recurring Budget Type",
   "description": "",
-  "id": "user-goig-to-verify-new-project;user-going-to-project-list-and-collect-data-recurring-budget",
+  "id": "user-going-to-create-new-project;create-new-project-of-recurring-budget-type",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 20,
-  "name": "User is on Login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 21,
-  "name": "User select Creator at CDA",
+  "line": 32,
+  "name": "User Click Add New Project button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
-  "name": "click Confirm button",
+  "line": 33,
+  "name": "User Click Select Parent Company",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 23,
-  "name": "User Click on Project List button",
-  "keyword": "When "
+  "line": 34,
+  "name": "User enters \"\" on Project Name field",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 24,
-  "name": "User Collect the Recent Created Project Data Recurring Budget",
+  "line": 35,
+  "name": "User enters \"\" on Project ID field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "User enters \"Random\" on Project Type field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 37,
+  "name": "User Click Budget Type button and Select Recurring Budget Type",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "User enters \"Rajshahi\" on Project Locatin field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "User enters \"Asif\" on Contact Person Name field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "User enters \"01799999999\" on Contact Person No field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 41,
+  "name": "User enters \"Not Applicable for automation\" on Remarks field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 42,
+  "name": "User enters \"Not Applicable for automation\" on Other Details field",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "User Click Create Project button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 44,
+  "name": "User Click Show All Project button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 45,
+  "name": "User Collect Created New Project Data for Recurring Budget Type",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Login_StepDef.user_is_on_Login_page()"
+  "location": "Master_Create_Project_StepDef.user_Click_Add_New_Project_button()"
 });
 formatter.result({
-  "duration": 1130644401,
+  "duration": 3103421700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Login_StepDef.user_select_Creator_at_CDA()"
+  "location": "Master_Create_Project_StepDef.user_Click_Select_Parent_Company()"
 });
 formatter.result({
-  "duration": 4041539800,
+  "duration": 3152856800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Login_StepDef.click_Confirm_button()"
+  "arguments": [
+    {
+      "val": "",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Name_field(String)"
 });
 formatter.result({
-  "duration": 4076862901,
+  "duration": 5249297400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Project_Verify_StepDef.user_Click_on_Project_List_button()"
+  "arguments": [
+    {
+      "val": "",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_ID_field(String)"
 });
 formatter.result({
-  "duration": 3230612899,
+  "duration": 35314156500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Project_Verify_StepDef.userCollectTheRecentCreatedProjectDataRecurringBudget()"
+  "arguments": [
+    {
+      "val": "Random",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Type_field(String)"
 });
 formatter.result({
-  "duration": 35366962300,
+  "duration": 3082231600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.userClickBudgetTypeButtonAndSelectRecurringBudgetType()"
+});
+formatter.result({
+  "duration": 3143322800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Rajshahi",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Locatin_field(String)"
+});
+formatter.result({
+  "duration": 3100949100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Asif",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_Name_field(String)"
+});
+formatter.result({
+  "duration": 3064882600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "01799999999",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_No_field(String)"
+});
+formatter.result({
+  "duration": 3102438800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Not Applicable for automation",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Remarks_field(String)"
+});
+formatter.result({
+  "duration": 3168197700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Not Applicable for automation",
+      "offset": 13
+    }
+  ],
+  "location": "Master_Create_Project_StepDef.user_enters_on_Other_Details_field(String)"
+});
+formatter.result({
+  "duration": 3146304800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.user_Click_Create_Project_button()"
+});
+formatter.result({
+  "duration": 3075244800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.user_Click_Show_All_Project_button()"
+});
+formatter.result({
+  "duration": 3131824200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Master_Create_Project_StepDef.userCollectCreatedNewProjectDataForRecurringBudgetType()"
+});
+formatter.result({
+  "duration": 26053293900,
   "status": "passed"
 });
 });

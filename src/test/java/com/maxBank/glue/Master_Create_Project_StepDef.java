@@ -38,14 +38,15 @@ public class Master_Create_Project_StepDef extends ParentScenario{
 
 	@Then("^User enters \"([^\"]*)\" on Project Name field$")
 	public void user_enters_on_Project_Name_field(String arg1) throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		master_create_project.addProjectName(arg1);
 	}
 
 	@Then("^User enters \"([^\"]*)\" on Project ID field$")
 	public void user_enters_on_Project_ID_field(String arg1) throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(15000);
 		master_create_project.addProjectID(arg1);
+		Thread.sleep(20000);
 	}
 
 	@Then("^User enters \"([^\"]*)\" on Project Type field$")
@@ -124,16 +125,16 @@ public class Master_Create_Project_StepDef extends ParentScenario{
 
 	@Then("^User Collect Created New Project Data for Fixed Budget Type$")
 	public void userCollectCreatedNewProjectDataForFixedBudgetType() throws Throwable {
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		master_create_project.save_Data_For_New_Project_Fixed();
-		Thread.sleep(4000);
+		Thread.sleep(15000);
 	}
 
 	@Then("^User Collect Created New Project Data for Recurring Budget Type$")
 	public void userCollectCreatedNewProjectDataForRecurringBudgetType() throws Throwable {
-		Thread.sleep(6000);
+		Thread.sleep(10000);
 		master_create_project.save_Data_For_New_Project_Recurring();
-		Thread.sleep(4000);
+		Thread.sleep(15000);
 	}
 
 	

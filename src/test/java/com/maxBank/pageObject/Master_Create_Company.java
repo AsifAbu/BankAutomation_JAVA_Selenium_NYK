@@ -50,15 +50,20 @@ public class Master_Create_Company extends ParentDriver{
 		String B = "https://master.jomakhata.com/#/company/create";
 		Assert.assertEquals(A, B);
 	}
-	
+	String CompanyNameDemo,CompanyCodeDemo;
 	public void addCompanyName(String arg1) {
 		arg1 = UUID.randomUUID().toString();
+		CompanyNameDemo = arg1;
 		driver.findElement(By.xpath("//input[@id='companyName']")).sendKeys(arg1);
 		
 	}
 
-	public void addCompanyCode(String arg1) {
+	public void addCompanyCode(String arg1) throws FileNotFoundException, UnsupportedEncodingException {
 		arg1 = UUID.randomUUID().toString();
+		CompanyCodeDemo = arg1;
+		PrintWriter writer = new PrintWriter("LocalStorage/NewCompanyData.txt", "UTF-8");
+		writer.println(CompanyCodeDemo+"/"+CompanyNameDemo);
+		writer.close();
 		driver.findElement(By.xpath("//input[@id='companyId']")).sendKeys(arg1);
 	}
 
@@ -197,15 +202,23 @@ public class Master_Create_Company extends ParentDriver{
 	
 	//save data in text file  
 	
-	public void save_Data_Title_For_New_Company() throws FileNotFoundException, UnsupportedEncodingException {
-		String getCompanyCode = driver.findElement(By.xpath("//div[2]/div/table/tbody/tr[1]/td[2]/div/div")).getText();
-		String getCompanyName = driver.findElement(By.xpath("//div[2]/div/table/tbody/tr[1]/td[3]/div/div")).getText();
+	public void verify_New_Company() throws IOException {
+		String CompanyCodeSaved, CompanyNameSaved;
 		
-		PrintWriter writer = new PrintWriter("LocalStorage/NewCompanyData.txt", "UTF-8");
-		writer.println(getCompanyCode+"/"+getCompanyName);
-		writer.close();
-		System.out.println("Save New Company Code: " + getCompanyCode);
-		System.out.println("Save New Company Name: " + getCompanyName);
+		String data = FileUtils.readFileToString(new File("LocalStorage/NewCompanyData.txt"), "UTF-8");
+		String[] parts = data.trim().split("/");
+		CompanyCodeSaved = parts[0].trim(); //previously saved in text when created
+		CompanyNameSaved = parts[1].trim();
+		
+		driver.findElement(By.xpath("(//input[@ng-change='getallData(true)'])[4]")).sendKeys(CompanyNameSaved);
+		
+		//data collect from the list page
+		String ComNameInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[3]/div/div")).getText();
+		String ComCodeInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[2]/div/div")).getText();
+		
+		//assert here of list data vs saved data in Master Module
+		Assert.assertEquals(CompanyNameSaved, ComNameInList);
+		Assert.assertEquals(CompanyCodeSaved, ComCodeInList);
 	}
 
 	public void Search_Designation_Title_UTF_For_New_Project() throws IOException, InterruptedException {
