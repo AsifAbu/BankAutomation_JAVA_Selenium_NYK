@@ -2,12 +2,6 @@
 
 Feature: User going to Create New Project
 	Scenario: Create New Project of Fixed Budget Type
-		Given User is on Master_LogIn page	
-		When User enters "erp.maxgroup@gmail.com" into Master_name field
-    And User enters "123" into Master_Password field
-    And User Click Master_LogIn button
-	
-		When User Master_Login Successfully
 		Then User Click ProjectBusiness Unit button
 		Then User Click Add New Project button
 		Then User Click Select Parent Company 

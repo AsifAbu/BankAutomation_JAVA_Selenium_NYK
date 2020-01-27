@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/1B_Master/1D_Master_Create_Project.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("1A_Create_Beneficiary.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,92 +7,91 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "User going to Create New Project",
+  "name": "User Create New Beneficiary",
   "description": "",
-  "id": "user-going-to-create-new-project",
+  "id": "user-create-new-beneficiary",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8663129000,
+  "duration": 6206548400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 129300,
+  "duration": 101700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 74700,
+  "duration": 73000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 68000,
+  "duration": 56900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 75900,
+  "duration": 90400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 84000,
+  "duration": 73200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 80000,
+  "duration": 66700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 106400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 4,
-  "name": "Create New Project of Fixed Budget Type",
+  "line": 5,
+  "name": "Successful Login with Valid Credentials",
   "description": "",
-  "id": "user-going-to-create-new-project;create-new-project-of-fixed-budget-type",
+  "id": "user-create-new-beneficiary;successful-login-with-valid-credentials",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
-  "name": "User is on Master_LogIn page",
+  "line": 6,
+  "name": "User is on Login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "User enters \"erp.maxgroup@gmail.com\" into Master_name field",
+  "line": 7,
+  "name": "User enters \"erp.maxgroup@gmail.com\" into Username field",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "User enters \"123\" into Master_Password field",
+  "line": 8,
+  "name": "User enters \"123\" into Password field",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
-  "name": "User Click Master_LogIn button",
+  "line": 9,
+  "name": "User Click LogIn button",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
-  "name": "User Master_Login Successfully",
-  "keyword": "When "
+  "name": "User Login Successfully",
+  "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "User Click ProjectBusiness Unit button",
+  "name": "User select Creator at CDA",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "User Click Add New Project button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "User Click Select Parent Company",
+  "name": "click Confirm button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Master_Login_StepDef.userIsOnMaster_LogInPage()"
+  "location": "Login_StepDef.user_is_on_Login_page()"
 });
 formatter.result({
-  "duration": 7379699900,
+  "duration": 2554797100,
   "status": "passed"
 });
 formatter.match({
@@ -102,10 +101,10 @@ formatter.match({
       "offset": 13
     }
   ],
-  "location": "Master_Login_StepDef.user_enters_into_Master_name_field(String)"
+  "location": "Login_StepDef.user_enters_into_Username_field(String)"
 });
 formatter.result({
-  "duration": 4187185500,
+  "duration": 4156638400,
   "status": "passed"
 });
 formatter.match({
@@ -115,495 +114,283 @@ formatter.match({
       "offset": 13
     }
   ],
-  "location": "Master_Login_StepDef.user_enters_into_Master_Password_field(String)"
+  "location": "Login_StepDef.user_enters_into_Password_field(String)"
 });
 formatter.result({
-  "duration": 4058759500,
+  "duration": 4057295900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Login_StepDef.userClickMaster_LogInButton()"
+  "location": "Login_StepDef.user_Click_LogIn_button()"
 });
 formatter.result({
-  "duration": 4069116500,
+  "duration": 4064454300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Login_StepDef.userMaster_LoginSuccessfully()"
+  "location": "Login_StepDef.user_Login_Successfully()"
 });
 formatter.result({
-  "duration": 6042040900,
+  "duration": 6012302100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_ProjectBusiness_Unit_button()"
+  "location": "Login_StepDef.user_select_Creator_at_CDA()"
 });
 formatter.result({
-  "duration": 3078084400,
+  "duration": 4049990400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Add_New_Project_button()"
+  "location": "Login_StepDef.click_Confirm_button()"
 });
 formatter.result({
-  "duration": 3070980000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Select_Parent_Company()"
-});
-formatter.result({
-  "duration": 3156231500,
+  "duration": 4083320800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 110000,
+  "duration": 134200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 96500,
+  "duration": 139700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 77500,
+  "duration": 102600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95100,
+  "duration": 124600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 82800,
+  "duration": 271000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 135400,
+  "duration": 113500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95600,
+  "duration": 92600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 88200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 15,
-  "name": "Create New Project of Fixed Budget Type",
+  "line": 14,
+  "name": "User going to Create New Beneficiary of Vendor Type",
   "description": "",
-  "id": "user-going-to-create-new-project;create-new-project-of-fixed-budget-type",
+  "id": "user-create-new-beneficiary;user-going-to-create-new-beneficiary-of-vendor-type",
   "type": "scenario",
   "keyword": "Scenario"
+});
+formatter.step({
+  "line": 15,
+  "name": "User Click Beneficiary button",
+  "keyword": "When "
 });
 formatter.step({
   "line": 16,
-  "name": "User enters \"\" on Project Name field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "User enters \"\" on Project ID field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "User enters \"Random\" on Project Type field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "User enters \"Rajshahi\" on Project Locatin field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "User Enters \"200\" on Project Budget Ammount Field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "User Click on Budget Duration button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "User Click on Budget Duration To button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "User enters \"Asif\" on Contact Person Name field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "User enters \"01799999999\" on Contact Person No field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "User enters \"Not Applicable for automation\" on Remarks field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "User enters \"Not Applicable for automation\" on Other Details field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "User Click Create Project button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "User Click Show All Project button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 29,
-  "name": "User Collect Created New Project Data for Fixed Budget Type",
+  "name": "User Click Create Beneficiary button",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Name_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.user_Click_Beneficiary_button()"
 });
 formatter.result({
-  "duration": 5334135700,
+  "duration": 3086890000,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_ID_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.user_Click_Create_Beneficiary_button()"
 });
 formatter.result({
-  "duration": 35359190700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Random",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Type_field(String)"
-});
-formatter.result({
-  "duration": 3087177100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Rajshahi",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Locatin_field(String)"
-});
-formatter.result({
-  "duration": 3124773600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "200",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_Enters_on_Project_Budget_Ammount_Field(String)"
-});
-formatter.result({
-  "duration": 3079112900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Master_Create_Project_StepDef.userClickOnBudgetDurationButton()"
-});
-formatter.result({
-  "duration": 3160642200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Master_Create_Project_StepDef.userClickOnBudgetDurationToButton()"
-});
-formatter.result({
-  "duration": 3152308600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Asif",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_Name_field(String)"
-});
-formatter.result({
-  "duration": 3073576600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "01799999999",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_No_field(String)"
-});
-formatter.result({
-  "duration": 3105330000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Not Applicable for automation",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Remarks_field(String)"
-});
-formatter.result({
-  "duration": 3155008000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Not Applicable for automation",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Other_Details_field(String)"
-});
-formatter.result({
-  "duration": 3161488400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Create_Project_button()"
-});
-formatter.result({
-  "duration": 3070843900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Show_All_Project_button()"
-});
-formatter.result({
-  "duration": 3068854900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Master_Create_Project_StepDef.userCollectCreatedNewProjectDataForFixedBudgetType()"
-});
-formatter.result({
-  "duration": 26393247500,
+  "duration": 3107721900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 81600,
+  "duration": 112900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 86700,
+  "duration": 64100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 73800,
+  "duration": 78100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 63900,
+  "duration": 77600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 66300,
+  "duration": 135200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 53100,
+  "duration": 88900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 104200,
+  "duration": 112600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 455900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 31,
-  "name": "Create New Project of Recurring Budget Type",
+  "comments": [
+    {
+      "line": 18,
+      "value": "#\tThen User Click Exixting Vendor field"
+    },
+    {
+      "line": 19,
+      "value": "#"
+    },
+    {
+      "line": 20,
+      "value": "#\tThen User Click Gazipur Polish Store button"
+    },
+    {
+      "line": 21,
+      "value": "#\tAnd User Select \"ERP Admin\" At Approver Option"
+    },
+    {
+      "line": 22,
+      "value": "#\tThen User enters \"AsifBenificiary-Vendor\" into Beneficiary Name field"
+    },
+    {
+      "line": 23,
+      "value": "#\tThen User enters \"asifbeneficiary@gmail.com\" into Beneficiary Email field"
+    },
+    {
+      "line": 24,
+      "value": "#\tThen User enters \"01799999999\" into beneficiary Phone field"
+    },
+    {
+      "line": 25,
+      "value": "#"
+    },
+    {
+      "line": 26,
+      "value": "#Scenario: User going to Add Beneficiary Bank Account for Vendor Type"
+    },
+    {
+      "line": 27,
+      "value": "#\tWhen User Clicks Add Beneficiary Bank Account button"
+    },
+    {
+      "line": 28,
+      "value": "#\tThen User Clicks Bank Name button and Select or Click UCBL"
+    },
+    {
+      "line": 29,
+      "value": "#\tThen User enters \"UCBL, Mohakhali-DOHS\" into Branch Name field"
+    },
+    {
+      "line": 30,
+      "value": "#\tThen user enters \"11001100\" into Account Number field"
+    },
+    {
+      "line": 31,
+      "value": "#\tThen User Click Submit button"
+    }
+  ],
+  "line": 33,
+  "name": "User going to Create New Beneficiary of Non Vendor Type",
   "description": "",
-  "id": "user-going-to-create-new-project;create-new-project-of-recurring-budget-type",
+  "id": "user-create-new-beneficiary;user-going-to-create-new-beneficiary-of-non-vendor-type",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 32,
-  "name": "User Click Add New Project button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "User Click Select Parent Company",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 34,
-  "name": "User enters \"\" on Project Name field",
-  "keyword": "And "
+  "name": "User Click Benificiary Type field",
+  "keyword": "When "
 });
 formatter.step({
   "line": 35,
-  "name": "User enters \"\" on Project ID field",
-  "keyword": "And "
+  "name": "User select Non Vendor Type",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 36,
-  "name": "User enters \"Random\" on Project Type field",
+  "name": "User Select \"ERP Admin\" At Approver Option",
   "keyword": "And "
 });
 formatter.step({
   "line": 37,
-  "name": "User Click Budget Type button and Select Recurring Budget Type",
-  "keyword": "And "
+  "name": "User enters \"AsifBenificiary-NonVendor\" into Beneficiary Name field",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 38,
-  "name": "User enters \"Rajshahi\" on Project Locatin field",
-  "keyword": "And "
+  "name": "User enters \"asifbeneficiary@gmail.com\" into Beneficiary Email field",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 39,
-  "name": "User enters \"Asif\" on Contact Person Name field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 40,
-  "name": "User enters \"01799999999\" on Contact Person No field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 41,
-  "name": "User enters \"Not Applicable for automation\" on Remarks field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 42,
-  "name": "User enters \"Not Applicable for automation\" on Other Details field",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 43,
-  "name": "User Click Create Project button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 44,
-  "name": "User Click Show All Project button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 45,
-  "name": "User Collect Created New Project Data for Recurring Budget Type",
+  "name": "User enters \"01799999999\" into beneficiary Phone field",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Add_New_Project_button()"
+  "location": "Bank_Create_Beneficiary_StepDef.user_Click_Benificiary_Type_field()"
 });
 formatter.result({
-  "duration": 3103421700,
+  "duration": 3077600200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Select_Parent_Company()"
+  "location": "Bank_Create_Beneficiary_StepDef.user_select_Non_Vendor_Type()"
 });
 formatter.result({
-  "duration": 3152856800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Name_field(String)"
-});
-formatter.result({
-  "duration": 5249297400,
+  "duration": 26111036900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "",
+      "val": "ERP Admin",
       "offset": 13
     }
   ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_ID_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.userSelectAtApproverOption(String)"
 });
 formatter.result({
-  "duration": 35314156500,
+  "duration": 6067249500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Random",
+      "val": "AsifBenificiary-NonVendor",
       "offset": 13
     }
   ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Type_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_Beneficiary_Name_field(String)"
 });
 formatter.result({
-  "duration": 3082231600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Master_Create_Project_StepDef.userClickBudgetTypeButtonAndSelectRecurringBudgetType()"
-});
-formatter.result({
-  "duration": 3143322800,
+  "duration": 3289777400,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Rajshahi",
+      "val": "asifbeneficiary@gmail.com",
       "offset": 13
     }
   ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Project_Locatin_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_Beneficiary_Email_field(String)"
 });
 formatter.result({
-  "duration": 3100949100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Asif",
-      "offset": 13
-    }
-  ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_Name_field(String)"
-});
-formatter.result({
-  "duration": 3064882600,
+  "duration": 3192069900,
   "status": "passed"
 });
 formatter.match({
@@ -613,57 +400,370 @@ formatter.match({
       "offset": 13
     }
   ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Contact_Person_No_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_beneficiary_Phone_field(String)"
 });
 formatter.result({
-  "duration": 3102438800,
+  "duration": 3101370000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 124600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 98300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 109000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 96300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 91100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 75900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 98200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 93400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 41,
+  "name": "User going to Add Beneficiary Bank Account for Non Vendor Type",
+  "description": "",
+  "id": "user-create-new-beneficiary;user-going-to-add-beneficiary-bank-account-for-non-vendor-type",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 42,
+  "name": "User Clicks Add Beneficiary Bank Account button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 43,
+  "name": "User Clicks Bank Name button and Select or Click UCBL",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 44,
+  "name": "User enters \"UCBL, Mohakhali-DOHS\" into Branch Name field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 45,
+  "name": "user enters \"11001100\" into Account Number field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 46,
+  "name": "User Click Submit button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Bank_Create_Beneficiary_StepDef.user_Clicks_Add_Beneficiary_Bank_Account_button()"
+});
+formatter.result({
+  "duration": 15412675000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Bank_Create_Beneficiary_StepDef.user_Clicks_Bank_Name_button_and_Select_or_Click_UCBL()"
+});
+formatter.result({
+  "duration": 3160041400,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Not Applicable for automation",
+      "val": "UCBL, Mohakhali-DOHS",
       "offset": 13
     }
   ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Remarks_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.userEntersIntoBranchNameField(String)"
 });
 formatter.result({
-  "duration": 3168197700,
+  "duration": 3186643300,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Not Applicable for automation",
+      "val": "11001100",
       "offset": 13
     }
   ],
-  "location": "Master_Create_Project_StepDef.user_enters_on_Other_Details_field(String)"
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_Account_Number_field(String)"
 });
 formatter.result({
-  "duration": 3146304800,
+  "duration": 3094881100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Create_Project_button()"
+  "location": "Bank_Create_Beneficiary_StepDef.user_Click_Submit_button()"
 });
 formatter.result({
-  "duration": 3075244800,
+  "duration": 3133569500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 103300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 88800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 66200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 72700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 103700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 83000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 83300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 108700,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 48,
+  "name": "User going to Create New Beneficiary of TDS Type",
+  "description": "",
+  "id": "user-create-new-beneficiary;user-going-to-create-new-beneficiary-of-tds-type",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 49,
+  "name": "User Click Benificiary Type field",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 50,
+  "name": "User select TDS Type",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 51,
+  "name": "User Select \"ERP Admin\" At Approver Option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 52,
+  "name": "User enters \"AsifBenificiary-TDS\" into Beneficiary Name field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 53,
+  "name": "User enters \"asifbeneficiary@gmail.com\" into Beneficiary Email field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 54,
+  "name": "User enters \"01799999999\" into beneficiary Phone field",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Bank_Create_Beneficiary_StepDef.user_Click_Benificiary_Type_field()"
+});
+formatter.result({
+  "duration": 3098366000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Create_Project_StepDef.user_Click_Show_All_Project_button()"
+  "location": "Bank_Create_Beneficiary_StepDef.user_select_TDS_Type()"
 });
 formatter.result({
-  "duration": 3131824200,
+  "duration": 3045815500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Master_Create_Project_StepDef.userCollectCreatedNewProjectDataForRecurringBudgetType()"
+  "arguments": [
+    {
+      "val": "ERP Admin",
+      "offset": 13
+    }
+  ],
+  "location": "Bank_Create_Beneficiary_StepDef.userSelectAtApproverOption(String)"
 });
 formatter.result({
-  "duration": 26053293900,
+  "duration": 6065499500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "AsifBenificiary-TDS",
+      "offset": 13
+    }
+  ],
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_Beneficiary_Name_field(String)"
+});
+formatter.result({
+  "duration": 3277984500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "asifbeneficiary@gmail.com",
+      "offset": 13
+    }
+  ],
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_Beneficiary_Email_field(String)"
+});
+formatter.result({
+  "duration": 3188159900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "01799999999",
+      "offset": 13
+    }
+  ],
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_beneficiary_Phone_field(String)"
+});
+formatter.result({
+  "duration": 3100674800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 97900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 127300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 362500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 108700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 92300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 106800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 109200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 126600,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 56,
+  "name": "User going to Add Beneficiary Bank Account for TDS Type",
+  "description": "",
+  "id": "user-create-new-beneficiary;user-going-to-add-beneficiary-bank-account-for-tds-type",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 57,
+  "name": "User Clicks Add Beneficiary Bank Account button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 58,
+  "name": "User Clicks Bank Name button and Select or Click UCBL",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 59,
+  "name": "User enters \"UCBL, Mohakhali-DOHS\" into Branch Name field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 60,
+  "name": "user enters \"11001100\" into Account Number field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 61,
+  "name": "User Click Submit button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Bank_Create_Beneficiary_StepDef.user_Clicks_Add_Beneficiary_Bank_Account_button()"
+});
+formatter.result({
+  "duration": 15417158700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Bank_Create_Beneficiary_StepDef.user_Clicks_Bank_Name_button_and_Select_or_Click_UCBL()"
+});
+formatter.result({
+  "duration": 3164256500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "UCBL, Mohakhali-DOHS",
+      "offset": 13
+    }
+  ],
+  "location": "Bank_Create_Beneficiary_StepDef.userEntersIntoBranchNameField(String)"
+});
+formatter.result({
+  "duration": 3186619800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "11001100",
+      "offset": 13
+    }
+  ],
+  "location": "Bank_Create_Beneficiary_StepDef.user_enters_into_Account_Number_field(String)"
+});
+formatter.result({
+  "duration": 3095361000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Bank_Create_Beneficiary_StepDef.user_Click_Submit_button()"
+});
+formatter.result({
+  "duration": 3088116700,
   "status": "passed"
 });
 });
