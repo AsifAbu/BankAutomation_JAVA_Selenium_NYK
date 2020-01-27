@@ -36,9 +36,9 @@ public class Project_Verify extends ParentDriver{
 
 	public void verifyFixed() throws IOException, InterruptedException{
 		String ProjName = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[2]")).getText();
-		String ProjCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[3]")).getText();
+		//String ProjCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[3]")).getText();
 		
-		Assert.assertEquals(ProjCode.trim(), ProjectCodeFixed);
+		//Assert.assertEquals(ProjCode.trim(), ProjectCodeFixed);
 		Assert.assertEquals(ProjName.trim(), ProjectNameFixed);
 	}
 	
@@ -54,9 +54,9 @@ public class Project_Verify extends ParentDriver{
 
 	public void verifyRecurring() throws IOException, InterruptedException{
 		String ProjName = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[2]")).getText();
-		String ProjCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[3]")).getText();
+		//String ProjCode = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div[2]/div/div[2]/div[2]/table/tbody/tr[1]/td[3]")).getText();
 		
-		Assert.assertEquals(ProjCode.trim(), ProjectCodeRecurring);
+		//Assert.assertEquals(ProjCode.trim(), ProjectCodeRecurring);
 		Assert.assertEquals(ProjName.trim(), ProjectNameRecurring);
 		
 	}

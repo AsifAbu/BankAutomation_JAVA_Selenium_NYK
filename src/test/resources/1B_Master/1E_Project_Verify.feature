@@ -3,10 +3,6 @@
 Feature: User goig to Verify New Project
 	Scenario: Successful Login with Valid Credentials
 		Given User is on Login page
-		When User enters "erp.maxgroup@gmail.com" into Master_name field
-    And User enters "123" into Master_Password field
-    And User Click LogIn button
-    And User Login Successfully
 
 	Scenario: Select Role
 		Then User select Creator at CDA

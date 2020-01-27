@@ -124,18 +124,19 @@ public class Master_Create_Project extends ParentDriver{
 	}
 
 	public void save_Data_For_New_Project_Fixed() throws IOException, FileNotFoundException, UnsupportedEncodingException{		
-		String PCodeSaved, PNameSaved;
+		//String PCodeSaved;
+		String PNameSaved;
 		
 		String data = FileUtils.readFileToString(new File("LocalStorage/NewProjectDataFixed.txt"), "UTF-8");
 		String[] parts = data.trim().split("/");
-		PCodeSaved = parts[0].trim(); //previously saved in text when created
+		//PCodeSaved = parts[0].trim(); //previously saved in text when created
 		PNameSaved = parts[1].trim();
 		
 		driver.findElement(By.xpath("(//input[@ng-change='getallData(true)'])[4]")).sendKeys(PNameSaved);
 		
 		//data collect from the list page
 		String ProjectNameInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[3]/div/div")).getText();
-		String ProjectCodeInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
+		//String ProjectCodeInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
 		
 		//assert here of list data vs saved data in Master Module
 		Assert.assertEquals(PNameSaved, ProjectNameInList.trim());
@@ -144,18 +145,19 @@ public class Master_Create_Project extends ParentDriver{
 	}
 	public void save_Data_For_New_Project_Recurring() throws IOException, FileNotFoundException, UnsupportedEncodingException{
 				
-		String ProjectCodeSaved, ProjectNameSaved;
+		//String ProjectCodeSaved;
+		String ProjectNameSaved;
 		
 		String data = FileUtils.readFileToString(new File("LocalStorage/NewProjectDataRecurring.txt"), "UTF-8");
 		String[] parts = data.trim().split("/");
-		ProjectCodeSaved = parts[0].trim(); //previously saved in text when created
+		//ProjectCodeSaved = parts[0].trim(); //previously saved in text when created
 		ProjectNameSaved = parts[1].trim();
 		
 		driver.findElement(By.xpath("(//input[@ng-change='getallData(true)'])[4]")).sendKeys(ProjectNameSaved);
 		
 		//data collect from the list page
 		String ProjectNameInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[3]/div/div")).getText();
-		String ProjectCodeInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
+		//String ProjectCodeInList = driver.findElement(By.xpath("/html/body/div[4]/div[2]/div/div/div/div/div/div[2]/div/div/table/tbody/tr[1]/td[2]/div/div")).getText();
 		
 		//assert here of list data vs saved data in Master Module
 		Assert.assertEquals(ProjectNameSaved, ProjectNameInList);

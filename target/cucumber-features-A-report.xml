@@ -1,47 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="245.921074">
-<testcase classname="User going to Create New Project" name="Create New Project of Fixed Budget Type" time="43.705739">
-<system-out><![CDATA[Given User is on Master_LogIn page..........................................passed
-When User enters "erp.maxgroup@gmail.com" into Master_name field............passed
-And User enters "123" into Master_Password field............................passed
-And User Click Master_LogIn button..........................................passed
-When User Master_Login Successfully.........................................passed
-Then User Click ProjectBusiness Unit button.................................passed
-Then User Click Add New Project button......................................passed
-Then User Click Select Parent Company.......................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="163.940274">
+<testcase classname="User Create New Beneficiary" name="Successful Login with Valid Credentials" time="35.185916">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+When User enters "erp.maxgroup@gmail.com" into Username field...............passed
+And User enters "123" into Password field...................................passed
+And User Click LogIn button.................................................passed
+And User Login Successfully.................................................passed
+Then User select Creator at CDA.............................................passed
+Then click Confirm button...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User going to Create New Project" name="Create New Project of Fixed Budget Type" time="101.326383">
-<system-out><![CDATA[And User enters "" on Project Name field....................................passed
-And User enters "" on Project ID field......................................passed
-And User enters "Random" on Project Type field..............................passed
-And User enters "Rajshahi" on Project Locatin field.........................passed
-And User Enters "200" on Project Budget Ammount Field.......................passed
-And User Click on Budget Duration button....................................passed
-And User Click on Budget Duration To button.................................passed
-And User enters "Asif" on Contact Person Name field.........................passed
-And User enters "01799999999" on Contact Person No field....................passed
-And User enters "Not Applicable for automation" on Remarks field............passed
-And User enters "Not Applicable for automation" on Other Details field......passed
-Then User Click Create Project button.......................................passed
-Then User Click Show All Project button.....................................passed
-Then User Collect Created New Project Data for Fixed Budget Type............passed
+<testcase classname="User Create New Beneficiary" name="User going to Create New Beneficiary of Vendor Type" time="6.195678">
+<system-out><![CDATA[When User Click Beneficiary button..........................................passed
+Then User Click Create Beneficiary button...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User going to Create New Project" name="Create New Project of Recurring Budget Type" time="100.888952">
-<system-out><![CDATA[Then User Click Add New Project button......................................passed
-Then User Click Select Parent Company.......................................passed
-And User enters "" on Project Name field....................................passed
-And User enters "" on Project ID field......................................passed
-And User enters "Random" on Project Type field..............................passed
-And User Click Budget Type button and Select Recurring Budget Type..........passed
-And User enters "Rajshahi" on Project Locatin field.........................passed
-And User enters "Asif" on Contact Person Name field.........................passed
-And User enters "01799999999" on Contact Person No field....................passed
-And User enters "Not Applicable for automation" on Remarks field............passed
-And User enters "Not Applicable for automation" on Other Details field......passed
-Then User Click Create Project button.......................................passed
-Then User Click Show All Project button.....................................passed
-Then User Collect Created New Project Data for Recurring Budget Type........passed
+<testcase classname="User Create New Beneficiary" name="User going to Create New Beneficiary of Non Vendor Type" time="44.840229">
+<system-out><![CDATA[When User Click Benificiary Type field......................................passed
+Then User select Non Vendor Type............................................passed
+And User Select "ERP Admin" At Approver Option..............................passed
+Then User enters "AsifBenificiary-NonVendor" into Beneficiary Name field....passed
+Then User enters "asifbeneficiary@gmail.com" into Beneficiary Email field...passed
+Then User enters "01799999999" into beneficiary Phone field.................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Create New Beneficiary" name="User going to Add Beneficiary Bank Account for Non Vendor Type" time="27.988597">
+<system-out><![CDATA[When User Clicks Add Beneficiary Bank Account button........................passed
+Then User Clicks Bank Name button and Select or Click UCBL..................passed
+Then User enters "UCBL, Mohakhali-DOHS" into Branch Name field..............passed
+Then user enters "11001100" into Account Number field.......................passed
+Then User Click Submit button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Create New Beneficiary" name="User going to Create New Beneficiary of TDS Type" time="21.77721">
+<system-out><![CDATA[When User Click Benificiary Type field......................................passed
+Then User select TDS Type...................................................passed
+And User Select "ERP Admin" At Approver Option..............................passed
+Then User enters "AsifBenificiary-TDS" into Beneficiary Name field..........passed
+Then User enters "asifbeneficiary@gmail.com" into Beneficiary Email field...passed
+Then User enters "01799999999" into beneficiary Phone field.................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Create New Beneficiary" name="User going to Add Beneficiary Bank Account for TDS Type" time="27.952644">
+<system-out><![CDATA[When User Clicks Add Beneficiary Bank Account button........................passed
+Then User Clicks Bank Name button and Select or Click UCBL..................passed
+Then User enters "UCBL, Mohakhali-DOHS" into Branch Name field..............passed
+Then user enters "11001100" into Account Number field.......................passed
+Then User Click Submit button...............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
