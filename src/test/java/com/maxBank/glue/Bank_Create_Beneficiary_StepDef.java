@@ -26,7 +26,7 @@ public class Bank_Create_Beneficiary_StepDef extends ParentScenario{
 	@Then("^User Click Create Beneficiary button$")
 	public void user_Click_Create_Beneficiary_button() throws Throwable {
 		Thread.sleep(3000);
-		bank_create_beneficiary.clickCreateBeneficiaryBtn();
+		bank_create_beneficiary.clickCreateBeneficiaryBtn(); 
 	}
 
 	@Then("^User Click Exixting Vendor field$")
@@ -56,8 +56,10 @@ public class Bank_Create_Beneficiary_StepDef extends ParentScenario{
 	
 	@Then("^User enters \"([^\"]*)\" into Beneficiary Name field$")
 	public void user_enters_into_Beneficiary_Name_field(String arg1) throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(15000);
 		bank_create_beneficiary.addBeneficiaryName(arg1);
+		Thread.sleep(15000);
+		//bank_create_beneficiary.beneficiaryInsertIntoTEXT(arg1);
 	}
 
 	@Then("^User enters \"([^\"]*)\" into Beneficiary Email field$")
