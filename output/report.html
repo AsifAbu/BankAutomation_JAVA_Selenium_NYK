@@ -51,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 28, 2020 03:05:59 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 29, 2020 03:33:11 PM</span>
 				</a>
 			</li>
 			<li>
@@ -127,7 +127,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -142,7 +142,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -157,7 +157,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>22</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>27</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -176,13 +176,13 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>User Create New Beneficiary</span>
-						<span class='test-time'>Jan 28, 2020 03:05:59 PM</span>
+						<span class='test-name'>User Approve Beneficiary</span>
+						<span class='test-time'>Jan 29, 2020 03:33:11 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 36s+923ms</span>
+	<span class='duration right label'>0h 0m 30s+489ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Successful Login with Valid Credentials</span>
@@ -228,7 +228,16 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='8' class='node then pass' status='pass'>
+	</ul>
+</div>
+<div class='scenario node' test-id='8' status='pass'>
+	<span class='duration right label'>0h 0m 8s+142ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Select Role</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='9' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -236,7 +245,7 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='9' class='node then pass' status='pass'>
+		<li test-id='10' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -246,122 +255,46 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='10' status='pass'>
-	<span class='duration right label'>0h 0m 6s+221ms</span>
+<div class='scenario node' test-id='11' status='pass'>
+	<span class='duration right label'>0h 0m 58s+260ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">User going to Create New Beneficiary of Vendor Type</span>
+		<span class="desc-text">Select User to Approver</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='11' class='node when pass' status='pass'>
+		<li test-id='12' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User Click Beneficiary button</span>
+			<span class="bdd-step-name">When User Click Select User button for Approver</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='12' class='node then pass' status='pass'>
+		<li test-id='13' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User Click Create Beneficiary button</span>
+			<span class="bdd-step-name">Then User Click checked button for Approve Request first row</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify New Created Beneficiary</span>
-						<span class='test-time'>Jan 28, 2020 03:06:43 PM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='scenario node' test-id='14' status='pass'>
-	<span class='duration right label'>0h 0m 30s+758ms</span>
-	<div class='desc'>
-		<b>Scenario</b>
-		<span class="desc-text">Verify List page Sort button</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='15' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User Click Beneficiary List button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='16' class='node when pass' status='pass'>
-			
-			<b>When</b>
-			
-			<span class="bdd-step-name">When User Click Beneficiary Name button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='17' class='node then pass' status='pass'>
+		<li test-id='14' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User Click Benecifiary Type button</span>
+			<span class="bdd-step-name">Then User Click Select User button for Creator</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='18' class='node then pass' status='pass'>
+		<li test-id='15' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User Click Benecificiary Email button</span>
+			<span class="bdd-step-name">Then User Click Beneficiary List button</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='19' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User Click Phone No button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='20' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User Click Status button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='21' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User Click Approver button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='22' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User Click Vendor Name button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='23' class='node then pass' status='pass'>
-			
-			<b>Then</b>
-			
-			<span class="bdd-step-name">Then User Click Create On button</span>
-				<div class='pre'>passed</div>
-			
-		</li>
-		<li test-id='24' class='node then pass' status='pass'>
+		<li test-id='16' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
@@ -369,36 +302,141 @@
 				<div class='pre'>passed</div>
 			
 		</li>
+		<li test-id='17' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Verify the status is "active" for that Beneficiary</span>
+				<div class='pre'>passed</div>
+			
+		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='25' status='pass'>
-	<span class='duration right label'>0h 2m 8s+627ms</span>
+<div class='scenario node' test-id='18' status='pass'>
+	<span class='duration right label'>0h 0m 54s+969ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Collect data and Verify</span>
+		<span class="desc-text">User going to Create New Beneficiary of TDS Type</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='26' class='node when pass' status='pass'>
+		<li test-id='19' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Create Beneficiary button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='20' class='node when pass' status='pass'>
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User collect Last TDS data and Verify it</span>
+			<span class="bdd-step-name">When User Click Benificiary Type field</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='27' class='node then pass' status='pass'>
+		<li test-id='21' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User collect Second Last NonVendor data and Verify it</span>
+			<span class="bdd-step-name">Then User select TDS Type</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='28' class='node then pass' status='pass'>
+		<li test-id='22' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Select "ERP Admin" At Approver Option</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User collect Third last Vendor data and Verify it</span>
+			<span class="bdd-step-name">Then User enters "AsifBenificiary-TDS" into Beneficiary Name field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "asifbeneficiary@gmail.com" into Beneficiary Email field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='25' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "01799999999" into beneficiary Phone field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='26' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='27' status='pass'>
+	<span class='duration right label'>0h 0m 57s+905ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Select User to Approver</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='28' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Approver</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='29' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click checked button for Denaid Request first row</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='30' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Select User button for Creator</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='31' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Beneficiary List button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='32' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click SL No button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='33' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Verify the status is "denied" for that Beneficiary</span>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="image/png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
@@ -444,37 +482,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>27</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 28, 2020 03:05:59 PM</div>
+					<div class='panel-lead'>Jan 29, 2020 03:33:11 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 28, 2020 03:09:22 PM</div>
+			 		<div class='panel-lead'>Jan 29, 2020 03:36:41 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 3m 22s+862ms</div>
+					<div class='panel-lead'>0h 3m 30s+140ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -532,7 +570,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 2,
+				passParent: 1,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -540,7 +578,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 4,
+				passChild: 5,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -549,7 +587,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 22,
+				passGrandChild: 27,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

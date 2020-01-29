@@ -81,7 +81,9 @@ public class Verify_Beneficiary extends ParentDriver{
 		Assert.assertEquals(BName3, "AsifBenificiary-Vendor");
 	}
 
-	public void clickBeneficiaryListBtn() {
+	public void clickBeneficiaryListBtn() throws InterruptedException {
+		driver.findElement(By.xpath("//a[contains(.,'Beneficiaries')]")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[contains(.,'Beneficiary Lists')]")).click();
 		
 	}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="209.581871">
+<testcase classname="User Approve Beneficiary" name="Successful Login with Valid Credentials" time="30.369165">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+When User enters "erp.maxgroup@gmail.com" into Username field...............passed
+And User enters "123" into Password field...................................passed
+And User Click LogIn button.................................................passed
+And User Login Successfully.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Approve Beneficiary" name="Select Role" time="8.133588">
+<system-out><![CDATA[Then User select Creator at CDA.............................................passed
+Then click Confirm button...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Approve Beneficiary" name="Select User to Approver" time="58.240184">
+<system-out><![CDATA[When User Click Select User button for Approver.............................passed
+Then User Click checked button for Approve Request first row................passed
+Then User Click Select User button for Creator..............................passed
+Then User Click Beneficiary List button.....................................passed
+Then User Click SL No button................................................passed
+Then User Verify the status is "active" for that Beneficiary................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Approve Beneficiary" name="User going to Create New Beneficiary of TDS Type" time="54.949197">
+<system-out><![CDATA[Then User Click Create Beneficiary button...................................passed
+When User Click Benificiary Type field......................................passed
+Then User select TDS Type...................................................passed
+And User Select "ERP Admin" At Approver Option..............................passed
+Then User enters "AsifBenificiary-TDS" into Beneficiary Name field..........passed
+Then User enters "asifbeneficiary@gmail.com" into Beneficiary Email field...passed
+Then User enters "01799999999" into beneficiary Phone field.................passed
+Then User Click Submit button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Approve Beneficiary" name="Select User to Approver" time="57.889737">
+<system-out><![CDATA[When User Click Select User button for Approver.............................passed
+Then User Click checked button for Denaid Request first row.................passed
+Then User Click Select User button for Creator..............................passed
+Then User Click Beneficiary List button.....................................passed
+Then User Click SL No button................................................passed
+Then User Verify the status is "denied" for that Beneficiary................passed
+]]></system-out>
+</testcase>
+</testsuite>

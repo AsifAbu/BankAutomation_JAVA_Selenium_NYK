@@ -26,7 +26,7 @@ Feature: User Create_Company on Master page
  		And User enters "70" into Retirement Age field
  		And User enters "Abu Asif" Contact Person name field
  		And User enters "HR" into Contact Person Designation field
- 			And User enters "abuasif.com" into Website field
+ 		And User enters "abuasif.com" into Website field
  		And Usert enters "abuasif.nyk@gmail.com" into Company Email field
  		And User enters "01780963777" into Telephone Number field
  		And User enters "000111" into Fax Number field

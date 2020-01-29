@@ -2,6 +2,7 @@ package com.maxBank.framework;
 
 import org.openqa.selenium.WebDriver;
 
+import com.maxBank.pageObject.Approve_Beneficiary;
 import com.maxBank.pageObject.Bank_Create_Beneficiary;
 import com.maxBank.pageObject.Bank_Logout;
 import com.maxBank.pageObject.Company_Verify;
@@ -27,7 +28,7 @@ public class ParentScenario extends ParentDriver{
 	public Project_Verify project_verify;
 	public Bank_Create_Beneficiary bank_create_beneficiary;
 	public Verify_Beneficiary verify_beneficiary;
-	
+	public Approve_Beneficiary approve_beneficiary;
 	
 	
 	public void startBrowser() {
@@ -42,7 +43,7 @@ public class ParentScenario extends ParentDriver{
 		project_verify = new Project_Verify(driver);
 		bank_create_beneficiary = new Bank_Create_Beneficiary(driver);
 		verify_beneficiary = new Verify_Beneficiary(driver);
-		
+		approve_beneficiary = new Approve_Beneficiary(driver);
 		
 	}
 	 
