@@ -1,5 +1,9 @@
 package com.maxBank.pageObject;
 
+import java.io.FileNotFoundException;
+//import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -37,7 +41,37 @@ public class Bank_Create_Beneficiary extends ParentDriver{
 		driver.findElement(By.xpath("//input[@ng-click='get_vendors(beneficiary.vendor_name)']")).click();
 		
 	}
-
+	
+//	public void beneficiaryInsertIntoTEXT (String arg1) throws FileNotFoundException, UnsupportedEncodingException 
+//	{
+//		String a = arg1.toString();
+//		System.out.println("Beneficiary Name is(Outside): "+a);
+//		if(a == "AsifBenificiary-Vendor".toString())
+//		{
+//			System.out.println("Beneficiary Name is(Inside): "+a);
+//			PrintWriter writer = new PrintWriter("LocalStorage/NewBeneficiaryVendorType.txt", "UTF-8");
+//			writer.println(a);
+//			writer.close();
+//			
+//		}
+//		if(a == "AsifBenificiary-NonVendor".toString())
+//		{
+//			System.out.println("Beneficiary Name is(Inside): "+a);
+//			PrintWriter writer = new PrintWriter("LocalStorage/NewBeneficiaryNonVendorType.txt", "UTF-8");
+//			writer.println(a);
+//			writer.close();
+//			
+//		}
+//		if(a == "AsifBenificiary-TDS".toString())
+//		{
+//			System.out.println("Beneficiary Name is(Inside): "+a);
+//			PrintWriter writer = new PrintWriter("LocalStorage/NewBeneficiaryTDSType.txt", "UTF-8");
+//			writer.println(a);
+//			writer.close();
+//			
+//		}
+//	}
+	
 	public void selectExistingVendor() {
 		driver.findElement(By.xpath("//li[contains(.,'Gazipur Polish Store')]")).click();
 		scrollDown();
@@ -49,9 +83,9 @@ public class Bank_Create_Beneficiary extends ParentDriver{
 		
 	}
 
-	public void addBeneficiaryName(String arg1) {
+	public void addBeneficiaryName(String arg1) throws FileNotFoundException, UnsupportedEncodingException {
 		driver.findElement(By.xpath("//input[@name='beneficiary_name']")).sendKeys(arg1);
-		
+		//beneficiaryInsertIntoTEXT(arg1);
 	}
 
 	public void addBeneficiaryEmail(String arg1) {

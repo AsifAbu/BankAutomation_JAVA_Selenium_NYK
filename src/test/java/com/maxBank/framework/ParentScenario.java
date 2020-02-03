@@ -2,15 +2,20 @@ package com.maxBank.framework;
 
 import org.openqa.selenium.WebDriver;
 
+import com.maxBank.pageObject.Approve_Beneficiary;
+import com.maxBank.pageObject.Approve_Chequebook;
 import com.maxBank.pageObject.Bank_Create_Beneficiary;
 import com.maxBank.pageObject.Bank_Logout;
 import com.maxBank.pageObject.Company_Verify;
+import com.maxBank.pageObject.Create_Chequebooks;
 //import com.maxBank.pageObject.Bank_Dashboard;
 import com.maxBank.pageObject.Login;
 import com.maxBank.pageObject.Master_Create_Company;
 import com.maxBank.pageObject.Master_Create_Project;
 import com.maxBank.pageObject.Master_Login;
 import com.maxBank.pageObject.Project_Verify;
+import com.maxBank.pageObject.Verify_Beneficiary;
+import com.maxBank.pageObject.Verify_Chequebook;
 
 public class ParentScenario extends ParentDriver{
 	
@@ -25,6 +30,12 @@ public class ParentScenario extends ParentDriver{
 	public Master_Create_Project master_create_project;
 	public Project_Verify project_verify;
 	public Bank_Create_Beneficiary bank_create_beneficiary;
+	public Verify_Beneficiary verify_beneficiary;
+	public Approve_Beneficiary approve_beneficiary;
+	public Create_Chequebooks create_checkbooks;
+	public Verify_Chequebook verify_chequebook;
+	public Approve_Chequebook approve_chequebook;
+	
 	
 	public void startBrowser() {
 		
@@ -37,6 +48,12 @@ public class ParentScenario extends ParentDriver{
 		master_create_project = new Master_Create_Project(driver);
 		project_verify = new Project_Verify(driver);
 		bank_create_beneficiary = new Bank_Create_Beneficiary(driver);
+		verify_beneficiary = new Verify_Beneficiary(driver);
+		approve_beneficiary = new Approve_Beneficiary(driver);
+		create_checkbooks = new Create_Chequebooks(driver);
+		verify_chequebook = new Verify_Chequebook(driver);
+		approve_chequebook = new Approve_Chequebook(driver);
+		
 		
 	}
 	 
