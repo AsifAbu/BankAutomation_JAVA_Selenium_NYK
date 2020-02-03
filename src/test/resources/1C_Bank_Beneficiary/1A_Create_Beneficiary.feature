@@ -1,8 +1,6 @@
 #Author: abuasif.nyk@gmail.com
 
 Feature: User Create New Beneficiary
-
-	
 		
   Scenario: User going to Create New Beneficiary of Vendor Type
   	When User Click Beneficiary button
