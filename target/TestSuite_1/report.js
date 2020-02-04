@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/1D_Bank_Chequebooks/1C_Approve_Chequebook.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("1A_Create_Material_Requisition_Payments_Cheque.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,93 +7,109 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "User Approve Chequebook",
+  "name": "User create Material Requisition Payments Cheque",
   "description": "",
-  "id": "user-approve-chequebook",
+  "id": "user-create-material-requisition-payments-cheque",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6608829800,
+  "duration": 7270011200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 118900,
+  "duration": 162200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 66700,
+  "duration": 89900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 56800,
+  "duration": 74700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 96400,
+  "duration": 104300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 67000,
+  "duration": 84200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 58300,
+  "duration": 72900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 99900,
+  "duration": 112600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 128600,
+  "duration": 143900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 94700,
+  "duration": 131200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 112100,
+  "duration": 165400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 122000,
+  "duration": 134200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 126400,
+  "duration": 123200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 143400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 105200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 204600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 212200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 5,
+  "line": 4,
   "name": "Successful Login with Valid Credentials",
   "description": "",
-  "id": "user-approve-chequebook;successful-login-with-valid-credentials",
+  "id": "user-create-material-requisition-payments-cheque;successful-login-with-valid-credentials",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 6,
+  "line": 5,
   "name": "User is on Login page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "User enters \"erp.maxgroup@gmail.com\" into Username field",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "User enters \"123\" into Password field",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "User Click LogIn button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "User Login Successfully",
   "keyword": "And "
 });
@@ -101,7 +117,7 @@ formatter.match({
   "location": "Login_StepDef.user_is_on_Login_page()"
 });
 formatter.result({
-  "duration": 4585001600,
+  "duration": 4329798100,
   "status": "passed"
 });
 formatter.match({
@@ -114,7 +130,7 @@ formatter.match({
   "location": "Login_StepDef.user_enters_into_Username_field(String)"
 });
 formatter.result({
-  "duration": 4143628700,
+  "duration": 4156994600,
   "status": "passed"
 });
 formatter.match({
@@ -127,90 +143,106 @@ formatter.match({
   "location": "Login_StepDef.user_enters_into_Password_field(String)"
 });
 formatter.result({
-  "duration": 4060046300,
+  "duration": 4071175000,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.user_Click_LogIn_button()"
 });
 formatter.result({
-  "duration": 4061415900,
+  "duration": 4095149600,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.user_Login_Successfully()"
 });
 formatter.result({
-  "duration": 6011525600,
+  "duration": 6021913300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 134400,
+  "duration": 68300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 92200,
+  "duration": 73200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95400,
+  "duration": 56500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 92400,
+  "duration": 51000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 97800,
+  "duration": 81400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 131900,
+  "duration": 47500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 74300,
+  "duration": 39700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 62800,
+  "duration": 40300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 75500,
+  "duration": 67300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 78900,
+  "duration": 51700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 77200,
+  "duration": 49200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 86300,
+  "duration": 69700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 126600,
+  "duration": 86600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 49200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 42000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 36200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 11,
   "name": "Select Role",
   "description": "",
-  "id": "user-approve-chequebook;select-role",
+  "id": "user-create-material-requisition-payments-cheque;select-role",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "User select Creator at CDA",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "click Confirm button",
   "keyword": "Then "
 });
@@ -218,398 +250,38 @@ formatter.match({
   "location": "Login_StepDef.user_select_Creator_at_CDA()"
 });
 formatter.result({
-  "duration": 4049562400,
+  "duration": 4050817000,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.click_Confirm_button()"
 });
 formatter.result({
-  "duration": 4082444000,
+  "duration": 4080706500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 100000,
+  "duration": 105200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 139500,
+  "duration": 135100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 79200,
+  "duration": 105500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 77000,
+  "duration": 92800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 97300,
+  "duration": 78400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 191000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 126800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 127500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 138900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 78000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 132100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 124800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 99300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "Select User to Approver",
-  "description": "",
-  "id": "user-approve-chequebook;select-user-to-approver",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 17,
-  "name": "User Click Select User button for Approver",
-  "keyword": "When "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 18,
-      "value": "#Then User enters \"cda\" into search field"
-    },
-    {
-      "line": 19,
-      "value": "#Then User Click \"Approver at CDA\" button"
-    },
-    {
-      "line": 20,
-      "value": "#double scroll down will apper here"
-    }
-  ],
-  "line": 21,
-  "name": "User Click checked button for Approve Chequebook Request first row",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 22,
-      "value": "#Scroll up 2 times"
-    }
-  ],
-  "line": 23,
-  "name": "User Click Select User button for Creator",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "User Click Checkbooks button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 25,
-  "name": "User Click Chequebook List button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "User Verify the status is \"active\" for that Chequebook",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Approve_Beneficiary_StepDef.user_Click_Select_User_button_for_Approver()"
-});
-formatter.result({
-  "duration": 18711046700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Approve_Chequebook_StepDef.user_Click_checked_button_for_Approve_Chequebook_Request_first_row()"
-});
-formatter.result({
-  "duration": 6100374300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Approve_Beneficiary_StepDef.user_Click_Select_User_button_for_Creator()"
-});
-formatter.result({
-  "duration": 9359301900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Create_Chequebooks_StepDef.user_Click_Checkbooks_button()"
-});
-formatter.result({
-  "duration": 3083823200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Verify_Chequebook_StepDef.userClickChequebookListButton()"
-});
-formatter.result({
-  "duration": 3117492300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "active",
-      "offset": 27
-    }
-  ],
-  "location": "Approve_Chequebook_StepDef.user_Verify_the_status_is_for_that_Chequebook(String)"
-});
-formatter.result({
-  "duration": 11190601300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 74500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 89500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 83000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 77500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 87700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 66000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 95300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 86200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 88500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 95300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 125000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 92200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 66400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 28,
-  "name": "User Fillup Basic Info form",
-  "description": "",
-  "id": "user-approve-chequebook;user-fillup-basic-info-form",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 29,
-      "value": "#When User Click Checkbooks button"
-    }
-  ],
-  "line": 30,
-  "name": "User Clicks Create Checkbook button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 31,
-  "name": "User Click Approver button and select Approver",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 32,
-  "name": "User Select \"ERP Admin\" as Signatory Authorities",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "User set the DateMonth \"0203\" and Year \"2020\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Create_Chequebooks_StepDef.user_Clicks_Create_Checkbook_button()"
-});
-formatter.result({
-  "duration": 3115503100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Create_Chequebooks_StepDef.user_Click_Approver_button_and_select_Approver()"
-});
-formatter.result({
-  "duration": 6128927600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "ERP Admin",
-      "offset": 13
-    }
-  ],
-  "location": "Create_Chequebooks_StepDef.user_Select_as_Signatory_Authorities(String)"
-});
-formatter.result({
-  "duration": 3061044100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0203",
-      "offset": 24
-    },
-    {
-      "val": "2020",
-      "offset": 40
-    }
-  ],
-  "location": "Create_Chequebooks_StepDef.userSetTheDateMonthAndYear(String,String)"
-});
-formatter.result({
-  "duration": 6160622300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 58800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 85900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 51600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 73900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 46400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 59000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 59400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 50900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 104300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 63300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 48900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 42300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 65100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 35,
-  "name": "User Fillup Bank Account Info form",
-  "description": "",
-  "id": "user-approve-chequebook;user-fillup-bank-account-info-form",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 36,
-  "name": "User Click Bank Name button and set \"UCBL\" bank",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 37,
-  "name": "User Click Bank Account button and set \"0210589438\" Account",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "UCBL",
-      "offset": 37
-    }
-  ],
-  "location": "Create_Chequebooks_StepDef.user_Click_Bank_Name_button_and_set_bank(String)"
-});
-formatter.result({
-  "duration": 7133908300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0210589438",
-      "offset": 40
-    }
-  ],
-  "location": "Create_Chequebooks_StepDef.user_Click_Bank_Account_button_and_set_Account(String)"
-});
-formatter.result({
-  "duration": 8138880700,
+  "duration": 75800,
   "status": "passed"
 });
 formatter.before({
@@ -617,105 +289,264 @@ formatter.before({
   "status": "passed"
 });
 formatter.before({
-  "duration": 106400,
+  "duration": 148700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 73600,
+  "duration": 102800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 71400,
+  "duration": 120900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 75700,
+  "duration": 123300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 65500,
+  "duration": 100300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 62600,
+  "duration": 113100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 58000,
+  "duration": 97900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 75300,
+  "duration": 124900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 92700,
+  "duration": 84100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 65400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 72300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 93300,
+  "duration": 108300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 39,
-  "name": "User Fillup Check Leaf Info Form",
+  "line": 15,
+  "name": "User going create Cheque page",
   "description": "",
-  "id": "user-approve-chequebook;user-fillup-check-leaf-info-form",
+  "id": "user-create-material-requisition-payments-cheque;user-going-create-cheque-page",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 40,
-  "name": "User enters \"11111111\" into Checkbook Number field",
+  "line": 16,
+  "name": "User Click Cheque button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "User Click Create Cheque button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 41,
-  "name": "User enters \"1111111\" into Starting Leaf Number field",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 42,
-  "name": "User enters \"5\" into Cheque Leaf Count field",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 44,
-  "name": "User Click CheckBookSubmit button",
+  "line": 18,
+  "name": "User Click Regular BO button",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "11111111",
-      "offset": 13
-    }
-  ],
-  "location": "Create_Chequebooks_StepDef.user_enters_into_Checkbook_Number_field(String)"
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Cheque_button()"
 });
 formatter.result({
-  "duration": 3125155300,
+  "duration": 3083730400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Create_Cheque_button()"
+});
+formatter.result({
+  "duration": 3126629200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Regular_BO_button()"
+});
+formatter.result({
+  "duration": 3110472600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 66300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 81200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 61500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 54800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 77500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 77500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 52500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 39100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 59600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 63900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 66100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 54100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 56500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 111100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 55500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 54900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 58900,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "User Fillup Vendor \u0026 Amount Selection section",
+  "description": "",
+  "id": "user-create-material-requisition-payments-cheque;user-fillup-vendor-\u0026-amount-selection-section",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 21,
+  "name": "User Click Vendor \u0026 Amount Selection button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "User Click Requisition type field and select \"Material Requisition Payments\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "User Click Vendor List field and select \"Gazipur Polish Store\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "User Click ID Requisition button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "User enters \"1\" in first row TDS field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "User enters \"2\" in first row VDS field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "User enters \"5\" in first row Amount field",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Vendor_Amount_Selection_button()"
+});
+formatter.result({
+  "duration": 3060611400,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1111111",
+      "val": "Material Requisition Payments",
+      "offset": 46
+    }
+  ],
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Requisition_type_field_and_select(String)"
+});
+formatter.result({
+  "duration": 5159436700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Gazipur Polish Store",
+      "offset": 41
+    }
+  ],
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Vendor_List_field_and_select(String)"
+});
+formatter.result({
+  "duration": 5266770300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_ID_Requisition_button()"
+});
+formatter.result({
+  "duration": 3073363700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1",
       "offset": 13
     }
   ],
-  "location": "Create_Chequebooks_StepDef.user_enters_into_Starting_Leaf_Number_field(String)"
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_enters_in_first_row_TDS_field(String)"
 });
 formatter.result({
-  "duration": 3101460400,
+  "duration": 4140179600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "2",
+      "offset": 13
+    }
+  ],
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_enters_in_first_row_VDS_field(String)"
+});
+formatter.result({
+  "duration": 3081007100,
   "status": "passed"
 });
 formatter.match({
@@ -725,175 +556,300 @@ formatter.match({
       "offset": 13
     }
   ],
-  "location": "Create_Chequebooks_StepDef.user_enters_into_Cheque_Leaf_Count_field(String)"
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_enters_in_first_row_Amount_field(String)"
 });
 formatter.result({
-  "duration": 3070979400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Create_Chequebooks_StepDef.userClickCheckBookSubmitButton()"
-});
-formatter.result({
-  "duration": 3108523500,
+  "duration": 3087076500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 54900,
+  "duration": 105800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 52800,
+  "duration": 43700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 71200,
+  "duration": 42500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 38500,
+  "duration": 44700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 87600,
+  "duration": 35700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 156100,
+  "duration": 39500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 122300,
+  "duration": 39100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 107500,
+  "duration": 66000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 106300,
+  "duration": 35800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88500,
+  "duration": 33500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95400,
+  "duration": 33600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 101700,
+  "duration": 35700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 120800,
+  "duration": 34600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 33400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 43200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 80200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 102900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 46,
-  "name": "Select User to Approver",
+  "comments": [
+    {
+      "line": 28,
+      "value": "#3 Scroll down"
+    }
+  ],
+  "line": 30,
+  "name": "User Fillup Bank Information section",
   "description": "",
-  "id": "user-approve-chequebook;select-user-to-approver",
+  "id": "user-create-material-requisition-payments-cheque;user-fillup-bank-information-section",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 47,
-  "name": "User Click Select User button for Approver",
-  "keyword": "When "
+  "line": 31,
+  "name": "User Click Bank Select and select \"Trust Bank\"",
+  "keyword": "Then "
 });
 formatter.step({
-  "comments": [
+  "line": 32,
+  "name": "User Click Account No field and select \"0210589481\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "User Click select Chequebook and select \"1122\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
     {
-      "line": 48,
-      "value": "#Then User enters \"cda\" into search field"
-    },
-    {
-      "line": 49,
-      "value": "#Then User Click \"Approver at CDA\" button"
-    },
-    {
-      "line": 50,
-      "value": "#double scroll down will apper here"
+      "val": "Trust Bank",
+      "offset": 35
     }
   ],
-  "line": 51,
-  "name": "User Click checked button for Denied Chequebook Request first row",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 52,
-      "value": "#Scroll up 2 times"
-    }
-  ],
-  "line": 53,
-  "name": "User Click Select User button for Creator",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 54,
-  "name": "User Click Checkbooks button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 55,
-  "name": "User Click Chequebook List button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 56,
-  "name": "User Verify the status is \"denied\" for that Chequebook",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Approve_Beneficiary_StepDef.user_Click_Select_User_button_for_Approver()"
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Bank_Select_and_select(String)"
 });
 formatter.result({
-  "duration": 18581547100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Approve_Chequebook_StepDef.userClickCheckedButtonForDeniedChequebookRequestFirstRow()"
-});
-formatter.result({
-  "duration": 6094119100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Approve_Beneficiary_StepDef.user_Click_Select_User_button_for_Creator()"
-});
-formatter.result({
-  "duration": 9353654500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Create_Chequebooks_StepDef.user_Click_Checkbooks_button()"
-});
-formatter.result({
-  "duration": 3071631400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Verify_Chequebook_StepDef.userClickChequebookListButton()"
-});
-formatter.result({
-  "duration": 3121875700,
+  "duration": 8194440000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "denied",
-      "offset": 27
+      "val": "0210589481",
+      "offset": 40
     }
   ],
-  "location": "Approve_Chequebook_StepDef.user_Verify_the_status_is_for_that_Chequebook(String)"
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Account_No_field_and_select(String)"
 });
 formatter.result({
-  "duration": 11176064500,
+  "duration": 7179504600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1122",
+      "offset": 41
+    }
+  ],
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_select_Chequebook_and_select(String)"
+});
+formatter.result({
+  "duration": 7218711000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 88200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 90500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 45700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 38200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 32000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 29000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 31100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 28500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 42000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 56500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 49700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 46500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 45400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 38800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 31800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 39400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 35,
+  "name": "User Fillup Cheque Information section",
+  "description": "",
+  "id": "user-create-material-requisition-payments-cheque;user-fillup-cheque-information-section",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 36,
+  "name": "User Click Beneficiary Name and select \"Asad \u0026 Co\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "User Click Cheque Category field and select Bearer Cheque",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "User Click Cheque Auditor field and select \"ERP Admin\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "User Click Signatory Authority field and select \"ERP Admin\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 40,
+  "name": "User Click Material Requisition Payments Submit button",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Asad \u0026 Co",
+      "offset": 40
+    }
+  ],
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Beneficiary_Name_and_select(String)"
+});
+formatter.result({
+  "duration": 5168322700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Cheque_Category_field_and_select_Bearer_Cheque()"
+});
+formatter.result({
+  "duration": 3060510500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "ERP Admin",
+      "offset": 44
+    }
+  ],
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Cheque_Auditor_field_and_select(String)"
+});
+formatter.result({
+  "duration": 5164684700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "ERP Admin",
+      "offset": 49
+    }
+  ],
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Signatory_Authority_field_and_select(String)"
+});
+formatter.result({
+  "duration": 5152403000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Material_Requisition_Payments_Submit_button()"
+});
+formatter.result({
+  "duration": 7164119100,
   "status": "passed"
 });
 });

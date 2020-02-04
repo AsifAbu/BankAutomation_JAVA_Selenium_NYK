@@ -1,5 +1,5 @@
 package com.maxBank.runner;
-
+                                                                                                       
 import java.io.File;
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/1D_Bank_Chequebooks/1C_Approve_Chequebook.feature",
+		features = "src/test/resources/1E_Bank_Cheque",
 		glue = "com.maxBank.glue",
 		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
 		format = {"pretty","json:target/cucumber.json","html:target/TestSuite_1","junit:target/cucumber-features-A-report.xml"}

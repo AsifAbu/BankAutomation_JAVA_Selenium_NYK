@@ -20,6 +20,7 @@ public class Approve_Beneficiary_StepDef extends ParentScenario{
 	public void user_Click_Select_User_button_for_Approver() throws Throwable {
 	    Thread.sleep(3000);
 	    approve_beneficiary.setUserAsApprover();
+	    approve_beneficiary.verifyDashboardPage();
 	}
 
 	@Then("^User Click checked button for Approve Request first row$")

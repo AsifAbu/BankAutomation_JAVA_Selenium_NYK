@@ -33,11 +33,7 @@ public class Approve_Beneficiary extends ParentDriver{
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[contains(.,'Approver at CDA')]")).click();    //select approver role
 		Thread.sleep(3000);
-		verifyDashboardPage();
-		Thread.sleep(3000);
-		scrollDown();
-		Thread.sleep(3000);
-		scrollDown();
+		
 		
 	}
 
@@ -46,16 +42,17 @@ public class Approve_Beneficiary extends ParentDriver{
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("(//button[@ng-click='approve_others(value.id,value.type)'])[1]")).click();
 		Thread.sleep(1000);
-		scrollUp();
-		Thread.sleep(1000);
-		scrollUp();
 	}
 
-	public void verifyDashboardPage() {
+	public void verifyDashboardPage() throws InterruptedException {
 		driver.findElement(By.xpath("//a[contains(.,'Dashboard')]")).click();
 		String inPage = driver.getCurrentUrl();
 		String expectedPage = "https://bank.jomakhata.com/#/dashboard";
 		Assert.assertEquals(inPage, expectedPage);
+		Thread.sleep(3000);
+		scrollDown();
+		Thread.sleep(3000);
+		scrollDown();
 	}
 
 	public void setUserAsCreator() throws InterruptedException {

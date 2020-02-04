@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="186.717022">
-<testcase classname="User Approve Chequebook" name="Successful Login with Valid Credentials" time="29.471596">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="122.576085">
+<testcase classname="User create Material Requisition Payments Cheque" name="Successful Login with Valid Credentials" time="29.947106">
 <system-out><![CDATA[Given User is on Login page.................................................passed
 When User enters "erp.maxgroup@gmail.com" into Username field...............passed
 And User enters "123" into Password field...................................passed
@@ -7,46 +7,39 @@ And User Click LogIn button.................................................pass
 And User Login Successfully.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Approve Chequebook" name="Select Role" time="8.133232">
+<testcase classname="User create Material Requisition Payments Cheque" name="Select Role" time="8.132478">
 <system-out><![CDATA[Then User select Creator at CDA.............................................passed
 Then click Confirm button...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Approve Chequebook" name="Select User to Approver" time="51.564151">
-<system-out><![CDATA[When User Click Select User button for Approver.............................passed
-Then User Click checked button for Approve Chequebook Request first row.....passed
-Then User Click Select User button for Creator..............................passed
-When User Click Checkbooks button...........................................passed
-And User Click Chequebook List button.......................................passed
-Then User Verify the status is "active" for that Chequebook.................passed
+<testcase classname="User create Material Requisition Payments Cheque" name="User going create Cheque page" time="9.322643">
+<system-out><![CDATA[And User Click Cheque button................................................passed
+Then User Click Create Cheque button........................................passed
+Then User Click Regular BO button...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Approve Chequebook" name="User Fillup Basic Info form" time="18.467224">
-<system-out><![CDATA[Then User Clicks Create Checkbook button....................................passed
-When User Click Approver button and select Approver.........................passed
-Then User Select "ERP Admin" as Signatory Authorities.......................passed
-Then User set the DateMonth "0203" and Year "2020"..........................passed
+<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="26.869536">
+<system-out><![CDATA[Then User Click Vendor & Amount Selection button............................passed
+Then User Click Requisition type field and select "Material Requisition Payments".passed
+Then User Click Vendor List field and select "Gazipur Polish Store".........passed
+Then User Click ID Requisition button.......................................passed
+Then User enters "1" in first row TDS field.................................passed
+Then User enters "2" in first row VDS field.................................passed
+Then User enters "5" in first row Amount field..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Approve Chequebook" name="User Fillup Bank Account Info form" time="15.273599">
-<system-out><![CDATA[When User Click Bank Name button and set "UCBL" bank........................passed
-Then User Click Bank Account button and set "0210589438" Account............passed
+<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Bank Information section" time="22.593505">
+<system-out><![CDATA[Then User Click Bank Select and select "Trust Bank".........................passed
+Then User Click Account No field and select "0210589481"....................passed
+Then User Click select Chequebook and select "1122".........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Approve Chequebook" name="User Fillup Check Leaf Info Form" time="12.407124">
-<system-out><![CDATA[Then User enters "11111111" into Checkbook Number field.....................passed
-Then User enters "1111111" into Starting Leaf Number field..................passed
-Then User enters "5" into Cheque Leaf Count field...........................passed
-Then User Click CheckBookSubmit button......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Approve Chequebook" name="Select User to Approver" time="51.400096">
-<system-out><![CDATA[When User Click Select User button for Approver.............................passed
-Then User Click checked button for Denied Chequebook Request first row......passed
-Then User Click Select User button for Creator..............................passed
-When User Click Checkbooks button...........................................passed
-And User Click Chequebook List button.......................................passed
-Then User Verify the status is "denied" for that Chequebook.................passed
+<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Cheque Information section" time="25.710817">
+<system-out><![CDATA[Then User Click Beneficiary Name and select "Asad & Co".....................passed
+Then User Click Cheque Category field and select Bearer Cheque..............passed
+Then User Click Cheque Auditor field and select "ERP Admin".................passed
+Then User Click Signatory Authority field and select "ERP Admin"............passed
+Then User Click Material Requisition Payments Submit button.................passed
 ]]></system-out>
 </testcase>
 </testsuite>
