@@ -191,54 +191,59 @@ public class Create_Material_Requisition_Payments_Cheque_StepDef extends ParentS
 	@Then("^User Click Print button$")
 	public void userClickPrintButton() throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.clickPrintBtn();
 	}
 
 	@Then("^User Close New Tab$")
 	public void userCloseNewTab() throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.closeTab1();
 	}
 
 	@Then("^User Click Confirm button$")
 	public void userClickConfirmButton() throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.clickChequePrintConfirmBtn();
 	}
 
 	@Then("^User Click Approve button$")
 	public void userClickApproveButton() throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.clickApproveBtn();
 	}
 
 	@Then("^User Click Deliver button$")
 	public void userClickDeliverButton() throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.clickDeliverBtn();
 	}
 
 	@Then("^User enters \"([^\"]*)\" into Cheque Recever name field$")
 	public void userEntersIntoChequeReceverNameField(String arg1) throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.setChequeReceverName(arg1);
 	}
 
 	@Then("^User enters \"([^\"]*)\" into Recever phone Number field$")
 	public void userEntersIntoReceverPhoneNumberField(String arg1) throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.setReceverPhoneNumber(arg1);
 	}
 
 	@Then("^User Click Confirm Delevery button$")
 	public void userClickConfirmDeleveryButton() throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.clickConfirmDeleverBtn();
 	}
 
 	@Then("^User Click Complete button$")
 	public void userClickCompleteButton() throws Throwable {
 		Thread.sleep(3000);
-	    create_meterial_requisition_payments.
+	    create_meterial_requisition_payments.clickCompleteChequeBtn();
+	}
+	@When("^User Click Select User button for Cheque Approver$")
+	public void userClickSelectUserButtonForChequeApprover() throws Throwable {
+		Thread.sleep(3000);
+	    create_meterial_requisition_payments.setUserAsApproverCheque();
 	}
 }

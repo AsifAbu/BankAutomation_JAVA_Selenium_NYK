@@ -62,7 +62,7 @@ Feature: User create Material Requisition Payments Cheque
 		Then User Close New Tab
 		Then User Click Confirm button
 		Then User Collect "Cheque Printed" Status and Verify
-		When User Click Select User button for Approver
+		When User Click Select User button for Cheque Approver
 		#1scrollDown
 		Then User Click Approve button
 		Then User Collect "Cheque Request Approved" Status and Verify
@@ -73,9 +73,9 @@ Feature: User create Material Requisition Payments Cheque
 		Then User enters "Asif" into Cheque Recever name field
 		Then User enters "01899999999" into Recever phone Number field
 		Then User Click Confirm Delevery button
-		Then User Collect "Cheque Delivered" Status and Verify
+		Then User Collect "Check Delivered" Status and Verify
 		Then User Click Complete button
-		Then User Collect "Cheque Request Completed" Status and Verify
+		#Then User Collect "Cheque Request Completed" Status and Verify
 		
 		
 		

@@ -37,7 +37,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
 		</ul>
 
@@ -51,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 4, 2020 02:58:29 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 5, 2020 02:45:47 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,6 +78,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -127,10 +129,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -142,10 +144,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>7</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -157,10 +159,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>25</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='98.077%'><span class='strong'>51</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.923%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -174,15 +176,15 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>User create Material Requisition Payments Cheque</span>
-						<span class='test-time'>Feb 4, 2020 02:58:29 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Feb 5, 2020 02:45:47 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 30s+39ms</span>
+	<span class='duration right label'>0h 0m 29s+524ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Successful Login with Valid Credentials</span>
@@ -231,7 +233,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='8' status='pass'>
-	<span class='duration right label'>0h 0m 8s+142ms</span>
+	<span class='duration right label'>0h 0m 8s+147ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Select Role</span>
@@ -256,7 +258,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='11' status='pass'>
-	<span class='duration right label'>0h 0m 9s+341ms</span>
+	<span class='duration right label'>0h 0m 9s+345ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User going create Cheque page</span>
@@ -289,7 +291,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='15' status='pass'>
-	<span class='duration right label'>0h 0m 26s+887ms</span>
+	<span class='duration right label'>0h 0m 26s+858ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User Fillup Vendor & Amount Selection section</span>
@@ -354,7 +356,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='23' status='pass'>
-	<span class='duration right label'>0h 0m 22s+605ms</span>
+	<span class='duration right label'>0h 0m 22s+703ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User Fillup Bank Information section</span>
@@ -387,7 +389,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='27' status='pass'>
-	<span class='duration right label'>0h 0m 25s+724ms</span>
+	<span class='duration right label'>0h 0m 25s+954ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User Fillup Cheque Information section</span>
@@ -430,10 +432,254 @@
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then User Click Material Requisition Payments Submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='33' status='pass'>
+	<span class='duration right label'>0h 0m 56s+275ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Data of Material Requisition Payments Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='34' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect Total Amount Data and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='35' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect Beneficiary Name and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='36' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect Bank name and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='37' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect Account Data and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='38' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Request Created" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='39' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect TDS Data and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='40' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect VDS Data and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='41' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect Total Amount and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='42' status='fail'>
+	<span class='duration right label'>0h 2m 56s+459ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Approve Material Requisition Payments Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='43' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Auditor</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='44' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Review button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='45' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Reviewed" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='46' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='47' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Print button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='48' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Close New Tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='49' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='50' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Printed" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='51' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Cheque Approver</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='52' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Approve button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='53' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Approved" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='54' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='55' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Deliver button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='56' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "Asif" into Cheque Recever name field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "01899999999" into Recever phone Number field</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='58' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm Delevery button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='59' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Delivered" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='60' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Complete button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='61' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Completed" Status and Verify</span>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="image/png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
-				<div class='pre'>passed</div>
+				<div class='pre'><pre>java.lang.AssertionError: expected [Cheque Request Completed] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:196)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)
+	at ✽.Then User Collect "Cheque Request Completed" Status and Verify(1A_Create_Material_Requisition_Payments_Cheque.feature:78)
+</pre></div>
 			
 		</li>
 	</ul>
@@ -466,6 +712,77 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Feb 5, 2020 02:51:32 PM</td>
+                                                        <td class='linked' test-id='61'>User create Material Requisition Payments Cheque.Approve Material Requisition Payments Cheque.Then User Collect "Cheque Request Completed" Status and Verify</td>
+                                                        <td><pre><pre>java.lang.AssertionError: expected [Cheque Request Completed] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:196)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)
+	at ✽.Then User Collect "Cheque Request Completed" Status and Verify(1A_Create_Material_Requisition_Payments_Cheque.feature:78)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -481,31 +798,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>25</div>
+					<div class='panel-lead'>52</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 4, 2020 02:58:29 PM</div>
+					<div class='panel-lead'>Feb 5, 2020 02:45:47 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 4, 2020 03:00:32 PM</div>
+			 		<div class='panel-lead'>Feb 5, 2020 02:51:42 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 3s+228ms</div>
+					<div class='panel-lead'>0h 5m 55s+645ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -563,31 +880,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 6,
-				failChild: 0,
+				passChild: 7,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 1,
 				
-				passGrandChild: 25,
-				failGrandChild: 0,
+				passGrandChild: 51,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		

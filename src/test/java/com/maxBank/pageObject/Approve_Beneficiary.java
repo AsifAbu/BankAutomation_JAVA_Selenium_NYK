@@ -56,7 +56,11 @@ public class Approve_Beneficiary extends ParentDriver{
 	}
 
 	public void setUserAsCreator() throws InterruptedException {
-		driver.findElement(By.xpath("//button[contains(.,'Approver at')]")).click();     //click the red button
+		scrollUp();
+		Thread.sleep(3000);
+		scrollUp();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[@class='btn red-haze btn-sm dropdown-toggle']")).click();     //click the red button
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[contains(.,'Creator at CDA')]")).click();    //select approver role
 		Thread.sleep(3000);
