@@ -7,7 +7,11 @@ import com.maxBank.pageObject.Approve_Chequebook;
 import com.maxBank.pageObject.Bank_Create_Beneficiary;
 import com.maxBank.pageObject.Bank_Logout;
 import com.maxBank.pageObject.Company_Verify;
+import com.maxBank.pageObject.Create_Cash_Withdrawal_Cheque;
 import com.maxBank.pageObject.Create_Chequebooks;
+import com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque;
+import com.maxBank.pageObject.Create_NonRequisition_Entries_Cheque;
+import com.maxBank.pageObject.Create_Without_Advance_Requisition_Payments_Cheque;
 //import com.maxBank.pageObject.Bank_Dashboard;
 import com.maxBank.pageObject.Login;
 import com.maxBank.pageObject.Master_Create_Company;
@@ -35,6 +39,13 @@ public class ParentScenario extends ParentDriver{
 	public Create_Chequebooks create_checkbooks;
 	public Verify_Chequebook verify_chequebook;
 	public Approve_Chequebook approve_chequebook;
+	public Create_Material_Requisition_Payments_Cheque create_meterial_requisition_payments;
+	public Create_NonRequisition_Entries_Cheque create_nonrequisition_entries_cheque;
+	public Create_Without_Advance_Requisition_Payments_Cheque create_without_advanced_requisition_payments_cheque;
+	public Create_Cash_Withdrawal_Cheque create_cash_withdrawal_cheque;
+	
+	
+	
 	
 	
 	public void startBrowser() {
@@ -53,6 +64,13 @@ public class ParentScenario extends ParentDriver{
 		create_checkbooks = new Create_Chequebooks(driver);
 		verify_chequebook = new Verify_Chequebook(driver);
 		approve_chequebook = new Approve_Chequebook(driver);
+		create_meterial_requisition_payments = new Create_Material_Requisition_Payments_Cheque(driver);
+		create_nonrequisition_entries_cheque = new Create_NonRequisition_Entries_Cheque(driver);
+		create_without_advanced_requisition_payments_cheque = new Create_Without_Advance_Requisition_Payments_Cheque(driver);
+		create_cash_withdrawal_cheque = new Create_Cash_Withdrawal_Cheque(driver);
+		
+		
+		
 		
 		
 	}
