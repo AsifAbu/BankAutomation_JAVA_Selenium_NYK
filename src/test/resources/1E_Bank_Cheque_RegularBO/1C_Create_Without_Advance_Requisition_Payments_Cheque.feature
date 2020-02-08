@@ -1,6 +1,10 @@
 #Author: abuasif.nyk@gmail.com
 
 Feature: User create Fund Without Advanced Requisition Payments Cheque
+	Scenario: User going create Cheque page
+		And User Click Cheque button
+		Then User Click Create Cheque button
+		Then User Click Regular BO button
 		
 	Scenario: User Fillup Vendor & Amount Selection section
 		Then User Click Vendor & Amount Selection button
@@ -57,8 +61,4 @@ Feature: User create Fund Without Advanced Requisition Payments Cheque
 		#Edit in Later Update
 		#Dive scroll work does not work
 		
-		#Then User Collect "Cheque Request Completed" Status and Verify
-		
-		
-		
-		
+		#Then User Collect "Cheque Request Completed" Status and Verify	
