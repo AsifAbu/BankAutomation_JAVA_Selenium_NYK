@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="26" time="1177.106492">
-<testcase classname="User create Material Requisition Payments Cheque" name="Successful Login with Valid Credentials" time="28.614867">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="325.812172">
+<testcase classname="User create Material Purchase Bill Cheque" name="Successful Login with Valid Credentials" time="30.590275">
 <system-out><![CDATA[Given User is on Login page.................................................passed
 When User enters "erp.maxgroup@gmail.com" into Username field...............passed
 And User enters "123" into Password field...................................passed
@@ -7,100 +7,42 @@ And User Click LogIn button.................................................pass
 And User Login Successfully.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="Select Role" time="8.133409">
+<testcase classname="User create Material Purchase Bill Cheque" name="Select Role" time="8.182548">
 <system-out><![CDATA[Then User select Creator at CDA.............................................passed
 Then click Confirm button...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User going create Cheque page" time="9.328018">
+<testcase classname="User create Material Purchase Bill Cheque" name="User going create Cheque page" time="9.318847">
 <system-out><![CDATA[And User Click Cheque button................................................passed
 Then User Click Create Cheque button........................................passed
-Then User Click Regular BO button...........................................passed
+Then User Click Purchase button.............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="27.054221">
+<testcase classname="User create Material Purchase Bill Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="25.753878">
 <system-out><![CDATA[Then User Click Vendor & Amount Selection button............................passed
-Then User Click Requisition type field and select "Material Requisition Payments".passed
+Then User Click Purchase Bill type field and select "Material Purchase Bill".passed
 Then User Click Vendor List field and select "Gazipur Polish Store".........passed
-Then User Click ID Requisition button.......................................passed
-Then User enters "1" in first row TDS field.................................passed
-Then User enters "2" in first row VDS field.................................passed
-Then User enters "5" in first row Amount field..............................passed
+Then User Click Bill SL button..............................................passed
+Then User enters "1" in first row TDS field in Purchase Bill................passed
+Then User enters "2" in first row VDS field Purchase Bill...................passed
+Then User enters "5" in first row Amount field Purchase Bill................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Bank Information section" time="22.768766">
+<testcase classname="User create Material Purchase Bill Cheque" name="User Fillup Bank Information section" time="22.650885">
 <system-out><![CDATA[Then User Click Bank Select and select "Trust Bank".........................passed
 Then User Click Account No field and select "0210589481"....................passed
 Then User Click select Chequebook and select "1122".........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Cheque Information section" time="26.201327">
+<testcase classname="User create Material Purchase Bill Cheque" name="User Fillup Cheque Information section" time="26.009291">
 <system-out><![CDATA[Then User Click Beneficiary Name and select "Asad & Co".....................passed
 Then User Click Cheque Category field and select Bearer Cheque..............passed
 Then User Click Cheque Auditor field and select "ERP Admin".................passed
 Then User Click Signatory Authority field and select "ERP Admin"............passed
-Then User Click Material Requisition Payments Submit button.................passed
+Then User Click Material Purchase Bill Submit button........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="Verify Data of Material Requisition Payments Cheque" time="56.247886">
-<system-out><![CDATA[Then User Collect Total Amount Data and Verify..............................passed
-Then User Collect Beneficiary Name and Verify...............................passed
-Then User Collect Bank name and Verify......................................passed
-Then User Collect Account Data and Verify...................................passed
-Then User Collect "Check Request Created" Status and Verify.................passed
-Then User Collect TDS Data and Verify.......................................passed
-Then User Collect VDS Data and Verify.......................................passed
-Then User Collect Total Amount and Verify...................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="Approve Material Requisition Payments Cheque" time="169.245028">
-<system-out><![CDATA[When User Click Select User button for Auditor..............................passed
-Then User Click Review button...............................................passed
-Then User Collect "Cheque Request Reviewed" Status and Verify...............passed
-When User Click Select User button for Creator..............................passed
-Then User Click Print button................................................passed
-Then User Close New Tab.....................................................passed
-Then User Click Confirm button..............................................passed
-Then User Collect "Cheque Printed" Status and Verify........................passed
-When User Click Select User button for Cheque Approver......................passed
-Then User Click Approve button..............................................passed
-Then User Collect "Cheque Request Approved" Status and Verify...............passed
-When User Click Select User button for Creator..............................passed
-Then User Click Deliver button..............................................passed
-Then User enters "Asif" into Cheque Recever name field......................passed
-Then User enters "01899999999" into Recever phone Number field..............passed
-Then User Click Confirm Delevery button.....................................passed
-Then User Collect "Check Delivered" Status and Verify.......................passed
-Then User Click Complete button.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="User going create Cheque page" time="9.278769">
-<system-out><![CDATA[And User Click Cheque button................................................passed
-Then User Click Create Cheque button........................................passed
-Then User Click Regular BO button...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="11.283667">
-<system-out><![CDATA[Then User Click Vendor & Amount Selection button............................passed
-Then User Click Requisition type field and select "Non-requisition Entries (Manual)".passed
-Then User enters "5" in Cheque Amount field.................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Bank Information section" time="23.56175">
-<system-out><![CDATA[Then User Click Bank Select and select "Trust Bank".........................passed
-Then User Click Account No field and select "0210589481"....................passed
-Then User Click select Chequebook and select "1122".........................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Cheque Information section" time="25.790705">
-<system-out><![CDATA[Then User Click Beneficiary Name and select "Asad & Co".....................passed
-Then User Click Cheque Category field and select Bearer Cheque..............passed
-Then User Click Cheque Auditor field and select "ERP Admin".................passed
-Then User Click Signatory Authority field and select "ERP Admin"............passed
-Then User Click NonRequisition Entries Cheque Submit button.................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="Verify Data of NonRequisition Entries Cheque" time="34.146069">
+<testcase classname="User create Material Purchase Bill Cheque" name="Verify Data of Material Purchase Bill Cheque" time="34.157556">
 <system-out><![CDATA[Then User Collect Total Amount Data and Verify..............................passed
 Then User Collect Beneficiary Name and Verify...............................passed
 Then User Collect Bank name and Verify......................................passed
@@ -108,119 +50,7 @@ Then User Collect Account Data and Verify...................................pass
 Then User Collect "Check Request Created" Status and Verify.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="Approve NonRequisition Entries Cheque" time="168.889261">
-<system-out><![CDATA[When User Click Select User button for Auditor..............................passed
-Then User Click Review button...............................................passed
-Then User Collect "Cheque Request Reviewed" Status and Verify...............passed
-When User Click Select User button for Creator..............................passed
-Then User Click Print button................................................passed
-Then User Close New Tab.....................................................passed
-Then User Click Confirm button..............................................passed
-Then User Collect "Cheque Printed" Status and Verify........................passed
-When User Click Select User button for Cheque Approver......................passed
-Then User Click Approve button..............................................passed
-Then User Collect "Cheque Request Approved" Status and Verify...............passed
-When User Click Select User button for Creator..............................passed
-Then User Click Deliver button..............................................passed
-Then User enters "Asif" into Cheque Recever name field......................passed
-Then User enters "01899999999" into Recever phone Number field..............passed
-Then User Click Confirm Delevery button.....................................passed
-Then User Collect "Check Delivered" Status and Verify.......................passed
-Then User Click Complete button.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="User going create Cheque page" time="9.26694">
-<system-out><![CDATA[And User Click Cheque button................................................passed
-Then User Click Create Cheque button........................................passed
-Then User Click Regular BO button...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="14.388542">
-<system-out><![CDATA[Then User Click Vendor & Amount Selection button............................passed
-Then User Click Requisition type field and select "Fund Without Advanced Requisition Payments".passed
-Then User Click ID Requisition button.......................................passed
-Then User enters "5" in Total in First Row Amount field.....................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="User Fillup Bank Information section" time="22.612641">
-<system-out><![CDATA[Then User Click Bank Select and select "Trust Bank".........................passed
-Then User Click Account No field and select "0210589481"....................passed
-Then User Click select Chequebook and select "1122".........................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="User Fillup Cheque Information section" time="25.938346">
-<system-out><![CDATA[Then User Click Beneficiary Name and select "Asad & Co".....................passed
-Then User Click Cheque Category field and select Bearer Cheque..............passed
-Then User Click Cheque Auditor field and select "ERP Admin".................passed
-Then User Click Signatory Authority field and select "ERP Admin"............passed
-Then User Click Fund Without Advanced Requisition Payments Cheque Submit button.passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="Verify Data of Fund Without Advanced Requisition Payments Cheque" time="34.13967">
-<system-out><![CDATA[Then User Collect Total Amount Data and Verify..............................passed
-Then User Collect Beneficiary Name and Verify...............................passed
-Then User Collect Bank name and Verify......................................passed
-Then User Collect Account Data and Verify...................................passed
-Then User Collect "Check Request Created" Status and Verify.................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="Approve Fund Without Advanced Requisition Payments Cheque" time="168.847045">
-<system-out><![CDATA[When User Click Select User button for Auditor..............................passed
-Then User Click Review button...............................................passed
-Then User Collect "Cheque Request Reviewed" Status and Verify...............passed
-When User Click Select User button for Creator..............................passed
-Then User Click Print button................................................passed
-Then User Close New Tab.....................................................passed
-Then User Click Confirm button..............................................passed
-Then User Collect "Cheque Printed" Status and Verify........................passed
-When User Click Select User button for Cheque Approver......................passed
-Then User Click Approve button..............................................passed
-Then User Collect "Cheque Request Approved" Status and Verify...............passed
-When User Click Select User button for Creator..............................passed
-Then User Click Deliver button..............................................passed
-Then User enters "Asif" into Cheque Recever name field......................passed
-Then User enters "01899999999" into Recever phone Number field..............passed
-Then User Click Confirm Delevery button.....................................passed
-Then User Collect "Check Delivered" Status and Verify.......................passed
-Then User Click Complete button.............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Cash Withdrawal Cheque" name="User going create Cheque page" time="9.813012">
-<system-out><![CDATA[And User Click Cheque button................................................passed
-Then User Click Create Cheque button........................................passed
-Then User Click Regular BO button...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Cash Withdrawal Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="20.336126">
-<system-out><![CDATA[Then User Click Vendor & Amount Selection button............................passed
-Then User Click Requisition type field and select "Cash Withdrawal".........passed
-Then User enters "5" in Check Amount field..................................passed
-Then User enters "ID:19600 Cash in Hand Site" in Account Cash Head field....passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Cash Withdrawal Cheque" name="User Fillup Bank Information section" time="22.536406">
-<system-out><![CDATA[Then User Click Bank Select and select "Trust Bank".........................passed
-Then User Click Account No field and select "0210589481"....................passed
-Then User Click select Chequebook and select "1122".........................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Cash Withdrawal Cheque" name="User Fillup Cheque Information section" time="25.75531">
-<system-out><![CDATA[Then User Click Beneficiary Name and select "Asad & Co".....................passed
-Then User Click Cheque Category field and select Bearer Cheque..............passed
-Then User Click Cheque Auditor field and select "ERP Admin".................passed
-Then User Click Signatory Authority field and select "ERP Admin"............passed
-Then User Click Cash Withdrawal Submit button...............................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Cash Withdrawal Cheque" name="Verify Data of Cash Withdrawal Cheque" time="34.18974">
-<system-out><![CDATA[Then User Collect Total Amount Data and Verify..............................passed
-Then User Collect Beneficiary Name and Verify...............................passed
-Then User Collect Bank name and Verify......................................passed
-Then User Collect Account Data and Verify...................................passed
-Then User Collect "Check Request Created" Status and Verify.................passed
-]]></system-out>
-</testcase>
-<testcase classname="User create Cash Withdrawal Cheque" name="Approve Cash Withdrawal Cheque" time="168.738971">
+<testcase classname="User create Material Purchase Bill Cheque" name="Approve Material Requisition Payments Cheque" time="169.148892">
 <system-out><![CDATA[When User Click Select User button for Auditor..............................passed
 Then User Click Review button...............................................passed
 Then User Collect "Cheque Request Reviewed" Status and Verify...............passed

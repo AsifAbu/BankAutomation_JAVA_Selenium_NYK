@@ -7,10 +7,14 @@ import com.maxBank.pageObject.Approve_Chequebook;
 import com.maxBank.pageObject.Bank_Create_Beneficiary;
 import com.maxBank.pageObject.Bank_Logout;
 import com.maxBank.pageObject.Company_Verify;
+import com.maxBank.pageObject.Create_Advance_Slip;
 import com.maxBank.pageObject.Create_Cash_Withdrawal_Cheque;
 import com.maxBank.pageObject.Create_Chequebooks;
+import com.maxBank.pageObject.Create_Material_Purchase_Bill;
 import com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque;
 import com.maxBank.pageObject.Create_NonRequisition_Entries_Cheque;
+import com.maxBank.pageObject.Create_NonStore_Advance_Bill;
+import com.maxBank.pageObject.Create_NonStore_Purchase_Bill;
 import com.maxBank.pageObject.Create_Without_Advance_Requisition_Payments_Cheque;
 //import com.maxBank.pageObject.Bank_Dashboard;
 import com.maxBank.pageObject.Login;
@@ -44,6 +48,10 @@ public class ParentScenario extends ParentDriver{
 	public Create_Without_Advance_Requisition_Payments_Cheque create_without_advanced_requisition_payments_cheque;
 	public Create_Cash_Withdrawal_Cheque create_cash_withdrawal_cheque;
 	
+	public Create_NonStore_Advance_Bill create_nonstore_advance_bill;
+	public Create_Advance_Slip create_advance_slip;
+	public Create_Material_Purchase_Bill create_material_purchase_bill;
+	public Create_NonStore_Purchase_Bill create_nonstore_purchase_bill;
 	
 	
 	
@@ -69,9 +77,10 @@ public class ParentScenario extends ParentDriver{
 		create_without_advanced_requisition_payments_cheque = new Create_Without_Advance_Requisition_Payments_Cheque(driver);
 		create_cash_withdrawal_cheque = new Create_Cash_Withdrawal_Cheque(driver);
 		
-		
-		
-		
+		create_nonstore_purchase_bill = new Create_NonStore_Purchase_Bill(driver);
+		create_material_purchase_bill = new Create_Material_Purchase_Bill(driver);
+		create_advance_slip = new Create_Advance_Slip(driver);
+		create_nonstore_advance_bill = new Create_NonStore_Advance_Bill(driver);
 		
 	}
 	 
