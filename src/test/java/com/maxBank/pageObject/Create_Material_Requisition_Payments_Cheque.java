@@ -119,7 +119,7 @@ public class Create_Material_Requisition_Payments_Cheque extends ParentDriver{
 	}
 
 	public void setBeneficiaryName(String arg1) throws InterruptedException {
-		driver.findElement(By.xpath("//input[@name='beneficiary_name']")).click();
+		driver.findElement(By.xpath("//input[@name='beneficiary_name']")).sendKeys(arg1);
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//li[contains(.,'"+arg1+"')])[1]")).click();
 		
@@ -294,8 +294,8 @@ public class Create_Material_Requisition_Payments_Cheque extends ParentDriver{
 		driver.findElement(By.xpath("//button[contains(.,'Complete')]")).click();
 		Thread.sleep(3000);
 		scrollUp();
-		//Thread.sleep(3000);
-		scrollDown();
+		Thread.sleep(3000);
+		scrollUp();
 	}
 
 	public void setUserAsApproverCheque() throws InterruptedException {

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="354.981141">
-<testcase classname="User create Material Requisition Payments Cheque" name="Successful Login with Valid Credentials" time="29.437549">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="325.431537">
+<testcase classname="User create Material Requisition Payments Cheque" name="Successful Login with Valid Credentials" time="30.224294">
 <system-out><![CDATA[Given User is on Login page.................................................passed
 When User enters "erp.maxgroup@gmail.com" into Username field...............passed
 And User enters "123" into Password field...................................passed
@@ -7,54 +7,47 @@ And User Click LogIn button.................................................pass
 And User Login Successfully.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="Select Role" time="8.135141">
+<testcase classname="User create Material Requisition Payments Cheque" name="Select Role" time="8.136045">
 <system-out><![CDATA[Then User select Creator at CDA.............................................passed
 Then click Confirm button...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User going create Cheque page" time="9.326266">
+<testcase classname="User create Material Requisition Payments Cheque" name="User going create Cheque page" time="9.320033">
 <system-out><![CDATA[And User Click Cheque button................................................passed
 Then User Click Create Cheque button........................................passed
 Then User Click Regular BO button...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="26.83758">
+<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="11.353675">
 <system-out><![CDATA[Then User Click Vendor & Amount Selection button............................passed
-Then User Click Requisition type field and select "Material Requisition Payments".passed
-Then User Click Vendor List field and select "Gazipur Polish Store".........passed
-Then User Click ID Requisition button.......................................passed
-Then User enters "1" in first row TDS field.................................passed
-Then User enters "2" in first row VDS field.................................passed
-Then User enters "5" in first row Amount field..............................passed
+Then User Click Requisition type field and select "Non-requisition Entries (Manual)".passed
+Then User enters "5" in Cheque Amount field.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Bank Information section" time="22.69208">
+<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Bank Information section" time="22.60669">
 <system-out><![CDATA[Then User Click Bank Select and select "Trust Bank".........................passed
 Then User Click Account No field and select "0210589481"....................passed
 Then User Click select Chequebook and select "1122".........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User Fillup Cheque Information section" time="25.940574">
+<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Cheque Information section" time="40.754199">
 <system-out><![CDATA[Then User Click Beneficiary Name and select "Asad & Co".....................passed
 Then User Click Cheque Category field and select Bearer Cheque..............passed
 Then User Click Cheque Auditor field and select "ERP Admin".................passed
 Then User Click Signatory Authority field and select "ERP Admin"............passed
-Then User Click Material Requisition Payments Submit button.................passed
+Then User Click NonRequisition Entries Cheque Submit button.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="Verify Data of Material Requisition Payments Cheque" time="56.256763">
+<testcase classname="User create NonRequisition Entries Cheque" name="Verify Data of Material Requisition Payments Cheque" time="34.157113">
 <system-out><![CDATA[Then User Collect Total Amount Data and Verify..............................passed
 Then User Collect Beneficiary Name and Verify...............................passed
 Then User Collect Bank name and Verify......................................passed
 Then User Collect Account Data and Verify...................................passed
 Then User Collect "Check Request Created" Status and Verify.................passed
-Then User Collect TDS Data and Verify.......................................passed
-Then User Collect VDS Data and Verify.......................................passed
-Then User Collect Total Amount and Verify...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="Approve Material Requisition Payments Cheque" time="176.355188">
-<failure message="java.lang.AssertionError: expected [Cheque Request Completed] but found []&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:94)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:513)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:135)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:116)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:190)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:200)&#13;&#10;&#9;at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:196)&#13;&#10;&#9;at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)&#13;&#10;&#9;at ✽.Then User Collect &quot;Cheque Request Completed&quot; Status and Verify(1A_Create_Material_Requisition_Payments_Cheque.feature:78)&#13;&#10;"><![CDATA[When User Click Select User button for Auditor..............................passed
+<testcase classname="User create NonRequisition Entries Cheque" name="Approve Material Requisition Payments Cheque" time="168.879488">
+<system-out><![CDATA[When User Click Select User button for Auditor..............................passed
 Then User Click Review button...............................................passed
 Then User Collect "Cheque Request Reviewed" Status and Verify...............passed
 When User Click Select User button for Creator..............................passed
@@ -72,19 +65,6 @@ Then User enters "01899999999" into Recever phone Number field..............pass
 Then User Click Confirm Delevery button.....................................passed
 Then User Collect "Check Delivered" Status and Verify.......................passed
 Then User Click Complete button.............................................passed
-Then User Collect "Cheque Request Completed" Status and Verify..............failed
-
-StackTrace:
-java.lang.AssertionError: expected [Cheque Request Completed] but found []
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:196)
-	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)
-	at ✽.Then User Collect "Cheque Request Completed" Status and Verify(1A_Create_Material_Requisition_Payments_Cheque.feature:78)
-]]></failure>
+]]></system-out>
 </testcase>
 </testsuite>
