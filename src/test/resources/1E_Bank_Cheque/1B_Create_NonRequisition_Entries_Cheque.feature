@@ -20,14 +20,14 @@
 #		Then User Click Signatory Authority field and select "ERP Admin"
 #		Then User Click NonRequisition Entries Cheque Submit button
 #		
-#	Scenario: Verify Data of Material Requisition Payments Cheque
+#	Scenario: Verify Data of NonRequisition Entries Cheque
 #		Then User Collect Total Amount Data and Verify
 #		Then User Collect Beneficiary Name and Verify
 #		Then User Collect Bank name and Verify
 #		Then User Collect Account Data and Verify
 #		Then User Collect "Check Request Created" Status and Verify
 #	
-#	Scenario: Approve Material Requisition Payments Cheque
+#	Scenario: Approve NonRequisition Entries Cheque
 #		When User Click Select User button for Auditor
 #		#1scrollDown
 #		Then User Click Review button

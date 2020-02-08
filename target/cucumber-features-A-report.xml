@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="325.431537">
-<testcase classname="User create Material Requisition Payments Cheque" name="Successful Login with Valid Credentials" time="30.224294">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="313.793784">
+<testcase classname="User create Material Requisition Payments Cheque" name="Successful Login with Valid Credentials" time="30.158567">
 <system-out><![CDATA[Given User is on Login page.................................................passed
 When User enters "erp.maxgroup@gmail.com" into Username field...............passed
 And User enters "123" into Password field...................................passed
@@ -7,38 +7,39 @@ And User Click LogIn button.................................................pass
 And User Login Successfully.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="Select Role" time="8.136045">
+<testcase classname="User create Material Requisition Payments Cheque" name="Select Role" time="8.132448">
 <system-out><![CDATA[Then User select Creator at CDA.............................................passed
 Then click Confirm button...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create Material Requisition Payments Cheque" name="User going create Cheque page" time="9.320033">
+<testcase classname="User create Material Requisition Payments Cheque" name="User going create Cheque page" time="9.318137">
 <system-out><![CDATA[And User Click Cheque button................................................passed
 Then User Click Create Cheque button........................................passed
 Then User Click Regular BO button...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="11.353675">
+<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="User Fillup Vendor &amp; Amount Selection section" time="14.454849">
 <system-out><![CDATA[Then User Click Vendor & Amount Selection button............................passed
-Then User Click Requisition type field and select "Non-requisition Entries (Manual)".passed
-Then User enters "5" in Cheque Amount field.................................passed
+Then User Click Requisition type field and select "Fund Without Advanced Requisition Payments".passed
+Then User Click ID Requisition button.......................................passed
+Then User enters "5" in Total in First Row Amount field.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Bank Information section" time="22.60669">
+<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="User Fillup Bank Information section" time="22.661882">
 <system-out><![CDATA[Then User Click Bank Select and select "Trust Bank".........................passed
 Then User Click Account No field and select "0210589481"....................passed
 Then User Click select Chequebook and select "1122".........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="User Fillup Cheque Information section" time="40.754199">
+<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="User Fillup Cheque Information section" time="25.94252">
 <system-out><![CDATA[Then User Click Beneficiary Name and select "Asad & Co".....................passed
 Then User Click Cheque Category field and select Bearer Cheque..............passed
 Then User Click Cheque Auditor field and select "ERP Admin".................passed
 Then User Click Signatory Authority field and select "ERP Admin"............passed
-Then User Click NonRequisition Entries Cheque Submit button.................passed
+Then User Click Fund Without Advanced Requisition Payments Cheque Submit button.passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="Verify Data of Material Requisition Payments Cheque" time="34.157113">
+<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="Verify Data of Fund Without Advanced Requisition Payments Cheque" time="34.159919">
 <system-out><![CDATA[Then User Collect Total Amount Data and Verify..............................passed
 Then User Collect Beneficiary Name and Verify...............................passed
 Then User Collect Bank name and Verify......................................passed
@@ -46,7 +47,7 @@ Then User Collect Account Data and Verify...................................pass
 Then User Collect "Check Request Created" Status and Verify.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create NonRequisition Entries Cheque" name="Approve Material Requisition Payments Cheque" time="168.879488">
+<testcase classname="User create Fund Without Advanced Requisition Payments Cheque" name="Approve Fund Without Advanced Requisition Payments Cheque" time="168.965462">
 <system-out><![CDATA[When User Click Select User button for Auditor..............................passed
 Then User Click Review button...............................................passed
 Then User Collect "Cheque Request Reviewed" Status and Verify...............passed
