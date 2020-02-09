@@ -1,5 +1,6 @@
 package com.maxBank.pageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
@@ -23,4 +24,11 @@ public class Create_NonStore_Purchase_Bill extends ParentDriver{
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,-800)", "");
     }
+
+	public void clickNonStoreSubmitBtn() throws InterruptedException {
+		driver.findElement(By.xpath("//button[contains(.,'Submit')]")).click();
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//button[contains(.,'OK')]")).click();
+	}
+	
 }
