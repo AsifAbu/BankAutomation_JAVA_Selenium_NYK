@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("1A_Create_Material_Purchase_Bill.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("1A_Create_C\u0026F_Payment.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,100 +7,120 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "User create Material Purchase Bill Cheque",
+  "name": "User create LC C\u0026F Payment Cheque",
   "description": "",
-  "id": "user-create-material-purchase-bill-cheque",
+  "id": "user-create-lc-c\u0026f-payment-cheque",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7550353200,
+  "duration": 8197541600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 137100,
+  "duration": 150700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 84300,
+  "duration": 76700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 128400,
+  "duration": 56500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 165800,
+  "duration": 196600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 154800,
+  "duration": 116700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 111300,
+  "duration": 136200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 110200,
+  "duration": 113100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 128000,
+  "duration": 158000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 113800,
+  "duration": 118700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 97900,
+  "duration": 134200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 104800,
+  "duration": 117100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 91900,
+  "duration": 131100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 96000,
+  "duration": 101800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 101000,
+  "duration": 104300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 93600,
+  "duration": 77100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 105900,
+  "duration": 79000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 100400,
+  "duration": 58400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 68700,
+  "duration": 94200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 63300,
+  "duration": 73900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 81200,
+  "duration": 65400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 80700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 153300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 86100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 84500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 105000,
   "status": "passed"
 });
 formatter.scenario({
   "line": 5,
   "name": "Successful Login with Valid Credentials",
   "description": "",
-  "id": "user-create-material-purchase-bill-cheque;successful-login-with-valid-credentials",
+  "id": "user-create-lc-c\u0026f-payment-cheque;successful-login-with-valid-credentials",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -133,7 +153,7 @@ formatter.match({
   "location": "Login_StepDef.user_is_on_Login_page()"
 });
 formatter.result({
-  "duration": 4756658800,
+  "duration": 3880904100,
   "status": "passed"
 });
 formatter.match({
@@ -146,7 +166,7 @@ formatter.match({
   "location": "Login_StepDef.user_enters_into_Username_field(String)"
 });
 formatter.result({
-  "duration": 4573817400,
+  "duration": 4155393500,
   "status": "passed"
 });
 formatter.match({
@@ -159,112 +179,132 @@ formatter.match({
   "location": "Login_StepDef.user_enters_into_Password_field(String)"
 });
 formatter.result({
-  "duration": 4128549400,
+  "duration": 4058454700,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.user_Click_LogIn_button()"
 });
 formatter.result({
-  "duration": 4105556100,
+  "duration": 4071748600,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.user_Login_Successfully()"
 });
 formatter.result({
-  "duration": 6054179600,
+  "duration": 6054362800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 78100,
+  "duration": 61300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 64100,
+  "duration": 50600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 51500,
+  "duration": 60100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95500,
+  "duration": 165000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95900,
+  "duration": 66100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 112300,
+  "duration": 79400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 109700,
+  "duration": 92100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 80500,
+  "duration": 75400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 130000,
+  "duration": 68100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 85200,
+  "duration": 65400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 80800,
+  "duration": 291200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 83800,
+  "duration": 66900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 97100,
+  "duration": 55800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 84200,
+  "duration": 54200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 77900,
+  "duration": 70800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 78300,
+  "duration": 64900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 94100,
+  "duration": 38600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 85500,
+  "duration": 36900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 84300,
+  "duration": 67100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 71500,
+  "duration": 47000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 117800,
+  "duration": 41000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 52200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 42100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 41800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 58100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 88500,
   "status": "passed"
 });
 formatter.scenario({
   "line": 12,
   "name": "Select Role",
   "description": "",
-  "id": "user-create-material-purchase-bill-cheque;select-role",
+  "id": "user-create-lc-c\u0026f-payment-cheque;select-role",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -282,18 +322,106 @@ formatter.match({
   "location": "Login_StepDef.user_select_Creator_at_CDA()"
 });
 formatter.result({
-  "duration": 4051759100,
+  "duration": 4050538200,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.click_Confirm_button()"
 });
 formatter.result({
-  "duration": 4081463100,
+  "duration": 4086508000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 102100,
+  "duration": 110400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 131200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 144600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 113800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 207800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 137300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 141500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 174100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 146500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 106700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 85100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 81800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 129800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 120700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 99000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 135300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 202100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 113600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 137100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 115600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 131400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 135300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 131700,
   "status": "passed"
 });
 formatter.before({
@@ -301,304 +429,387 @@ formatter.before({
   "status": "passed"
 });
 formatter.before({
-  "duration": 91900,
+  "duration": 161900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 80400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 75000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 108000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 125400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 76400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 78000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 119600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 143400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 119300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 153100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 330500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 96500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 103400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 82700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 104500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 116400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 121100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 82000,
+  "duration": 124100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
+  "comments": [
+    {
+      "line": 16,
+      "value": "#\tScenario: User going create Cheque page"
+    },
+    {
+      "line": 17,
+      "value": "#\t\tAnd User Click Cheque button"
+    },
+    {
+      "line": 18,
+      "value": "#\t\tThen User Click Create Cheque button"
+    },
+    {
+      "line": 19,
+      "value": "#\t\tThen User Click LC Payments button"
+    },
+    {
+      "line": 20,
+      "value": "#"
+    },
+    {
+      "line": 21,
+      "value": "#\t\tThen User Click Amount Selection button"
+    },
+    {
+      "line": 22,
+      "value": "#\t\tThen User Click LC Payment type field and select \"C\u0026F Payment\""
+    },
+    {
+      "line": 23,
+      "value": "#\t\tThen User Click CDR SL field and search \"125\""
+    },
+    {
+      "line": 24,
+      "value": "#\t\tThen User enters \"1\" in first row TDS field in LC Payment Bill"
+    },
+    {
+      "line": 25,
+      "value": "#\t\tThen User enters \"5\" in first row Amount field LC Payment Bill"
+    },
+    {
+      "line": 26,
+      "value": "#"
+    },
+    {
+      "line": 27,
+      "value": "#\t\tScenario: User Fillup Bank Information section"
+    },
+    {
+      "line": 28,
+      "value": "#\t\t\tThen User Click Bank Select and select \"Trust Bank\""
+    },
+    {
+      "line": 29,
+      "value": "#\t\t\tThen User Click Account No field and select \"0210589481\""
+    },
+    {
+      "line": 30,
+      "value": "#\t\t\tThen User Click select Chequebook and select \"1122\""
+    },
+    {
+      "line": 31,
+      "value": "#\t\t\tThen User Click Bank To and select \"UCBL\""
+    },
+    {
+      "line": 32,
+      "value": "#\t\t\tThen User Click Bank To Account No and select \"001112233\""
+    },
+    {
+      "line": 33,
+      "value": "#"
+    },
+    {
+      "line": 34,
+      "value": "#\t\tScenario: User Fillup Cheque Information section"
+    },
+    {
+      "line": 35,
+      "value": "#\t\t\tThen User Click Cheque Date CDC"
+    },
+    {
+      "line": 36,
+      "value": "#\t\t\tThen User Click Beneficiary Name and select \"Asad \u0026 Co\""
+    },
+    {
+      "line": 37,
+      "value": "#\t\t\tThen User Click Cheque Category field and select Bearer Cheque"
+    },
+    {
+      "line": 38,
+      "value": "#\t\t\tThen User Click Cheque Auditor field and select \"ERP Admin\""
+    },
+    {
+      "line": 39,
+      "value": "#\t\t\tThen User Click Signatory Authority field and select \"ERP Admin\""
+    },
+    {
+      "line": 40,
+      "value": "#\t\t\tThen User Click C\u0026F Payment Submit button"
+    },
+    {
+      "line": 41,
+      "value": "#"
+    },
+    {
+      "line": 42,
+      "value": "#\t\tScenario: Verify Data of C\u0026F Payment Cheque"
+    },
+    {
+      "line": 43,
+      "value": "#\t\t\tThen User Collect Total Amount Data and Verify"
+    },
+    {
+      "line": 44,
+      "value": "#\t\t\tThen User Collect Beneficiary Name and Verify"
+    },
+    {
+      "line": 45,
+      "value": "#\t\t\tThen User Collect Bank name and Verify"
+    },
+    {
+      "line": 46,
+      "value": "#\t\t\tThen User Collect Account Data and Verify"
+    },
+    {
+      "line": 47,
+      "value": "#\t\t\tThen User Collect \"Check Request Created\" Status and Verify"
+    },
+    {
+      "line": 48,
+      "value": "#"
+    },
+    {
+      "line": 49,
+      "value": "#\t\tScenario: Approve C\u0026F Payment Cheque"
+    },
+    {
+      "line": 50,
+      "value": "#\t\t\tWhen User Click Select User button for Auditor"
+    },
+    {
+      "line": 51,
+      "value": "#\t\t\t#1scrollDown"
+    },
+    {
+      "line": 52,
+      "value": "#\t\t\tThen User Click Review button"
+    },
+    {
+      "line": 53,
+      "value": "#\t\t\t#1Scrollup"
+    },
+    {
+      "line": 54,
+      "value": "#\t\t\tThen User Collect \"Cheque Request Reviewed\" Status and Verify"
+    },
+    {
+      "line": 55,
+      "value": "#\t\t\tWhen User Click Select User button for Creator"
+    },
+    {
+      "line": 56,
+      "value": "#\t\t\t#1scrollDown"
+    },
+    {
+      "line": 57,
+      "value": "#\t\t\tThen User Click Print button"
+    },
+    {
+      "line": 58,
+      "value": "#\t\t\tThen User Close New Tab"
+    },
+    {
+      "line": 59,
+      "value": "#\t\t\tThen User Click Confirm button"
+    },
+    {
+      "line": 60,
+      "value": "#\t\t\tThen User Collect \"Cheque Printed\" Status and Verify"
+    },
+    {
+      "line": 61,
+      "value": "#\t\t\tWhen User Click Select User button for Cheque Approver"
+    },
+    {
+      "line": 62,
+      "value": "#\t\t\t#1scrollDown"
+    },
+    {
+      "line": 63,
+      "value": "#\t\t\tThen User Click Approve button"
+    },
+    {
+      "line": 64,
+      "value": "#\t\t\tThen User Collect \"Cheque Request Approved\" Status and Verify"
+    },
+    {
+      "line": 65,
+      "value": "#\t\t\t#1scrollUp"
+    },
+    {
+      "line": 66,
+      "value": "#\t\t\tWhen User Click Select User button for Creator"
+    },
+    {
+      "line": 67,
+      "value": "#\t\t\t#2scrollDown"
+    },
+    {
+      "line": 68,
+      "value": "#\t\t\tThen User Click Deliver button"
+    },
+    {
+      "line": 69,
+      "value": "#\t\t\tThen User enters \"Asif\" into Cheque Recever name field"
+    },
+    {
+      "line": 70,
+      "value": "#\t\t\tThen User enters \"01899999999\" into Recever phone Number field"
+    },
+    {
+      "line": 71,
+      "value": "#\t\t\tThen User Click Confirm Delevery button"
+    },
+    {
+      "line": 72,
+      "value": "#\t\t\tThen User Collect \"Check Delivered\" Status and Verify"
+    },
+    {
+      "line": 73,
+      "value": "#\t\t\tThen User Click Complete button"
+    },
+    {
+      "line": 75,
+      "value": "################################################"
+    }
+  ],
+  "line": 77,
   "name": "User going create Cheque page",
   "description": "",
-  "id": "user-create-material-purchase-bill-cheque;user-going-create-cheque-page",
+  "id": "user-create-lc-c\u0026f-payment-cheque;user-going-create-cheque-page",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 17,
+  "line": 78,
   "name": "User Click Cheque button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 79,
   "name": "User Click Create Cheque button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
-  "name": "User Click Purchase button",
+  "line": 80,
+  "name": "User Click LC Payments button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 81,
+  "name": "User Click Amount Selection button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 82,
+  "name": "User Click LC Payment type field and select \"C\u0026F Payment\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 83,
+  "name": "User Click C\u0026F Type field and select \"Third Party C\u0026F\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 84,
+  "name": "User Click Vendor List field and select \"Regal Sports\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 85,
+  "name": "User Click CDR SL field and search \"116\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 86,
+  "name": "User enters \"1\" in first row TDS field in LC Payment Bill",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 87,
+  "name": "User enters \"5\" in first row Amount field LC Payment Bill",
   "keyword": "Then "
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Cheque_button()"
 });
 formatter.result({
-  "duration": 3083782200,
+  "duration": 3086803300,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Create_Cheque_button()"
 });
 formatter.result({
-  "duration": 3130437600,
+  "duration": 3129695200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Create_Material_Purchase_Bill_StepDef.user_Click_Purchase_button()"
+  "location": "Create_CF_Payment_StepDef.user_Click_LC_Payments_button()"
 });
 formatter.result({
-  "duration": 3109803200,
+  "duration": 3103343400,
   "status": "passed"
-});
-formatter.uri("1D_Create_NonStore_Advance_Bill.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "#Author: abuasif.nyk@gmail.com"
-    }
-  ],
-  "line": 3,
-  "name": "User create Non Store Advance Bill Cheque",
-  "description": "",
-  "id": "user-create-non-store-advance-bill-cheque",
-  "keyword": "Feature"
-});
-formatter.before({
-  "duration": 99300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 152700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 64500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 59700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 42500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 43800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 53600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 41000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 35200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 37400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 35900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 33900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 38900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 36700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 56400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 56600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 50300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 63800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 50600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 51700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 55700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 4,
-  "name": "User Fillup Vendor \u0026 Amount Selection section",
-  "description": "",
-  "id": "user-create-non-store-advance-bill-cheque;user-fillup-vendor-\u0026-amount-selection-section",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 5,
-  "name": "User Click Vendor \u0026 Amount Selection button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 6,
-  "name": "User Click Purchase Bill type field and select \"Non-Store Advance Bill\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 7,
-  "name": "User Click Vendor List field and select \"Gazipur Polish Store\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "User Click Bill SL button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "User enters \"1\" in first row TDS field in Purchase Bill",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User enters \"2\" in first row VDS field Purchase Bill",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "User enters \"5\" in first row Amount field Purchase Bill",
-  "keyword": "Then "
 });
 formatter.match({
-  "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Vendor_Amount_Selection_button()"
+  "location": "Create_CF_Payment_StepDef.userClickAmountSelectionButton()"
 });
 formatter.result({
-  "duration": 3068617700,
+  "duration": 3298848100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Non-Store Advance Bill",
-      "offset": 48
+      "val": "C\u0026F Payment",
+      "offset": 45
     }
   ],
-  "location": "Create_Material_Purchase_Bill_StepDef.user_Click_Purchase_Bill_type_field_and_select(String)"
+  "location": "Create_CF_Payment_StepDef.user_Click_LC_Payment_type_field_and_select(String)"
 });
 formatter.result({
-  "duration": 5179338900,
+  "duration": 5402209700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Gazipur Polish Store",
+      "val": "Third Party C\u0026F",
+      "offset": 38
+    }
+  ],
+  "location": "Create_CF_Payment_StepDef.userClickCFTypeFieldAndSelect(String)"
+});
+formatter.result({
+  "duration": 5257066400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Regal Sports",
       "offset": 41
     }
   ],
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Vendor_List_field_and_select(String)"
 });
 formatter.result({
-  "duration": 5222883400,
+  "duration": 5338483000,
   "status": "passed"
 });
 formatter.match({
-  "location": "Create_Material_Purchase_Bill_StepDef.user_Click_Bill_SL_button()"
+  "arguments": [
+    {
+      "val": "116",
+      "offset": 36
+    }
+  ],
+  "location": "Create_CF_Payment_StepDef.user_Click_CDR_SL_field_and_search(String)"
 });
 formatter.result({
-  "duration": 3066088600,
+  "duration": 6098375500,
   "status": "passed"
 });
 formatter.match({
@@ -608,23 +819,10 @@ formatter.match({
       "offset": 13
     }
   ],
-  "location": "Create_Material_Purchase_Bill_StepDef.user_enters_in_first_row_TDS_field_in_Purchase_Bill(String)"
+  "location": "Create_CF_Payment_StepDef.user_enters_in_first_row_TDS_field_in_LC_Payment_Bill(String)"
 });
 formatter.result({
-  "duration": 3084469500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 13
-    }
-  ],
-  "location": "Create_Material_Purchase_Bill_StepDef.user_enters_in_first_row_VDS_field_Purchase_Bill(String)"
-});
-formatter.result({
-  "duration": 3071740400,
+  "duration": 3059589100,
   "status": "passed"
 });
 formatter.match({
@@ -634,122 +832,136 @@ formatter.match({
       "offset": 13
     }
   ],
-  "location": "Create_Material_Purchase_Bill_StepDef.user_enters_in_first_row_Amount_field_Purchase_Bill(String)"
+  "location": "Create_CF_Payment_StepDef.user_enters_in_first_row_Amount_field_LC_Payment_Bill(String)"
 });
 formatter.result({
-  "duration": 3069408600,
+  "duration": 4111075200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 94000,
+  "duration": 112200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 109000,
+  "duration": 89900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 94100,
+  "duration": 90300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 113300,
+  "duration": 82200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 78500,
+  "duration": 93200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 70100,
+  "duration": 68000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 67900,
+  "duration": 74700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 77300,
+  "duration": 78300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88100,
+  "duration": 63300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 333900,
+  "duration": 122800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 112000,
+  "duration": 82100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 121700,
+  "duration": 96800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 87700,
+  "duration": 78700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 115500,
+  "duration": 96500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 101100,
+  "duration": 101000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95500,
+  "duration": 119400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 101600,
+  "duration": 100900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 89000,
+  "duration": 78700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 95200,
+  "duration": 48300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 125600,
+  "duration": 52100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 136400,
+  "duration": 47200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 39800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 41200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 47500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 72500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 42000,
   "status": "passed"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 12,
-      "value": "#3 Scroll down"
-    }
-  ],
-  "line": 14,
+  "line": 89,
   "name": "User Fillup Bank Information section",
   "description": "",
-  "id": "user-create-non-store-advance-bill-cheque;user-fillup-bank-information-section",
+  "id": "user-create-lc-c\u0026f-payment-cheque;user-fillup-bank-information-section",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 15,
+  "line": 90,
   "name": "User Click Bank Select and select \"Trust Bank\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 91,
   "name": "User Click Account No field and select \"0210589481\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
+  "line": 92,
   "name": "User Click select Chequebook and select \"1122\"",
   "keyword": "Then "
 });
@@ -763,7 +975,7 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Bank_Select_and_select(String)"
 });
 formatter.result({
-  "duration": 8346784800,
+  "duration": 8246809000,
   "status": "passed"
 });
 formatter.match({
@@ -776,7 +988,7 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Account_No_field_and_select(String)"
 });
 formatter.result({
-  "duration": 7146859800,
+  "duration": 7158820600,
   "status": "passed"
 });
 formatter.match({
@@ -789,125 +1001,157 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_select_Chequebook_and_select(String)"
 });
 formatter.result({
-  "duration": 7151033500,
+  "duration": 7168891300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 81700,
+  "duration": 103100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 81500,
+  "duration": 92700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 76400,
+  "duration": 86100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 79300,
+  "duration": 110300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 110700,
+  "duration": 65300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 57300,
+  "duration": 82200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 48500,
+  "duration": 70800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 52000,
+  "duration": 45600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 54500,
+  "duration": 92600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 57600,
+  "duration": 81400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 74600,
+  "duration": 64000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 132000,
+  "duration": 62700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 99000,
+  "duration": 55300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 148800,
+  "duration": 63000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 93100,
+  "duration": 92900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 104300,
+  "duration": 67800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88900,
+  "duration": 65900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 65200,
+  "duration": 82400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 90300,
+  "duration": 66500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 62400,
+  "duration": 63600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 76300,
+  "duration": 75900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 84900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 85900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 96900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 47600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 36000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 94,
   "name": "User Fillup Cheque Information section",
   "description": "",
-  "id": "user-create-non-store-advance-bill-cheque;user-fillup-cheque-information-section",
+  "id": "user-create-lc-c\u0026f-payment-cheque;user-fillup-cheque-information-section",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 20,
+  "line": 95,
+  "name": "User Click Cheque Date CDC",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 96,
   "name": "User Click Beneficiary Name and select \"Asad \u0026 Co\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 97,
   "name": "User Click Cheque Category field and select Bearer Cheque",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
+  "line": 98,
   "name": "User Click Cheque Auditor field and select \"ERP Admin\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 23,
+  "line": 99,
   "name": "User Click Signatory Authority field and select \"ERP Admin\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 24,
-  "name": "User Click Non Store Advance Bill Submit button",
+  "line": 100,
+  "name": "User Click C\u0026F Payment Submit button",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "Create_CF_Payment_StepDef.user_Click_Cheque_Date_CDC()"
+});
+formatter.result({
+  "duration": 3072331800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -919,14 +1163,14 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Beneficiary_Name_and_select(String)"
 });
 formatter.result({
-  "duration": 5255452400,
+  "duration": 5225347400,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Cheque_Category_field_and_select_Bearer_Cheque()"
 });
 formatter.result({
-  "duration": 3062359600,
+  "duration": 3055539400,
   "status": "passed"
 });
 formatter.match({
@@ -939,7 +1183,7 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Cheque_Auditor_field_and_select(String)"
 });
 formatter.result({
-  "duration": 5240925600,
+  "duration": 5219526700,
   "status": "passed"
 });
 formatter.match({
@@ -952,130 +1196,150 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Signatory_Authority_field_and_select(String)"
 });
 formatter.result({
-  "duration": 5236773100,
+  "duration": 5202960800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Create_NonStore_Advance_Bill_StepDef.user_Click_Non_Store_Advance_Bill_Submit_button()"
+  "location": "Create_CF_Payment_StepDef.user_Click_C_F_Payment_Submit_button()"
 });
 formatter.result({
-  "duration": 7156692000,
+  "duration": 7197893600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 157800,
+  "duration": 91100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 207500,
+  "duration": 118400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 151500,
+  "duration": 165800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 220600,
+  "duration": 150600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 114500,
+  "duration": 98800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 120200,
+  "duration": 103500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 178800,
+  "duration": 117800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 127700,
+  "duration": 182000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 82100,
+  "duration": 109900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 133600,
+  "duration": 109200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1000500,
+  "duration": 76800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 197000,
+  "duration": 192200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 76000,
+  "duration": 171800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 105900,
+  "duration": 114800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 133100,
+  "duration": 81900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 108100,
+  "duration": 94200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 92700,
+  "duration": 110400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 136000,
+  "duration": 95100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 173600,
+  "duration": 155400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 97700,
+  "duration": 132300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 111600,
+  "duration": 86300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 303200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 104500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 100300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 182800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 101400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 26,
-  "name": "Verify Data of Non Store Advance Bill Cheque",
+  "line": 102,
+  "name": "Verify Data of C\u0026F Payment Cheque",
   "description": "",
-  "id": "user-create-non-store-advance-bill-cheque;verify-data-of-non-store-advance-bill-cheque",
+  "id": "user-create-lc-c\u0026f-payment-cheque;verify-data-of-c\u0026f-payment-cheque",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 27,
+  "line": 103,
   "name": "User Collect Total Amount Data and Verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 28,
+  "line": 104,
   "name": "User Collect Beneficiary Name and Verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
+  "line": 105,
   "name": "User Collect Bank name and Verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 106,
   "name": "User Collect Account Data and Verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 31,
+  "line": 107,
   "name": "User Collect \"Check Request Created\" Status and Verify",
   "keyword": "Then "
 });
@@ -1083,28 +1347,28 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectTotalAmountDataAndVerify()"
 });
 formatter.result({
-  "duration": 6029396500,
+  "duration": 6029355300,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectBeneficiaryNameAndVerify()"
 });
 formatter.result({
-  "duration": 6048079000,
+  "duration": 6044619800,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectBankNameAndVerify()"
 });
 formatter.result({
-  "duration": 6029270800,
+  "duration": 6026916500,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectAccountDataAndVerify()"
 });
 formatter.result({
-  "duration": 6026816100,
+  "duration": 6029283900,
   "status": "passed"
 });
 formatter.match({
@@ -1117,83 +1381,31 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(String)"
 });
 formatter.result({
-  "duration": 10029936300,
+  "duration": 10028402300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 106600,
+  "duration": 72200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 53700,
+  "duration": 53800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 43900,
+  "duration": 45100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 33700,
+  "duration": 46700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 30400,
+  "duration": 34400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 33500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 35200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 37600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 47100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 73200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 56800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 45900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 63200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 63800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 47400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 60700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 40000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 34000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 39600,
+  "duration": 58000,
   "status": "passed"
 });
 formatter.before({
@@ -1201,140 +1413,212 @@ formatter.before({
   "status": "passed"
 });
 formatter.before({
-  "duration": 32500,
+  "duration": 32100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 47300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 36900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 33400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 32200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 29100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 54800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 51600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 43500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 38200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 33800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 31600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 35000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 32300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 32700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 42200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 34500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 40400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 46300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
-  "name": "Approve Non Store Advance Bill Cheque",
+  "line": 109,
+  "name": "Approve C\u0026F Payment Cheque",
   "description": "",
-  "id": "user-create-non-store-advance-bill-cheque;approve-non-store-advance-bill-cheque",
+  "id": "user-create-lc-c\u0026f-payment-cheque;approve-c\u0026f-payment-cheque",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 34,
+  "line": 110,
   "name": "User Click Select User button for Auditor",
   "keyword": "When "
 });
 formatter.step({
   "comments": [
     {
-      "line": 35,
+      "line": 111,
       "value": "#1scrollDown"
     }
   ],
-  "line": 36,
+  "line": 112,
   "name": "User Click Review button",
   "keyword": "Then "
 });
 formatter.step({
   "comments": [
     {
-      "line": 37,
+      "line": 113,
       "value": "#1Scrollup"
     }
   ],
-  "line": 38,
+  "line": 114,
   "name": "User Collect \"Cheque Request Reviewed\" Status and Verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 39,
+  "line": 115,
   "name": "User Click Select User button for Creator",
   "keyword": "When "
 });
 formatter.step({
   "comments": [
     {
-      "line": 40,
+      "line": 116,
       "value": "#1scrollDown"
     }
   ],
-  "line": 41,
+  "line": 117,
   "name": "User Click Print button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 42,
+  "line": 118,
   "name": "User Close New Tab",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 43,
+  "line": 119,
   "name": "User Click Confirm button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 44,
+  "line": 120,
   "name": "User Collect \"Cheque Printed\" Status and Verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 45,
+  "line": 121,
   "name": "User Click Select User button for Cheque Approver",
   "keyword": "When "
 });
 formatter.step({
   "comments": [
     {
-      "line": 46,
+      "line": 122,
       "value": "#1scrollDown"
     }
   ],
-  "line": 47,
+  "line": 123,
   "name": "User Click Approve button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 48,
+  "line": 124,
   "name": "User Collect \"Cheque Request Approved\" Status and Verify",
   "keyword": "Then "
 });
 formatter.step({
   "comments": [
     {
-      "line": 49,
+      "line": 125,
       "value": "#1scrollUp"
     }
   ],
-  "line": 50,
+  "line": 126,
   "name": "User Click Select User button for Creator",
   "keyword": "When "
 });
 formatter.step({
   "comments": [
     {
-      "line": 51,
+      "line": 127,
       "value": "#2scrollDown"
     }
   ],
-  "line": 52,
+  "line": 128,
   "name": "User Click Deliver button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 53,
+  "line": 129,
   "name": "User enters \"Asif\" into Cheque Recever name field",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 54,
+  "line": 130,
   "name": "User enters \"01899999999\" into Recever phone Number field",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 55,
+  "line": 131,
   "name": "User Click Confirm Delevery button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 132,
   "name": "User Collect \"Check Delivered\" Status and Verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 57,
+  "line": 133,
   "name": "User Click Complete button",
   "keyword": "Then "
 });
@@ -1342,14 +1626,14 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickSelectUserButtonForAuditor()"
 });
 formatter.result({
-  "duration": 14599502800,
+  "duration": 17236289600,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickReviewButton()"
 });
 formatter.result({
-  "duration": 7093551000,
+  "duration": 7100759300,
   "status": "passed"
 });
 formatter.match({
@@ -1362,35 +1646,35 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(String)"
 });
 formatter.result({
-  "duration": 10030876300,
+  "duration": 10030114500,
   "status": "passed"
 });
 formatter.match({
   "location": "Approve_Beneficiary_StepDef.user_Click_Select_User_button_for_Creator()"
 });
 formatter.result({
-  "duration": 23972600700,
+  "duration": 15402589500,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickPrintButton()"
 });
 formatter.result({
-  "duration": 5086765900,
+  "duration": 5077948700,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCloseNewTab()"
 });
 formatter.result({
-  "duration": 13063148800,
+  "duration": 13090591700,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickConfirmButton()"
 });
 formatter.result({
-  "duration": 5080709100,
+  "duration": 5143782400,
   "status": "passed"
 });
 formatter.match({
@@ -1403,21 +1687,21 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(String)"
 });
 formatter.result({
-  "duration": 10030699100,
+  "duration": 10028978300,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickSelectUserButtonForChequeApprover()"
 });
 formatter.result({
-  "duration": 12495636000,
+  "duration": 12477812900,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickApproveButton()"
 });
 formatter.result({
-  "duration": 5082643300,
+  "duration": 5079861900,
   "status": "passed"
 });
 formatter.match({
@@ -1430,21 +1714,21 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(String)"
 });
 formatter.result({
-  "duration": 10028535600,
+  "duration": 10028994100,
   "status": "passed"
 });
 formatter.match({
   "location": "Approve_Beneficiary_StepDef.user_Click_Select_User_button_for_Creator()"
 });
 formatter.result({
-  "duration": 15861018500,
+  "duration": 15409653500,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickDeliverButton()"
 });
 formatter.result({
-  "duration": 5094304600,
+  "duration": 5091966200,
   "status": "passed"
 });
 formatter.match({
@@ -1457,7 +1741,7 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userEntersIntoChequeReceverNameField(String)"
 });
 formatter.result({
-  "duration": 3072852000,
+  "duration": 3074495000,
   "status": "passed"
 });
 formatter.match({
@@ -1470,14 +1754,14 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userEntersIntoReceverPhoneNumberField(String)"
 });
 formatter.result({
-  "duration": 3100500300,
+  "duration": 3102944400,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickConfirmDeleveryButton()"
 });
 formatter.result({
-  "duration": 15095838400,
+  "duration": 15112050700,
   "status": "passed"
 });
 formatter.match({
@@ -1490,14 +1774,14 @@ formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(String)"
 });
 formatter.result({
-  "duration": 10028702700,
+  "duration": 10028572100,
   "status": "passed"
 });
 formatter.match({
   "location": "Create_Material_Requisition_Payments_Cheque_StepDef.userClickCompleteButton()"
 });
 formatter.result({
-  "duration": 9086506900,
+  "duration": 9077399100,
   "status": "passed"
 });
 });
