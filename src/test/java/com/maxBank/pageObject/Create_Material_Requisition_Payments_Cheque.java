@@ -62,7 +62,7 @@ public class Create_Material_Requisition_Payments_Cheque extends ParentDriver{
 	}
 
 	public void clickAndSelectVendor(String arg1) throws InterruptedException {
-		driver.findElement(By.xpath("//input[@name='vendor_name']")).click();
+		driver.findElement(By.xpath("//input[@name='vendor_name']")).sendKeys(arg1);
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//li[contains(.,'"+arg1+"')]")).click();
 	}
