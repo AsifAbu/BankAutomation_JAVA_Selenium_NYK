@@ -1,6 +1,11 @@
 #Author: abuasif.nyk@gmail.com
 
 Feature: User create Non Store Advance Bill Cheque
+	Scenario: User going create Cheque page
+		And User Click Cheque button
+		Then User Click Create Cheque button
+		Then User Click Purchase button
+		
 	Scenario: User Fillup Vendor & Amount Selection section
 			Then User Click Vendor & Amount Selection button
 			Then User Click Purchase Bill type field and select "Non-Store Advance Bill" 
