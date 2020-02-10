@@ -6,8 +6,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.maxBank.framework.ParentDriver;
 
-import cucumber.api.java.en.Then;
-
 public class Create_Material_Purchase_Bill extends ParentDriver{
 	WebDriver driver = getDriver();
 	

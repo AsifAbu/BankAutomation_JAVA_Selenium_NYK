@@ -296,6 +296,8 @@ public class Create_Material_Requisition_Payments_Cheque extends ParentDriver{
 		scrollUp();
 		Thread.sleep(3000);
 		scrollUp();
+		Thread.sleep(3000);
+		scrollUp();
 	}
 
 	public void setUserAsApproverCheque() throws InterruptedException {
