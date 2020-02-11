@@ -9,6 +9,10 @@ import com.maxBank.pageObject.Bank_Logout;
 import com.maxBank.pageObject.Company_Verify;
 import com.maxBank.pageObject.Create_Advance_Slip;
 import com.maxBank.pageObject.Create_Arrenger_Commission;
+import com.maxBank.pageObject.Create_Bank_Cheque_Payment_Application;
+import com.maxBank.pageObject.Create_Bank_Cheque_Security;
+import com.maxBank.pageObject.Create_Bank_Cheque_TDS;
+import com.maxBank.pageObject.Create_Bank_Cheque_Transfer;
 import com.maxBank.pageObject.Create_CF_Payment;
 import com.maxBank.pageObject.Create_Cash_Withdrawal_Cheque;
 import com.maxBank.pageObject.Create_Chequebooks;
@@ -64,6 +68,17 @@ public class ParentScenario extends ParentDriver{
 	public Create_Arrenger_Commission create_arrenger_commission;
 	public Create_Freight_Charge create_freight_charge;
 	
+	public Create_Bank_Cheque_Payment_Application create_bank_cheque_payment_application;
+	
+	public Create_Bank_Cheque_Transfer create_bank_cheque_transfer;
+	
+	public Create_Bank_Cheque_Security create_bank_cheque_security;
+	
+	public Create_Bank_Cheque_TDS create_bank_cheque_tds;
+	
+	
+	
+	
 	
 	public void startBrowser() {
 		
@@ -97,10 +112,13 @@ public class ParentScenario extends ParentDriver{
 		create_arrenger_commission = new Create_Arrenger_Commission(driver);
 		create_freight_charge = new Create_Freight_Charge(driver);
 		
+		create_bank_cheque_payment_application = new Create_Bank_Cheque_Payment_Application(driver);
 		
+		create_bank_cheque_transfer = new Create_Bank_Cheque_Transfer(driver);
 		
+		create_bank_cheque_security = new Create_Bank_Cheque_Security(driver);
 		
-		
+		create_bank_cheque_tds = new Create_Bank_Cheque_TDS(driver);
 		
 		
 	}
