@@ -53,6 +53,10 @@ public class Create_Bank_Cheque_TDS extends ParentDriver{
 		driver.findElement(By.xpath("//th[contains(.,'ID Requisition')]")).click();
 	}
 	
+	public void clickIDRequisitionGeneralBtn(String arg1) {
+		driver.findElement(By.xpath("//th[contains(.,'"+arg1+"')]")).click();
+	}
+	
 	public void clickAmountBtn() {
 		driver.findElement(By.xpath("(//span[@class='box'])[1]")).click();
 	}
