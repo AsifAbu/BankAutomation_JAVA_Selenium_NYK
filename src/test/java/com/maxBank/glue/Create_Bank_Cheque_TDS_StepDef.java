@@ -57,4 +57,11 @@ public class Create_Bank_Cheque_TDS_StepDef extends ParentScenario{
 		Thread.sleep(3000);
 	    create_bank_cheque_tds.clickTDSSubmit();
 	}
+
+
+	@Then("^User Click ID Requisition \"([^\"]*)\"$")
+	public void userClickIDRequisition(String arg1) throws Throwable {
+		Thread.sleep(3000);
+	    create_bank_cheque_tds.clickIDRequisitionGeneralBtn(arg1);
+	}
 }

@@ -37,7 +37,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
 		</ul>
 
@@ -51,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Feb 11, 2020 03:59:04 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Feb 15, 2020 01:52:29 PM</span>
 				</a>
 			</li>
 			<li>
@@ -77,6 +78,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -127,10 +130,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -142,10 +145,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>9</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='56.667%'><span class='strong'>17</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='43.333%'>13</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -157,10 +160,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>42</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='54.422%'><span class='strong'>80</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='8.844%'>13</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='36.735%'>54</span> others
 				</div>
 			</div>
 		</div>
@@ -174,15 +177,15 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>User create TDS Cheque</span>
-						<span class='test-time'>Feb 11, 2020 03:59:04 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Feb 15, 2020 01:52:30 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 43s+482ms</span>
+	<span class='duration right label'>0h 0m 34s+714ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Successful Login with Valid Credentials</span>
@@ -231,7 +234,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='8' status='pass'>
-	<span class='duration right label'>0h 0m 8s+267ms</span>
+	<span class='duration right label'>0h 0m 8s+158ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Select Role</span>
@@ -256,7 +259,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='11' status='pass'>
-	<span class='duration right label'>0h 0m 12s+566ms</span>
+	<span class='duration right label'>0h 0m 12s+430ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User going create Cheque page</span>
@@ -297,34 +300,34 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='16' status='pass'>
-	<span class='duration right label'>0h 0m 5s+186ms</span>
+	<span class='duration right label'>0h 0m 5s+160ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">For TDS Type</span>
+		<span class="desc-text">For VDS Type</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='17' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User Click Select Cheque Type button and select "TDS"</span>
+			<span class="bdd-step-name">Then User Click Select Cheque Type button and select "VDS"</span>
 				<div class='pre'>passed</div>
 			
 		</li>
 	</ul>
 </div>
 <div class='scenario node' test-id='18' status='pass'>
-	<span class='duration right label'>0h 0m 11s+413ms</span>
+	<span class='duration right label'>0h 0m 11s+411ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">For Vendor TDS Type</span>
+		<span class="desc-text">For Vendor VDS Type</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='19' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User Click select TDS Type and select "Vendor TDS"</span>
+			<span class="bdd-step-name">Then User Click select TDS Type and select "Vendor VDS"</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -347,7 +350,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='22' status='pass'>
-	<span class='duration right label'>0h 0m 22s+759ms</span>
+	<span class='duration right label'>0h 0m 22s+796ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User Fillup Bank Information section</span>
@@ -380,7 +383,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='26' status='pass'>
-	<span class='duration right label'>0h 0m 29s+102ms</span>
+	<span class='duration right label'>0h 0m 29s+69ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">User Fillup Cheque Information section</span>
@@ -437,7 +440,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='33' status='pass'>
-	<span class='duration right label'>0h 0m 10s+320ms</span>
+	<span class='duration right label'>0h 0m 10s+54ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Verify Data of Transfer Cheque</span>
@@ -454,7 +457,7 @@
 	</ul>
 </div>
 <div class='scenario node' test-id='35' status='pass'>
-	<span class='duration right label'>0h 2m 39s+859ms</span>
+	<span class='duration right label'>0h 2m 39s+926ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Approve Transfer Cheque</span>
@@ -593,10 +596,1337 @@
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then User Collect "Check Delivered" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='53' status='pass'>
+	<span class='duration right label'>0h 0m 12s+363ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User going create Cheque page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='54' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Click Cheque button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='55' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Create Cheque button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='56' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click TDS&VDS button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click COmpany, TDS Type & Amount Selection button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='58' status='pass'>
+	<span class='duration right label'>0h 0m 5s+151ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">For VDS Type</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='59' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Select Cheque Type button and select "VDS"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='60' status='fail'>
+	<span class='duration right label'>0h 0m 31s+925ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">For Pund Payment VDS Type</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='61' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click select TDS Type and select "Fund Payment VDS"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='62' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click ID Requisition</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='63' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Amount nbutton in first row</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='box'])[1]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//span[@class='box'])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.clickAmountBtn(Create_Bank_Cheque_TDS.java:61)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_Amount_nbutton_in_first_row(Create_Bank_Cheque_TDS_StepDef.java:52)
+	at ✽.Then User Click Amount nbutton in first row(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:88)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='64' status='pass'>
+	<span class='duration right label'>0h 0m 22s+573ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User Fillup Bank Information section</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='65' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Bank Select and select "Trust Bank"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='66' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Account No field and select "0210589481"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='67' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click select Chequebook and select "1122"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='68' status='pass'>
+	<span class='duration right label'>0h 0m 28s+940ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User Fillup Cheque Information section</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='69' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Date CDC</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='70' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Beneficiary Name and select "Munnu Traders"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='71' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Category field and select Bearer Cheque</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='72' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Auditor field and select "ERP Admin"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='73' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Signatory Authority field and select "ERP Admin"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='74' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click TDS Submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='75' status='fail'>
+	<span class='duration right label'>0h 0m 27s+40ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Data of Transfer Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='76' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Request Created" Status and Verify</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:192)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)
+	at ✽.Then User Collect "Check Request Created" Status and Verify(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:105)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='77' status='fail'>
+	<span class='duration right label'>0h 0m 39s+923ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Approve Transfer Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='78' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Auditor</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='79' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Review button</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Review')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//button[contains(.,'Review')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.ClickReviewButton(Create_Material_Requisition_Payments_Cheque.java:223)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userClickReviewButton(Create_Material_Requisition_Payments_Cheque_StepDef.java:188)
+	at ✽.Then User Click Review button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:110)
+</pre></div>
+			
+		</li>
+		<li test-id='80' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Reviewed" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='81' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='82' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Print button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='83' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Close New Tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='84' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='85' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Printed" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='86' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Cheque Approver</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='87' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Approve button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='88' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Approved" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='89' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='90' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Deliver button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='91' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "Asif" into Cheque Recever name field</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='92' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "01899999999" into Recever phone Number field</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='93' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm Delevery button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='94' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Delivered" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='95' status='fail'>
+	<span class='duration right label'>0h 0m 26s+163ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User going create Cheque page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='96' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Click Cheque button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='97' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Create Cheque button</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Create Cheque')])[2]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//a[contains(.,'Create Cheque')])[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.clickCreatCheckBtn(Create_Material_Requisition_Payments_Cheque.java:43)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Create_Cheque_button(Create_Material_Requisition_Payments_Cheque_StepDef.java:30)
+	at ✽.Then User Click Create Cheque button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:136)
+</pre></div>
+			
+		</li>
+		<li test-id='98' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click TDS&VDS button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='99' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click COmpany, TDS Type & Amount Selection button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='100' status='fail'>
+	<span class='duration right label'>0h 0m 23s+52ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">For VDS Type</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='101' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Select Cheque Type button and select "VDS"</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='cheque_type']"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//select[@name='cheque_type']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.setChequeType(Create_Bank_Cheque_TDS.java:40)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_Select_Cheque_Type_button_and_select(Create_Bank_Cheque_TDS_StepDef.java:34)
+	at ✽.Then User Click Select Cheque Type button and select "VDS"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:141)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='102' status='fail'>
+	<span class='duration right label'>0h 0m 23s+62ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">For Purchase Bill VDS Type</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='103' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click select TDS Type and select "Purchase Bill VDS"</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='tds_type']"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//select[@name='tds_type']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.setTDSChequeType(Create_Bank_Cheque_TDS.java:47)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_select_TDS_Type_and_select(Create_Bank_Cheque_TDS_StepDef.java:40)
+	at ✽.Then User Click select TDS Type and select "Purchase Bill VDS"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:144)
+</pre></div>
+			
+		</li>
+		<li test-id='104' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click ID Requisition "Bill Sn"</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='105' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Amount nbutton in first row</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='106' status='fail'>
+	<span class='duration right label'>0h 0m 26s+60ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User Fillup Bank Information section</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='107' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Bank Select and select "Trust Bank"</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='bank_name']"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//input[@name='bank_name']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.selectBank(Create_Material_Requisition_Payments_Cheque.java:97)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Bank_Select_and_select(Create_Material_Requisition_Payments_Cheque_StepDef.java:84)
+	at ✽.Then User Click Bank Select and select "Trust Bank"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:149)
+</pre></div>
+			
+		</li>
+		<li test-id='108' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Account No field and select "0210589481"</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='109' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click select Chequebook and select "1122"</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='110' status='fail'>
+	<span class='duration right label'>0h 0m 23s+45ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User Fillup Cheque Information section</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='111' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Date CDC</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='check_date_type'])[1]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//input[@name='check_date_type'])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_CF_Payment.clickCDC(Create_CF_Payment.java:72)
+	at com.maxBank.glue.Create_CF_Payment_StepDef.user_Click_Cheque_Date_CDC(Create_CF_Payment_StepDef.java:69)
+	at ✽.Then User Click Cheque Date CDC(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:155)
+</pre></div>
+			
+		</li>
+		<li test-id='112' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Beneficiary Name and select "Munnu Traders"</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='113' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Category field and select Bearer Cheque</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='114' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Auditor field and select "ERP Admin"</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='115' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Signatory Authority field and select "ERP Admin"</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='116' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click TDS Submit button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='117' status='fail'>
+	<span class='duration right label'>0h 0m 27s+23ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Data of Transfer Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='118' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Request Created" Status and Verify</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:192)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)
+	at ✽.Then User Collect "Check Request Created" Status and Verify(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:163)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='119' status='fail'>
+	<span class='duration right label'>0h 0m 39s+526ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Approve Transfer Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='120' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Auditor</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='121' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Review button</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Review')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//button[contains(.,'Review')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.ClickReviewButton(Create_Material_Requisition_Payments_Cheque.java:223)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userClickReviewButton(Create_Material_Requisition_Payments_Cheque_StepDef.java:188)
+	at ✽.Then User Click Review button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:168)
+</pre></div>
+			
+		</li>
+		<li test-id='122' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Reviewed" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='123' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='124' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Print button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='125' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Close New Tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='126' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='127' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Printed" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='128' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Cheque Approver</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='129' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Approve button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='130' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Approved" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='131' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='132' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Deliver button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='133' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "Asif" into Cheque Recever name field</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='134' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "01899999999" into Recever phone Number field</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='135' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm Delevery button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='136' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Delivered" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='137' status='fail'>
+	<span class='duration right label'>0h 0m 16s+751ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User going create Cheque page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='138' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User Click Cheque button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='139' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Create Cheque button</span>
+				<div class='pre'><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.clickCreatCheckBtn(Create_Material_Requisition_Payments_Cheque.java:43)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Create_Cheque_button(Create_Material_Requisition_Payments_Cheque_StepDef.java:30)
+	at ✽.Then User Click Create Cheque button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:193)
+</pre></div>
+			
+		</li>
+		<li test-id='140' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click TDS&VDS button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='141' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click COmpany, TDS Type & Amount Selection button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='142' status='fail'>
+	<span class='duration right label'>0h 0m 7s+482ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">For VDS Type</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='143' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Select Cheque Type button and select "VDS"</span>
+				<div class='pre'><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.setChequeType(Create_Bank_Cheque_TDS.java:40)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_Select_Cheque_Type_button_and_select(Create_Bank_Cheque_TDS_StepDef.java:34)
+	at ✽.Then User Click Select Cheque Type button and select "VDS"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:198)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='144' status='pass'>
+	<span class='duration right label'>0h 0m 16s+581ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">For Subcontractor Bill VDS Type</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='145' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click select TDS Type and select "Subcontractor Bill VDS"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='146' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click ID Requisition "Bill Sn"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='147' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Amount nbutton in first row</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='148' status='pass'>
+	<span class='duration right label'>0h 0m 22s+528ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User Fillup Bank Information section</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='149' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Bank Select and select "Trust Bank"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='150' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Account No field and select "0210589481"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='151' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click select Chequebook and select "1122"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='152' status='pass'>
+	<span class='duration right label'>0h 0m 28s+901ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User Fillup Cheque Information section</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='153' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Date CDC</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='154' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Beneficiary Name and select "Munnu Traders"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='155' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Category field and select Bearer Cheque</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='156' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Cheque Auditor field and select "ERP Admin"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='157' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Signatory Authority field and select "ERP Admin"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='158' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click TDS Submit button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='159' status='pass'>
+	<span class='duration right label'>0h 0m 10s+39ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify Data of Transfer Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='160' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Request Created" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='161' status='fail'>
+	<span class='duration right label'>0h 0m 59s+485ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Approve Transfer Cheque</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='162' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Auditor</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='163' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Review button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='164' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Reviewed" Status and Verify</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='165' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='166' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Print button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='167' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Close New Tab</span>
+				<div class='pre'><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.closeTab1(Create_Material_Requisition_Payments_Cheque.java:242)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCloseNewTab(Create_Material_Requisition_Payments_Cheque_StepDef.java:200)
+	at ✽.Then User Close New Tab(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:231)
+</pre></div>
+			
+		</li>
+		<li test-id='168' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='169' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Printed" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='170' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Cheque Approver</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='171' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Approve button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='172' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Cheque Request Approved" Status and Verify</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='173' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User Click Select User button for Creator</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='174' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Deliver button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='175' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "Asif" into Cheque Recever name field</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='176' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User enters "01899999999" into Recever phone Number field</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='177' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Click Confirm Delevery button</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='178' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User Collect "Check Delivered" Status and Verify</span>
 			<ul class='screenshots right'>
 				<li><a data-featherlight="image" href="image/png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
 	</ul>
@@ -629,6 +1959,467 @@
 </div>
 <!-- test view -->
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>10</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 01:57:49 PM</td>
+                                                        <td class='linked' test-id='63'>User create TDS Cheque.For Pund Payment VDS Type.Then User Click Amount nbutton in first row</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='box'])[1]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.22 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//span[@class='box'])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.clickAmountBtn(Create_Bank_Cheque_TDS.java:61)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_Amount_nbutton_in_first_row(Create_Bank_Cheque_TDS_StepDef.java:52)
+	at ✽.Then User Click Amount nbutton in first row(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:88)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 01:59:04 PM</td>
+                                                        <td class='linked' test-id='76'>User create TDS Cheque.Verify Data of Transfer Cheque.Then User Collect "Check Request Created" Status and Verify</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:192)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)
+	at ✽.Then User Collect "Check Request Created" Status and Verify(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:105)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 01:59:46 PM</td>
+                                                        <td class='linked' test-id='79'>User create TDS Cheque.Approve Transfer Cheque.Then User Click Review button</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Review')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//button[contains(.,'Review')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.ClickReviewButton(Create_Material_Requisition_Payments_Cheque.java:223)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userClickReviewButton(Create_Material_Requisition_Payments_Cheque_StepDef.java:188)
+	at ✽.Then User Click Review button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:110)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:00:14 PM</td>
+                                                        <td class='linked' test-id='97'>User create TDS Cheque.User going create Cheque page.Then User Click Create Cheque button</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Create Cheque')])[2]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//a[contains(.,'Create Cheque')])[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.clickCreatCheckBtn(Create_Material_Requisition_Payments_Cheque.java:43)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Create_Cheque_button(Create_Material_Requisition_Payments_Cheque_StepDef.java:30)
+	at ✽.Then User Click Create Cheque button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:136)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:00:38 PM</td>
+                                                        <td class='linked' test-id='101'>User create TDS Cheque.For VDS Type.Then User Click Select Cheque Type button and select "VDS"</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='cheque_type']"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//select[@name='cheque_type']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.setChequeType(Create_Bank_Cheque_TDS.java:40)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_Select_Cheque_Type_button_and_select(Create_Bank_Cheque_TDS_StepDef.java:34)
+	at ✽.Then User Click Select Cheque Type button and select "VDS"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:141)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:01:01 PM</td>
+                                                        <td class='linked' test-id='103'>User create TDS Cheque.For Purchase Bill VDS Type.Then User Click select TDS Type and select "Purchase Bill VDS"</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='tds_type']"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//select[@name='tds_type']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.setTDSChequeType(Create_Bank_Cheque_TDS.java:47)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_select_TDS_Type_and_select(Create_Bank_Cheque_TDS_StepDef.java:40)
+	at ✽.Then User Click select TDS Type and select "Purchase Bill VDS"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:144)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:01:24 PM</td>
+                                                        <td class='linked' test-id='107'>User create TDS Cheque.User Fillup Bank Information section.Then User Click Bank Select and select "Trust Bank"</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='bank_name']"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//input[@name='bank_name']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.selectBank(Create_Material_Requisition_Payments_Cheque.java:97)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Bank_Select_and_select(Create_Material_Requisition_Payments_Cheque_StepDef.java:84)
+	at ✽.Then User Click Bank Select and select "Trust Bank"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:149)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:01:50 PM</td>
+                                                        <td class='linked' test-id='111'>User create TDS Cheque.User Fillup Cheque Information section.Then User Click Cheque Date CDC</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='check_date_type'])[1]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//input[@name='check_date_type'])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_CF_Payment.clickCDC(Create_CF_Payment.java:72)
+	at com.maxBank.glue.Create_CF_Payment_StepDef.user_Click_Cheque_Date_CDC(Create_CF_Payment_StepDef.java:69)
+	at ✽.Then User Click Cheque Date CDC(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:155)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:02:13 PM</td>
+                                                        <td class='linked' test-id='118'>User create TDS Cheque.Verify Data of Transfer Cheque.Then User Collect "Check Request Created" Status and Verify</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=(//span[@class='timeline-body-alerttitle font-red-intense ng-binding'])[contains(.,'Check Request Created')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.statusVerify(Create_Material_Requisition_Payments_Cheque.java:192)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCollectStatusAndVerify(Create_Material_Requisition_Payments_Cheque_StepDef.java:157)
+	at ✽.Then User Collect "Check Request Created" Status and Verify(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:163)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:02:54 PM</td>
+                                                        <td class='linked' test-id='121'>User create TDS Cheque.Approve Transfer Cheque.Then User Click Review button</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(.,'Review')]"}
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+*** Element info: {Using=xpath, value=//button[contains(.,'Review')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.ClickReviewButton(Create_Material_Requisition_Payments_Cheque.java:223)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userClickReviewButton(Create_Material_Requisition_Payments_Cheque_StepDef.java:188)
+	at ✽.Then User Click Review button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:168)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.ElementNotVisibleException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:03:22 PM</td>
+                                                        <td class='linked' test-id='139'>User create TDS Cheque.User going create Cheque page.Then User Click Create Cheque button</td>
+                                                        <td><pre><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.clickCreatCheckBtn(Create_Material_Requisition_Payments_Cheque.java:43)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.user_Click_Create_Cheque_button(Create_Material_Requisition_Payments_Cheque_StepDef.java:30)
+	at ✽.Then User Click Create Cheque button(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:193)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:03:36 PM</td>
+                                                        <td class='linked' test-id='143'>User create TDS Cheque.For VDS Type.Then User Click Select Cheque Type button and select "VDS"</td>
+                                                        <td><pre><pre>org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=79.0.3945.130)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-PCJ60MP', ip: '192.168.91.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\DestReza\AppData\Local\Temp\scoped_dir2044_16816}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=79.0.3945.130, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7ebd591241bb45684c7924cec170a1ef
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.maxBank.pageObject.Create_Bank_Cheque_TDS.setChequeType(Create_Bank_Cheque_TDS.java:40)
+	at com.maxBank.glue.Create_Bank_Cheque_TDS_StepDef.user_Click_Select_Cheque_Type_button_and_select(Create_Bank_Cheque_TDS_StepDef.java:34)
+	at ✽.Then User Click Select Cheque Type button and select "VDS"(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:198)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.IndexOutOfBoundsException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Feb 15, 2020 02:05:54 PM</td>
+                                                        <td class='linked' test-id='167'>User create TDS Cheque.Approve Transfer Cheque.Then User Close New Tab</td>
+                                                        <td><pre><pre>java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.maxBank.pageObject.Create_Material_Requisition_Payments_Cheque.closeTab1(Create_Material_Requisition_Payments_Cheque.java:242)
+	at com.maxBank.glue.Create_Material_Requisition_Payments_Cheque_StepDef.userCloseNewTab(Create_Material_Requisition_Payments_Cheque_StepDef.java:200)
+	at ✽.Then User Close New Tab(src/test/resources/1M_Bank_Cheque_TDS&VDS/1B_Create_Bank_Cheque_VDS.feature:231)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -644,31 +2435,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>30</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>42</div>
+					<div class='panel-lead'>147</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 11, 2020 03:59:04 PM</div>
+					<div class='panel-lead'>Feb 15, 2020 01:52:29 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 11, 2020 04:04:07 PM</div>
+			 		<div class='panel-lead'>Feb 15, 2020 02:06:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 5m 3s+346ms</div>
+					<div class='panel-lead'>0h 13m 31s+834ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -726,31 +2517,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 9,
-				failChild: 0,
+				passChild: 17,
+				failChild: 13,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 13,
 				
-				passGrandChild: 42,
-				failGrandChild: 0,
+				passGrandChild: 80,
+				failGrandChild: 13,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 54,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 67,
 			};
 		</script>
 		
