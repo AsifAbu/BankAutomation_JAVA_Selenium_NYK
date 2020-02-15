@@ -27,6 +27,7 @@ import com.maxBank.pageObject.Create_Transport_Bill;
 import com.maxBank.pageObject.Create_Without_Advance_Requisition_Payments_Cheque;
 //import com.maxBank.pageObject.Bank_Dashboard;
 import com.maxBank.pageObject.Login;
+import com.maxBank.pageObject.Manage_Bank;
 import com.maxBank.pageObject.Master_Create_Company;
 import com.maxBank.pageObject.Master_Create_Project;
 import com.maxBank.pageObject.Master_Login;
@@ -76,6 +77,7 @@ public class ParentScenario extends ParentDriver{
 	
 	public Create_Bank_Cheque_TDS create_bank_cheque_tds;
 	
+	public Manage_Bank manage_bank;
 	
 	
 	
@@ -119,6 +121,9 @@ public class ParentScenario extends ParentDriver{
 		create_bank_cheque_security = new Create_Bank_Cheque_Security(driver);
 		
 		create_bank_cheque_tds = new Create_Bank_Cheque_TDS(driver);
+		
+		manage_bank = new Manage_Bank(driver);
+		
 		
 		
 	}
