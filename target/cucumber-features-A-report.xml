@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="73.422601">
+<testcase classname="User create TDS Cheque" name="Successful Login with Valid Credentials" time="35.245735">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+When User enters "erp.maxgroup@gmail.com" into Username field...............passed
+And User enters "123" into Password field...................................passed
+And User Click LogIn button.................................................passed
+And User Login Successfully.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User create TDS Cheque" name="Select Role" time="8.137323">
+<system-out><![CDATA[Then User select Creator at CDA.............................................passed
+Then click Confirm button...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User create TDS Cheque" name="User going create Cheque page" time="15.607279">
+<system-out><![CDATA[And User Click Banks button.................................................passed
+Then User Click Manage Bank button..........................................passed
+Then User enters "testingBankName" into Bank Name field.....................passed
+Then User enters "testingFullBankName" into Bank Full Name field............passed
+Then User Click Submit button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User create TDS Cheque" name="User Verify Manage Data of Recently Managed Bank" time="14.432264">
+<system-out><![CDATA[Then User Collect Data and Verify...........................................passed
+Then Delete it..............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
