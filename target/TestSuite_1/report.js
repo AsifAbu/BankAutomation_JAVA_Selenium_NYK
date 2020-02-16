@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("1A_Manage_Banks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/1N_Banks/1B_Add_Account.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,89 +7,21 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "User create TDS Cheque",
+  "name": "User Create New Bank Account",
   "description": "",
-  "id": "user-create-tds-cheque",
+  "id": "user-create-new-bank-account",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 10758583500,
+  "duration": 8547274100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 189900,
+  "duration": 134700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 113300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 104000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 123100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 84600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 97800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 126600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 149000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 128300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 153600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 119800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 99400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 100500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 152700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 94500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 69500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 70400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 80800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 67200,
+  "duration": 105000,
   "status": "passed"
 });
 formatter.before({
@@ -97,50 +29,122 @@ formatter.before({
   "status": "passed"
 });
 formatter.before({
-  "duration": 96300,
+  "duration": 120900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88100,
+  "duration": 95400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 98900,
+  "duration": 89300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88300,
+  "duration": 153700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 98400,
+  "duration": 151400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 86300,
+  "duration": 144600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 97300,
+  "duration": 121700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88400,
+  "duration": 131600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 99700,
+  "duration": 126000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 107300,
+  "duration": 110200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 125200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 141000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 101600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 100800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 113200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 122700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 114800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 100700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 125700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 116200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 136600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 91100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 82100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 85400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 96800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 88600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 81900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 100600,
   "status": "passed"
 });
 formatter.scenario({
   "line": 5,
   "name": "Successful Login with Valid Credentials",
   "description": "",
-  "id": "user-create-tds-cheque;successful-login-with-valid-credentials",
+  "id": "user-create-new-bank-account;successful-login-with-valid-credentials",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -173,7 +177,7 @@ formatter.match({
   "location": "Login_StepDef.user_is_on_Login_page()"
 });
 formatter.result({
-  "duration": 5904309100,
+  "duration": 3443704200,
   "status": "passed"
 });
 formatter.match({
@@ -186,7 +190,7 @@ formatter.match({
   "location": "Login_StepDef.user_enters_into_Username_field(String)"
 });
 formatter.result({
-  "duration": 4381714600,
+  "duration": 4157138100,
   "status": "passed"
 });
 formatter.match({
@@ -199,81 +203,141 @@ formatter.match({
   "location": "Login_StepDef.user_enters_into_Password_field(String)"
 });
 formatter.result({
-  "duration": 4091551500,
+  "duration": 4064640800,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.user_Click_LogIn_button()"
 });
 formatter.result({
-  "duration": 4065334200,
+  "duration": 4061678100,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.user_Login_Successfully()"
 });
 formatter.result({
-  "duration": 6041052000,
+  "duration": 6017448400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 77700,
+  "duration": 64700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 79600,
+  "duration": 58200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 67200,
+  "duration": 50300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 65400,
+  "duration": 80300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 88000,
+  "duration": 49400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 155700,
+  "duration": 45300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 112600,
+  "duration": 61000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 74600,
+  "duration": 41400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 63300,
+  "duration": 37800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 70300,
+  "duration": 91100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 89000,
+  "duration": 102600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 96700,
+  "duration": 87800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 63500,
+  "duration": 51300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 60000,
+  "duration": 44400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 56900,
+  "duration": 47900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 39200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 46500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 41600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 42100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 37500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 37900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 92000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 131300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 86900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 78000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 80100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 49000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44200,
   "status": "passed"
 });
 formatter.before({
@@ -281,70 +345,14 @@ formatter.before({
   "status": "passed"
 });
 formatter.before({
-  "duration": 60500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 61600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 53100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 60200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 56800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 56700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 59200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 57000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 48900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 100500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 73200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 62800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 63000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 42200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 50000,
+  "duration": 49200,
   "status": "passed"
 });
 formatter.scenario({
   "line": 12,
   "name": "Select Role",
   "description": "",
-  "id": "user-create-tds-cheque;select-role",
+  "id": "user-create-new-bank-account;select-role",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -362,66 +370,62 @@ formatter.match({
   "location": "Login_StepDef.user_select_Creator_at_CDA()"
 });
 formatter.result({
-  "duration": 4048798400,
+  "duration": 4050993800,
   "status": "passed"
 });
 formatter.match({
   "location": "Login_StepDef.click_Confirm_button()"
 });
 formatter.result({
-  "duration": 4086333100,
+  "duration": 4083614300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 85900,
+  "duration": 111800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 158400,
+  "duration": 83200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 114000,
+  "duration": 84900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 103300,
+  "duration": 84100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 149900,
+  "duration": 114400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 337700,
+  "duration": 72600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 174700,
+  "duration": 77100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 89900,
+  "duration": 58600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 97100,
+  "duration": 58700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 110300,
+  "duration": 74800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 75700,
+  "duration": 268100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 64600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 89300,
+  "duration": 135500,
   "status": "passed"
 });
 formatter.before({
@@ -429,78 +433,86 @@ formatter.before({
   "status": "passed"
 });
 formatter.before({
-  "duration": 138100,
+  "duration": 106300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 150200,
+  "duration": 263700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 128300,
+  "duration": 182800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 145100,
+  "duration": 130300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 133500,
+  "duration": 103400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 152600,
+  "duration": 98500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 135100,
+  "duration": 120200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 156000,
+  "duration": 165300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 134400,
+  "duration": 105300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 171400,
+  "duration": 135000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 113900,
+  "duration": 166400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 126200,
+  "duration": 133200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 266600,
+  "duration": 108200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 131700,
+  "duration": 171100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 157200,
+  "duration": 147100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 140300,
+  "duration": 106300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 111900,
+  "duration": 101400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 98300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 111300,
   "status": "passed"
 });
 formatter.scenario({
   "line": 16,
-  "name": "User going create Cheque page",
+  "name": "User going Add Bank Page",
   "description": "",
-  "id": "user-create-tds-cheque;user-going-create-cheque-page",
+  "id": "user-create-new-bank-account;user-going-add-bank-page",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -511,121 +523,29 @@ formatter.step({
 });
 formatter.step({
   "line": 18,
-  "name": "User Click Manage Bank button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User enters \"testingBankName\" into Bank Name field",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "User enters \"testingFullBankName\" into Bank Full Name field",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
-  "name": "User Click Submit button",
+  "name": "User Click Add Bank button",
   "keyword": "Then "
 });
 formatter.match({
   "location": "Manage_Bank_StepDef.user_Click_Banks_button()"
 });
 formatter.result({
-  "duration": 3082049000,
+  "duration": 3080968700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Manage_Bank_StepDef.userClickManageBankButton()"
+  "location": "Add_Bank_StepDef.user_Click_Add_Bank_button()"
 });
 formatter.result({
-  "duration": 3129668200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "testingBankName",
-      "offset": 13
-    }
-  ],
-  "location": "Manage_Bank_StepDef.user_enters_into_Bank_Name_field(String)"
-});
-formatter.result({
-  "duration": 3140266300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "testingFullBankName",
-      "offset": 13
-    }
-  ],
-  "location": "Manage_Bank_StepDef.user_enters_into_Bank_Full_Name_field(String)"
-});
-formatter.result({
-  "duration": 3148976000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Bank_Create_Beneficiary_StepDef.user_Click_Submit_button()"
-});
-formatter.result({
-  "duration": 3102059000,
+  "duration": 3118104500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 127000,
+  "duration": 80700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 138400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 163900,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 105200,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 89000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 80500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 54500,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 55400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 86800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 109400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 144800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 102400,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 116100,
+  "duration": 88000,
   "status": "passed"
 });
 formatter.before({
@@ -633,103 +553,729 @@ formatter.before({
   "status": "passed"
 });
 formatter.before({
-  "duration": 91400,
+  "duration": 79000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 109100,
+  "duration": 88600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 125900,
+  "duration": 593500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 201600,
+  "duration": 89400,
   "status": "passed"
 });
 formatter.before({
-  "duration": 148400,
+  "duration": 82900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 104400,
+  "duration": 68500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 108100,
+  "duration": 51700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 101300,
+  "duration": 70500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 178000,
+  "duration": 77600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 109300,
+  "duration": 93700,
   "status": "passed"
 });
 formatter.before({
-  "duration": 106800,
+  "duration": 77100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 83200,
+  "duration": 214100,
   "status": "passed"
 });
 formatter.before({
-  "duration": 92300,
+  "duration": 103900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 119200,
+  "duration": 96900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 124700,
+  "duration": 93300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 126400,
+  "duration": 79900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 126800,
+  "duration": 127000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 98700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 95100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 150700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 123500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 103700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 98400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 63700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 58700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 40600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 88100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 58000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 100100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
-  "name": "User Verify Manage Data of Recently Managed Bank",
+  "line": 20,
+  "name": "User Fill the form",
   "description": "",
-  "id": "user-create-tds-cheque;user-verify-manage-data-of-recently-managed-bank",
+  "id": "user-create-new-bank-account;user-fill-the-form",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
+  "line": 21,
+  "name": "User Click and select \"ERP Admin\" into Approver field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "User Click and select \"Trust Bank\" into Bank Name field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "User enter \"112233445\" into Account Number field",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 24,
-  "name": "User Collect Data and Verify",
+  "name": "User Click and select \"SOD\" into Account Type field",
   "keyword": "Then "
 });
 formatter.step({
   "line": 25,
-  "name": "Delete it",
+  "name": "User enters \"Mohakhali, Dhaka\" into Branch name field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "User enters \"112233446\" into Account Routing Number field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "User enters \"Dhaka\" into Branch Head Destination field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "User enters \"Mohakhali, Dhaka\" into Branch Address field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "User enters \"01788888888\" into Phone Number field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 31,
+  "name": "User enters \"asif@gmail.com\" into Email field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "Click Submit button of Create Account",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Manage_Bank_StepDef.user_Collect_Data_and_Verify()"
+  "arguments": [
+    {
+      "val": "ERP Admin",
+      "offset": 23
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_Click_and_select_into_Approver_field(String)"
 });
 formatter.result({
-  "duration": 11363385700,
+  "duration": 5169922400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Manage_Bank_StepDef.deleteIt()"
+  "arguments": [
+    {
+      "val": "Trust Bank",
+      "offset": 23
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_Click_and_select_into_Bank_Name_field(String)"
 });
 formatter.result({
-  "duration": 3065348100,
+  "duration": 5141080500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "112233445",
+      "offset": 12
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enter_into_Account_Number_field(String)"
+});
+formatter.result({
+  "duration": 3207227000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "SOD",
+      "offset": 23
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_Click_and_select_into_Account_Type_field(String)"
+});
+formatter.result({
+  "duration": 5143849300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Mohakhali, Dhaka",
+      "offset": 13
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enters_into_Branch_name_field(String)"
+});
+formatter.result({
+  "duration": 3160627000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "112233446",
+      "offset": 13
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enters_into_Account_Routing_Number_field(String)"
+});
+formatter.result({
+  "duration": 3106398700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Dhaka",
+      "offset": 13
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enters_into_Branch_Head_Destination_field(String)"
+});
+formatter.result({
+  "duration": 3087852500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Mohakhali, Dhaka",
+      "offset": 13
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enters_into_Branch_Address_field(String)"
+});
+formatter.result({
+  "duration": 3145007700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "01788888888",
+      "offset": 13
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enters_into_Phone_Number_field(String)"
+});
+formatter.result({
+  "duration": 3104861400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "asif@gmail.com",
+      "offset": 13
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enters_into_Email_field(String)"
+});
+formatter.result({
+  "duration": 3190266500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Add_Bank_StepDef.click_Submit_button_of_Create_Account()"
+});
+formatter.result({
+  "duration": 7132387900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 90900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 2068300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 108500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 82700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 101900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 85800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 138300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 114600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 107300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 70200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 74700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 83500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 56400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 79000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 63200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 61000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 57300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 132700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 77800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 90600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 61800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 67100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 53800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 40500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 49200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 37400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 45100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 83300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 92100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 110900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 76900,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 36,
+  "name": "Verify The Created Status",
+  "description": "",
+  "id": "user-create-new-bank-account;verify-the-created-status",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 37,
+  "name": "User Click All Project List button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
+  "name": "User Click SL No button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 39,
+  "name": "User collect Account Status \"created\" and Verify",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Add_Bank_StepDef.user_Click_All_Project_List_button()"
+});
+formatter.result({
+  "duration": 3119341300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Verify_Beneficiary_StepDef.user_Click_SL_No_button()"
+});
+formatter.result({
+  "duration": 3055512200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "created",
+      "offset": 29
+    }
+  ],
+  "location": "Add_Bank_StepDef.userCollectAccountStatusAndVerify(String)"
+});
+formatter.result({
+  "duration": 6073725900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 99100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 70700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 43900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 119600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 56800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 45400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 94700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 82300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 88000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 80100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 97200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 84900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 71600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 69100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 69500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 73100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 70500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 91700,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 66400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 81000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 74600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 90100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 72000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 55600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 72000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 67000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 52600,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 60400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 54500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 60100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 60500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 52400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 42,
+  "name": "User Going to Approve New Created Bank Account",
+  "description": "",
+  "id": "user-create-new-bank-account;user-going-to-approve-new-created-bank-account",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 43,
+  "name": "User Click Dashboard button",
+  "keyword": "Then "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 45,
+      "value": "#scrollDown 2"
+    }
+  ],
+  "line": 46,
+  "name": "User Approve The created Account",
+  "keyword": "Then "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 47,
+      "value": "#scrollUp 2"
+    }
+  ],
+  "line": 49,
+  "name": "User Click Banks button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 50,
+  "name": "User Click All Project List button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 51,
+  "name": "User enters \"112233445\" into Account Number Search field",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 52,
+  "name": "User collect Account Status \"active\" and Verify",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "Add_Bank_StepDef.user_Click_Dashboard_button()"
+});
+formatter.result({
+  "duration": 7214478200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Add_Bank_StepDef.user_Approve_The_created_Account()"
+});
+formatter.result({
+  "duration": 7090261200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Manage_Bank_StepDef.user_Click_Banks_button()"
+});
+formatter.result({
+  "duration": 3080042200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Add_Bank_StepDef.user_Click_All_Project_List_button()"
+});
+formatter.result({
+  "duration": 3133089800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "112233445",
+      "offset": 13
+    }
+  ],
+  "location": "Add_Bank_StepDef.user_enters_into_Account_Number_Search_field(String)"
+});
+formatter.result({
+  "duration": 3127626100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "active",
+      "offset": 29
+    }
+  ],
+  "location": "Add_Bank_StepDef.userCollectAccountStatusAndVerify(String)"
+});
+formatter.result({
+  "duration": 6023937000,
   "status": "passed"
 });
 });

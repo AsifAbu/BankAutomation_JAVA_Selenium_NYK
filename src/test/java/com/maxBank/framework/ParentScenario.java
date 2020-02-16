@@ -2,6 +2,7 @@ package com.maxBank.framework;
 
 import org.openqa.selenium.WebDriver;
 
+import com.maxBank.pageObject.Add_Account;
 import com.maxBank.pageObject.Approve_Beneficiary;
 import com.maxBank.pageObject.Approve_Chequebook;
 import com.maxBank.pageObject.Bank_Create_Beneficiary;
@@ -79,7 +80,7 @@ public class ParentScenario extends ParentDriver{
 	
 	public Manage_Bank manage_bank;
 	
-	
+	public Add_Account add_account;
 	
 	
 	public void startBrowser() {
@@ -124,7 +125,7 @@ public class ParentScenario extends ParentDriver{
 		
 		manage_bank = new Manage_Bank(driver);
 		
-		
+		add_account = new Add_Account(driver);
 		
 	}
 	 

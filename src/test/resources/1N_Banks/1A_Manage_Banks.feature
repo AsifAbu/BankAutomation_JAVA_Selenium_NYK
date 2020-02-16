@@ -1,6 +1,6 @@
 #Author: abuasif.nyk@gmail.com
 
-Feature: User create TDS Cheque
+Feature: User Do Manage Bank
 
 	Scenario: Successful Login with Valid Credentials
 		Given User is on Login page
@@ -13,7 +13,7 @@ Feature: User create TDS Cheque
 		Then User select Creator at CDA
 		Then click Confirm button
 
-	Scenario: User going create Cheque page
+	Scenario: User going Manage Bank page
 		And User Click Banks button
 		Then User Click Manage Bank button
 		Then User enters "testingBankName" into Bank Name field
