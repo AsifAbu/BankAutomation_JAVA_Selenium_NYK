@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="73.422601">
-<testcase classname="User create TDS Cheque" name="Successful Login with Valid Credentials" time="35.245735">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="131.152674">
+<testcase classname="User Create New Bank Account" name="Successful Login with Valid Credentials" time="30.295409">
 <system-out><![CDATA[Given User is on Login page.................................................passed
 When User enters "erp.maxgroup@gmail.com" into Username field...............passed
 And User enters "123" into Password field...................................passed
@@ -7,22 +7,43 @@ And User Click LogIn button.................................................pass
 And User Login Successfully.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create TDS Cheque" name="Select Role" time="8.137323">
+<testcase classname="User Create New Bank Account" name="Select Role" time="8.136531">
 <system-out><![CDATA[Then User select Creator at CDA.............................................passed
 Then click Confirm button...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create TDS Cheque" name="User going create Cheque page" time="15.607279">
+<testcase classname="User Create New Bank Account" name="User going Add Bank Page" time="6.202968">
 <system-out><![CDATA[And User Click Banks button.................................................passed
-Then User Click Manage Bank button..........................................passed
-Then User enters "testingBankName" into Bank Name field.....................passed
-Then User enters "testingFullBankName" into Bank Full Name field............passed
-Then User Click Submit button...............................................passed
+Then User Click Add Bank button.............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User create TDS Cheque" name="User Verify Manage Data of Recently Managed Bank" time="14.432264">
-<system-out><![CDATA[Then User Collect Data and Verify...........................................passed
-Then Delete it..............................................................passed
+<testcase classname="User Create New Bank Account" name="User Fill the form" time="44.592917">
+<system-out><![CDATA[Then User Click and select "ERP Admin" into Approver field..................passed
+Then User Click and select "Trust Bank" into Bank Name field................passed
+Then User enter "112233445" into Account Number field.......................passed
+Then User Click and select "SOD" into Account Type field....................passed
+Then User enters "Mohakhali, Dhaka" into Branch name field..................passed
+Then User enters "112233446" into Account Routing Number field..............passed
+Then User enters "Dhaka" into Branch Head Destination field.................passed
+Then User enters "Mohakhali, Dhaka" into Branch Address field...............passed
+Then User enters "01788888888" into Phone Number field......................passed
+Then User enters "asif@gmail.com" into Email field..........................passed
+Then Click Submit button of Create Account..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Create New Bank Account" name="Verify The Created Status" time="12.253087">
+<system-out><![CDATA[Then User Click All Project List button.....................................passed
+Then User Click SL No button................................................passed
+Then User collect Account Status "created" and Verify.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Create New Bank Account" name="User Going to Approve New Created Bank Account" time="29.671762">
+<system-out><![CDATA[Then User Click Dashboard button............................................passed
+Then User Approve The created Account.......................................passed
+And User Click Banks button.................................................passed
+Then User Click All Project List button.....................................passed
+Then User enters "112233445" into Account Number Search field...............passed
+Then User collect Account Status "active" and Verify........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
