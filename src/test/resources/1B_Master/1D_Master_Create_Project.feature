@@ -1,6 +1,6 @@
 #Author: abuasif.nyk@gmail.com
 
-Feature: User going to Create New Project
+Feature: User going to Create New Project    
 	Scenario: Create New Project of Fixed Budget Type
 		Then User Click ProjectBusiness Unit button
 		Then User Click Add New Project button
@@ -8,7 +8,7 @@ Feature: User going to Create New Project
 		
 	Scenario: Create New Project of Fixed Budget Type	
 		And User enters "" on Project Name field
-		And User enters "" on Project ID field
+		And User enters "" on Project ID field Fixed
 		And User enters "Random" on Project Type field
 		And User enters "Rajshahi" on Project Locatin field
 		And User Enters "200" on Project Budget Ammount Field		
@@ -26,7 +26,7 @@ Feature: User going to Create New Project
 		Then User Click Add New Project button
 		Then User Click Select Parent Company
 		And User enters "" on Project Name field
-		And User enters "" on Project ID field
+		And User enters "" on Project ID field Recurring
 		And User enters "Random" on Project Type field
 		And User Click Budget Type button and Select Recurring Budget Type 
 		And User enters "Rajshahi" on Project Locatin field

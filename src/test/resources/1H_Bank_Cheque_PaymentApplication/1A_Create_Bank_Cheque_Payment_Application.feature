@@ -3,15 +3,15 @@
 Feature: User create Payment Appication Cheque
 
 	Scenario: Successful Login with Valid Credentials
-		Given User is on Login page
-		When User enters "erp.maxgroup@gmail.com" into Username field
-    And User enters "123" into Password field
-    And User Click LogIn button
-    And User Login Successfully
-
-	Scenario: Select Role
-		Then User select Creator at CDA
-		Then click Confirm button
+#		Given User is on Login page
+#		When User enters "erp.maxgroup@gmail.com" into Username field
+    #And User enters "123" into Password field
+    #And User Click LogIn button
+    #And User Login Successfully
+#
+#	Scenario: Select Role
+#		Then User select Creator at CDA
+#		Then click Confirm button
 
 	Scenario: User going create Cheque page
 		And User Click Cheque button
