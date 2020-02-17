@@ -42,13 +42,6 @@ public class Master_Create_Project_StepDef extends ParentScenario{
 		master_create_project.addProjectName(arg1);
 	}
 
-	@Then("^User enters \"([^\"]*)\" on Project ID field$")
-	public void user_enters_on_Project_ID_field(String arg1) throws Throwable {
-		Thread.sleep(15000);
-		master_create_project.addProjectID(arg1);
-		Thread.sleep(20000);
-	}
-
 	@Then("^User enters \"([^\"]*)\" on Project Type field$")
 	public void user_enters_on_Project_Type_field(String arg1) throws Throwable {
 		Thread.sleep(3000);
@@ -135,6 +128,20 @@ public class Master_Create_Project_StepDef extends ParentScenario{
 		Thread.sleep(10000);
 		master_create_project.save_Data_For_New_Project_Recurring();
 		Thread.sleep(15000);
+	}
+
+	@And("^User enters \"([^\"]*)\" on Project ID field Fixed$")
+	public void userEntersOnProjectIDFieldFixed(String arg1) throws Throwable {
+		Thread.sleep(15000);
+		master_create_project.addProjectIDFixed(arg1);
+		Thread.sleep(20000);
+	}
+
+	@And("^User enters \"([^\"]*)\" on Project ID field Recurring$")
+	public void userEntersOnProjectIDFieldRecurring(String arg1) throws Throwable {
+		Thread.sleep(15000);
+		master_create_project.addProjectIDRecurring(arg1);
+		Thread.sleep(20000);
 	}
 
 	
